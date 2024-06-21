@@ -1,0 +1,190 @@
+Exame 2 2016
+
+# 3. a)
+def valor(p,j,n):
+	if not (isinstance(q,int) and q>0):
+		raise ValueError ('valor: a quantia deve ser uma inteiro > 0')
+	if not (isinstance(j,float) and 0<j<1):
+		raise ValueError ('valor: a taxa deve ser um real entre 0 e 1')
+	if not (isinstance(n,int) and n>0):
+		raise ValueError ('valor: anos deve ser um inteiro >0')
+	return (q*(1+j)**n)
+
+# 3. b)
+def duplicar(q,j):
+	n=1
+	quant=q
+	while quant<2*q:
+		n=n+1
+		quant=valor(q,j,n)
+	return n 
+
+# 4. a)
+def codifica(texto):
+	pares=''
+	impares=''
+	for i in range(len(texto)):
+		if i%2==0:
+			pares+=texto[i]
+		else:
+			impares+=texto[i]
+	return (pares+impares)
+
+# 4. b)  <-------
+def descofica(texto):
+	res=''
+	pares=0
+	if len(texto)%2==0:
+		impares=len(texto)//2
+	else:
+		impares=len(texto)/2+1
+	while impares<len(texto):
+		res+=texto[pares]+texto[impares] 
+		pares+=1
+		impares+=1
+	if len(texto)%2!=0:
+		res+=res+texto[pares]
+	return res
+
+# 5. a)
+def perfeito(n):
+	def perfeito_aux(n,div,soma):
+	if div==n:
+		return n==soma:
+	elif n%div==0:
+		return perfeito_aux(n,div+1,soma+div)
+	else:
+		return perfeito_aux(n,div+1,soma)
+	return perfeito_aux(0,1,0)
+
+# 5. b)
+def perfeitos_entre(inicio,fim):
+	if inicio > fim:
+		return []
+	elif perfeito(inicio):     #?
+		return [inicio] + perfeitos_entre(inicio+1,fim):
+	else:
+		return perfeitos_entre(inicio+1,fim)
+
+# 7.
+def metabolismo(diz_p):
+	res={}
+	for e in dic_p:
+		if dic_p[e][0]=='M':
+			res[e]=66+6.3*diz_p[e][1]+12.9*dic_p[e][2]+6.8*dic_p[e][3]
+		else:
+			res[e]=655+4.3*dic_p[e][1]+4.7*dic_p[e][2]+4.7*dic_p[e][3]
+	return res
+
+# 8. a)
+def filtra(fn,lst):
+	if lst==[]:
+		return lst
+	elif fn(lst[0]):  #?
+		return [lst[0]]+filtra(fn, lst[1:])
+	else:
+		return filtra(fn,lst[1:])
+
+# 8. b)
+def transforma(fn,lst):
+	if lst==[]:
+		return lst
+	else:
+		return [fn(lst[0])] + transforma(fn,lst[1:])
+
+# 8. c)
+def acumula(fn,lst):
+	if len(lst)==1:
+		return lst[0]
+	else:
+		return fn(lst[0],acumula(fn,lst[1:])
+
+# 9. <-----
+def soma_quadrados_impares(lst):
+	return acumula(lambda x,y:x+y, transforma (lambda x: x*x, filtra (lambda x:x%2 !=0, lst))) 
+
+# 10. b)
+from random import random
+
+def conjunto():
+	return []
+
+def insere(e,c):
+	if e in c:
+		return c
+	else:
+		return c+[e]
+
+def elem_conj(c):
+	if c ==[]:
+		raise ValueError('elem_conj: conjunto vazio.')
+	else:
+		return c[int(random()*len(c))]
+
+def retira_conj(e,c):
+	if e in c:
+		return retira(e,c)
+	else:
+		return c
+
+def cardinal(c):
+	return len(c)
+
+def e_conjunto(arg):
+	def sem_els_repetidos(lst):
+		if lst==[]:
+			return True
+		elif lst[0] in lst[1:]:
+			return False
+		else:
+			retur sem_els_repetidos(lst[1:])
+
+	return isinstace(arg,list) and sem_els_repetidos(arg)
+
+def e_conj_vazio(c):
+	return c==[]
+
+def pertence(e,c):
+	return e in c
+
+def conj_iguais(c1,c2):
+	if c1==[] and c2=[]:
+		return True
+	elif c1==[] or c2==[]:
+		return False
+	elif c1[0] in c2:
+		return conj_iguais(c1[1:],retira(c1[0],c2))
+
+# funcao auxiliar
+def retira(e,l):
+	if l==[]:
+		return l
+	elif e==l[0]:
+		return l[1:]
+	else:
+		return [l[0]]+retira(e,l[1:])
+# 10. c)
+def subconjunto(c1,c2):
+	if e_conjunto(c1) and e_conjunto(c2):
+		return subconjunto_aux(c1,c2)
+	else:
+		raise ValueError('subconjunto: argumentos não são conjuntos')
+	def subconjunto_aux(c1,c2):
+		if e_conj_vazio(c1):
+			return True
+		else:
+			e=elem_conj(c1)
+			if pertence(c1,c2):
+				return subconjunto(retira(e,c1),retira(e,c2))
+			else:
+				return False
+
+
+
+	
+
+
+
+
+
+

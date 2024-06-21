@@ -1,0 +1,122 @@
+Exame 1 - 2016
+
+# 2.
+def digitos (n):
+	if not isinstace (n, int) and n>0:
+		raise ValueError ('int2digitos: argumento invalido')
+	t=()
+	for i in range(len(n)):
+		t+=(n[i],)
+	return t
+
+# 3.1
+def sem_pares(n):
+	l=list(n)
+	new=[]
+	for i in range(len(l)):
+		if l[i]%2!=0:
+			new+=l[i]
+		else:
+			new=new
+	new=int(new)
+	return new
+
+# 3.2  <--------
+def acumulador (f,lst):
+	res=lst[0]
+	for x in lst[1:]:
+		res=f(res,x)
+	return res
+
+def filtra(p,lst):
+	res=[]
+	for x in lst:
+		if p(x):
+			res.append(x)
+	return res
+
+def sem_pares(n):
+	return acumulador(lambda x,y: 10*x+y, \
+		filtra(lambda x: x%2, digitos (n)))
+
+# 4
+def soma_divisores(n):
+	def f_aux(d,r):
+		if d>n:
+			return r
+		elif n%d==0:
+			return f_aux(d+1,r+d) #?
+		else:
+			return f_aux(d+1,r)
+	return f_aux(1,0)
+
+# 7
+def conta_linas(nome):
+	ficheiro=open(nome,'r')
+	linhas=ficheiro.readlines()
+	fichero.close()
+	n=0
+	for linha in linhas:
+		if len(linhas>1:
+			n+=1
+	return n 
+
+# 9   <-----------
+def agrupa_por_chave(pares):
+	res={}
+	for par in pares:
+		if par[0] not in res:
+			res[par[0]]=[]  #?
+		res[par[0]].append(par[1])
+	return res
+
+# 10
+def pilha_nova():
+	return []
+
+def e_pilha(x):
+	return isinstance(x,list)
+
+def pilha_vazia(p):
+	return p == []
+
+def pilha_topo(p):
+	if not pilha_vazia(p):
+		return p[-1]  #?
+
+def pilha_retira(p):
+	if not pilha_vazia(p):
+		del(p[-1])
+	return p
+
+def pilha_empura(p,x):
+	p.append(x)
+	return p
+
+def pilha_igual(p,q):
+	return p==q
+
+# 11   <------------------
+def calculadora(memoria,x):
+	if isinstance(x,(int,float)):
+		pilha_empurra(memoria,x)
+	elif x in ('x','-','*','/'):
+		if pilha_vazia(memoria):
+			print('Erro: Arguntos em falta!')
+			return memoria
+		u=pilha_topo(memoria)
+		memoria=pilha_retira(memoria)
+		if pilha_vazia(memoria).
+			print('Erro: Argumentos Errados')
+			pilha_empurra(memoria,u)
+			return
+		v=pilha_topo(memoria)
+		pilha_retira(memoria)
+		pilha_empurra(memoriaeval(str(u) + x + str(v)))
+	elif x == '=':
+		if pilha_vazia(memoria):
+			print('Erro: Argumentos em falta!')
+		else:
+			print(pilha_topo(memoria))
+
+		

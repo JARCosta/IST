@@ -1,0 +1,3899 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-PT" xml:lang="pt-PT">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		
+
+		
+		<link rel="stylesheet" type="text/css" media="screen" href="/CSS/execution_course.css" />
+		<link rel="stylesheet" type="text/css" media="screen" href="/CSS/exam_map.css" />
+		<link rel="stylesheet" type="text/css" media="print" href="/CSS/iststyle_print.css" />
+		<link rel="stylesheet" type="text/css" media="print" href="/CSS/gesdis-print.css" />
+		<link rel="stylesheet" type="text/css" media="print" href="/CSS/print.css" />
+		<link rel="stylesheet" type="text/css" media="screen,print" href="/CSS/dotist_timetables.css" />
+		<link rel="stylesheet" type="text/css" media="screen" href="/CSS/istPublicPagesStyles.css"/>
+
+		<script type="text/javascript" src="/CSS/scripts/expmenu.js"></script>
+		<script type="text/javascript" src="/CSS/scripts/hideButtons.js"></script>
+		<script type="text/javascript"
+  src="https://d3eoax9i5htok0.cloudfront.net/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+		
+		
+
+
+
+
+
+    
+
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+			<title>Cálculo Diferencial e Integral I</title>
+		
+		
+		
+		<!-- Link -->
+		<link rel="shortcut icon" href="/images/newImage2012/favicon.png" type="image/x-icon" />
+		
+		<!-- For third-generation iPad with high-resolution Retina display: -->
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/newImage2012/apple-touch-icon-144x144-precomposed.png" />
+		
+		<!-- For iPhone with high-resolution Retina display: -->
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/newImage2012/apple-touch-icon-114x114-precomposed.png" />
+		
+		<!-- For first- and second-generation iPad: -->
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/newImage2012/apple-touch-icon-72x72-precomposed.png" />
+		
+		<!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+		<link rel="apple-touch-icon-precomposed" href="/images/newImage2012/apple-touch-icon-precomposed.png" />
+	</head>
+
+	<body>
+	
+	<script id="ist-bar" data-logout="https://fenix.ist.utl.pt/logoff.do" data-login="https://fenix.ist.utl.pt/loginPage.jsp" data-fluid="true"  data-use-offline="true"  data-next-param="service" src="https://barra.ist.utl.pt/site_media/static/js/barra.js"></script>
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+		
+		<script type="text/javascript">
+			jQuery(document).ready(function() {
+				setTimeout("invokeAjax()", 30000);
+			});
+
+			function verifyForDowntime(responseText, textStatus) {
+				if(responseText.length > 0) {
+					jQuery("#jsWarning").html(responseText);
+					jQuery("#jsWarning").css("display", "block");
+				} else {
+					jQuery("#jsWarning").css("display", "none");
+				}
+			}
+		
+			function invokeAjax() {
+				jQuery.ajax({
+					url: '/ajax/DeployNotifierServlet',
+					success: verifyForDowntime,
+					complete: function() {
+						setTimeout("invokeAjax()", 30000);
+					}
+				});
+			}
+		</script>
+	
+		<div id="jsWarning" class="switchInline">
+			<div id="deployWarning">
+				
+			</div>
+		</div>
+	
+		
+	
+	
+	
+
+<script type="text/javascript" language="javascript">switchGlobal();</script>
+
+
+	
+
+
+	
+		<div id="header">
+			
+
+
+
+
+
+
+
+<div id="logoist">
+	<a href="http://www.ist.utl.pt/">
+		<img alt="Logo .IST" src="/images/newImage2012/logo-ist.png?contentContextPath_PATH=/disciplinas/cdi7/2012-2013/1-semestre/sumarios&amp;_request_checksum_=0f63215f30be4c53f50815c1a2c4ad4f8e1fd1b7"/>
+	</a>
+</div>
+
+
+
+<div id="search">
+	
+	<form action="https://www.ist.utl.pt/search/""><input type="hidden" name="_request_checksum_" value="84150c76f869a4b677d60e0caa7e15f27ac3a062"/><input type="hidden" name="contentContextPath_PATH" value="/disciplinas/cdi7/2012-2013/1-semestre/sumarios"/>
+		<input type="hidden" name="cx" value="007266409324096302065:xkagxvojzme" />
+		<input type="hidden" name="cof" value="FORID:10" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<label for="textfield">
+			<input alt="input.q" placeholder="Pesquisar" type="text" id="textfield" name="q" size="17"/>
+		</label>
+		<label for="submit_button">
+			<input alt="input.sa" type="submit" id="submit" name="sa" value="Google" />
+		</label>
+	</form>
+</div>
+
+		</div>
+
+		<div id="perfnav">
+			
+
+
+
+
+
+
+
+
+
+
+
+
+<ul>
+	<li><a href="http://www.ist.utl.pt/">Início</a></li>
+  	<li><a href="http://www.ist.utl.pt/pt/alunos/">Aluno</a></li>
+  	<li><a href="http://www.ist.utl.pt/pt/docentes/">Docente</a></li>
+	<li><a href="http://www.ist.utl.pt/pt/pessoal/">Não Docente</a></li>
+	<li><!-- NO_CHECKSUM --><!-- HAS_CONTEXT --><a href="http://www.ist.utl.pt/pt/candidatos/">Candidato	</a></li>	
+  	<li><a href="http://www.ist.utl.pt/en/">International</a></li>
+  	<li><a href="http://www.ist.utl.pt/pt/alumni/">Alumni</a></li>
+</ul>
+
+		</div>
+
+		<div id="holder">
+			
+				<table id="bigtable" width="100%" border="0" cellpadding="0" cellspacing="0">
+					<tr>
+						<td id="latnav_container" width="155">
+							<div id="latnav">
+								
+
+
+
+
+
+
+
+
+
+
+
+<ul>
+  <li>
+<!-- NO_CHECKSUM --><!-- HAS_CONTEXT --><a href="/disciplinas/cdi7/2012-2013/1-semestre/pagina-inicial"><span>Página Inicial</span></a>
+  </li>
+  <li>
+<!-- NO_CHECKSUM --><!-- HAS_CONTEXT --><a href="/disciplinas/cdi7/2012-2013/1-semestre/agrupamentos"><span>Agrupamentos</span></a>
+  </li>
+  <li>
+<!-- NO_CHECKSUM --><!-- HAS_CONTEXT --><a href="/disciplinas/cdi7/2012-2013/1-semestre/anuncios"><span>Anúncios</span></a>
+  </li>
+  <li>
+<!-- NO_CHECKSUM --><!-- HAS_CONTEXT --><a href="/disciplinas/cdi7/2012-2013/1-semestre/avaliacao"><span>Avaliação</span></a>
+  </li>
+  <li>
+<!-- NO_CHECKSUM --><!-- HAS_CONTEXT --><a href="/disciplinas/cdi7/2012-2013/1-semestre/bibliografia"><span>Bibliografia</span></a>
+  </li>
+  <li>
+<!-- NO_CHECKSUM --><!-- HAS_CONTEXT --><a href="/disciplinas/cdi7/2012-2013/1-semestre/horario"><span>Horário</span></a>
+  </li>
+  <li>
+<!-- NO_CHECKSUM --><!-- HAS_CONTEXT --><a href="/disciplinas/cdi7/2012-2013/1-semestre/metodo-de-avaliacao"><span>Método de Avaliação</span></a>
+  </li>
+  <li>
+<!-- NO_CHECKSUM --><!-- HAS_CONTEXT --><a href="/disciplinas/cdi7/2012-2013/1-semestre/objectivos"><span>Objectivos</span></a>
+  </li>
+  <li>
+<!-- NO_CHECKSUM --><!-- HAS_CONTEXT --><a href="/disciplinas/cdi7/2012-2013/1-semestre/pesquisa-de-conteudos"><span>Pesquisa de Conteúdos</span></a>
+  </li>
+  <li>
+<!-- NO_CHECKSUM --><!-- HAS_CONTEXT --><a href="/disciplinas/cdi7/2012-2013/1-semestre/planeamento"><span>Planeamento</span></a>
+  </li>
+  <li>
+<!-- NO_CHECKSUM --><!-- HAS_CONTEXT --><a href="/disciplinas/cdi7/2012-2013/1-semestre/programa"><span>Programa</span></a>
+  </li>
+  <li>
+<!-- NO_CHECKSUM --><!-- HAS_CONTEXT --><a href="/disciplinas/cdi7/2012-2013/1-semestre/resultados-quc"><span>Resultados QUC</span></a>
+  </li>
+  <li>
+<!-- NO_CHECKSUM --><!-- HAS_CONTEXT --><a class="menu-top-item-selected" href="/disciplinas/cdi7/2012-2013/1-semestre/sumarios"><span>Sumários</span></a>
+  </li>
+  <li>
+<!-- NO_CHECKSUM --><!-- HAS_CONTEXT --><a href="/disciplinas/cdi7/2012-2013/1-semestre/turnos"><span>Turnos</span></a>
+  </li>
+</ul>
+
+<ul>
+    <li>
+        <a href="/publico/executionCourse.do?method=rss&amp;executionCourseID=170080&amp;contentContextPath_PATH=/disciplinas/cdi7/2012-2013/1-semestre/sumarios&amp;_request_checksum_=10beb2a5251ff7da62b9ed2e2838b0c90caece9d" class="rss">RSS</a>
+    </li>
+</ul>
+
+
+
+
+		
+		
+		<div class="email"><p>
+		<a href="mailto:mabreu@math.ist.utl.pt" title="Envia um e-mail para o endereço apresentado">Enviar e-mail</a>
+		</p></div>
+	
+
+
+							</div>
+						</td>
+						<td width="100%" colspan="3" id="main">
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="version">
+<!-- BLOCK_HAS_CONTEXT -->
+<table>
+	<tr>
+		<td>
+			
+			<!-- HAS_CONTEXT --><form method="post" action="/disciplinas/cdi7/2012-2013/1-semestre/sumarios?locale=pt_PT"><input type="hidden" name="_request_checksum_" value="a29bfb46dee7b9b3866e6f745d10faecba47aac4"/>
+			
+
+				<input 
+						type="image" src="/images/flags/pt.gif"
+						alt="Português"
+						title="Português"
+						value="PT"
+						onclick="this.form.submit();"/>
+			</form>
+		</td>
+		<td>
+			<!-- HAS_CONTEXT --><form method="post" action="/disciplinas/cdi7/2012-2013/1-semestre/sumarios?locale=en_EN"><input type="hidden" name="_request_checksum_" value="342131534d13446424acdcc984c81a2eeeb2d177"/>
+			
+
+				<input 
+						type="image" src="/images/flags/en.gif"
+						alt="Inglês"
+						title="Inglês"
+						value="EN"
+						onclick="this.form.submit();"/>
+			</form>
+		</td>
+	</tr>
+</table>
+<!-- END_BLOCK_HAS_CONTEXT -->
+</div>
+
+
+<h1 class="mtop0 mbottom03 cnone">
+	Cálculo Diferencial e Integral I
+	<span class="greytxt" style="font-size: 11px;">
+		(1
+		º Sem
+		2012/2013)
+	</span>
+</h1>
+
+<!--
+<p class="greytxt" style="">
+	1
+	º Sem
+	2012/2013
+</p>
+-->
+
+<p style="margin-top: 0;">
+<span>
+
+					
+	<!-- NO_CHECKSUM --><!-- HAS_CONTEXT --><a href="/cursos/lmac">LMAC</a>								
+
+	,				
+	<!-- NO_CHECKSUM --><!-- HAS_CONTEXT --><a href="/cursos/meft">MEFT</a>								
+
+	,				
+	<!-- NO_CHECKSUM --><!-- HAS_CONTEXT --><a href="/cursos/mebiom">MEBiom</a>								
+
+</span>
+</p>
+
+
+
+
+                            
+							
+
+
+
+
+
+
+<h2>Sum&aacute;rios</h2>
+
+
+
+<form method="post" action="/publico/searchSummaries.do"><input type="hidden" name="_request_checksum_" value="d748a3367fb7a8d6dca4b81ec7408b0537e67c7d"/><input type="hidden" name="contentContextPath_PATH" value="/disciplinas/cdi7/2012-2013/1-semestre/sumarios"/>
+	<input type="hidden" name="method" value="summaries" alt="Método" />
+	<input type="hidden" name="executionCourseID" value="170080" alt="Código de objeto" />
+
+	<table class="mtop1" cellspacing="2" cellpadding="0">
+		<tr>
+			<td>Tipo do Turno:</td>
+			<td>
+				<select name="shiftType" onchange="this.form.submit();"><option value="" selected="selected">Todos</option>
+					
+						<option value="TEORICA">Teórica</option>
+					
+						<option value="PROBLEMS">Problemas</option></select>
+				<input type="submit" value="Submeter" id="javascriptButtonID" class="altJavaScriptSubmitButton" alt="Submeter" />
+			</td>
+		</tr>
+		<tr>
+			<td>Turno:</td>
+			<td>
+				<select name="shiftID" onchange="this.form.submit();"><option value="" selected="selected">Todos</option>
+					
+						
+						<option value="448218">Mon
+								(09:00
+								-10:00)
+								
+									QA
+								
+							
+							
+								,
+								(09:00
+								-10:00)
+								
+									QA
+								
+							
+								,
+								(09:00
+								-10:00)
+								
+									QA</option>
+					
+						
+						<option value="448221">Tue
+								(12:00
+								-13:30)
+								
+									PA2</option>
+					
+						
+						<option value="448241">Fri
+								(08:00
+								-09:30)
+								
+									C10</option>
+					
+						
+						<option value="447614">Fri
+								(09:30
+								-11:00)
+								
+									V1.10</option>
+					
+						
+						<option value="448564">Fri
+								(09:30
+								-11:00)
+								
+									P12</option>
+					
+						
+						<option value="448567">Fri
+								(11:30
+								-13:00)
+								
+									P1</option></select>		
+				<input type="submit" value="Submeter" id="javascriptButtonID2" class="altJavaScriptSubmitButton" alt="Submeter" />
+			</td>
+		</tr>
+		<tr>
+			<td>Docente:</td>
+			<td>
+				<select name="professorshipID" onchange="this.form.submit();"><option value="0">Todos</option>
+					
+						
+						<option value="531456">João Paulo Neves Monteiro dos Santos</option>
+					
+						
+						<option value="531455">José Manuel Soares Chagas Roquette</option>
+					
+						
+						<option value="520069">Miguel Tribolet de Abreu</option>
+					
+					<option value="-1">Outros</option></select>			
+			</td>
+		</tr>
+		<tr>
+			<td>Ordem:</td>
+			<td>
+				<select name="order" onchange="this.form.submit();"><option value="descendant">Descendente</option>
+					<option value="ascendant">Ascendente</option></select>			
+				<input type="submit" value="Submeter" id="javascriptButtonID3" class="altJavaScriptSubmitButton" alt="Submeter" />
+			</td>
+		</tr>
+	</table>	
+</form>
+
+
+
+
+
+
+		
+		
+		<div id="s1513222" class="public_summary">
+			
+				<p class="mtop2 mbottom0">
+					02/11/2012
+					09:30
+				   	
+					
+						
+							(Sala V1.10)
+			       		
+			       	
+
+					<span class="greytxt">
+						
+						
+				       								       		
+								Aula
+								Problemas
+				       		
+				       		
+				       					       	
+					</span>     	
+				</p>
+			
+
+				
+					
+					
+						<h3 class="mvert05">7ª Aula Prática</h3>
+					
+						
+				
+			
+			
+			<div class="summary_content">
+				<p>Aplica&ccedil;&atilde;o dos teoremas de Bolzano e de Weierstrass. Uso da Regra de Cauchy.</p>
+			</div>
+			
+			<div class="details mtop025">
+				<span class="updated-date">
+					Modificado em
+					02/11/2012 11:29
+				</span>
+		
+				
+					<span class="author">
+						Prof.				
+						José Manuel Soares Chagas Roquette	
+					</span>
+				
+		
+				
+		
+								
+		
+								
+		
+							
+					<span class="comment">
+						Presen&ccedil;as:
+						<i>n&atilde;o foram contabilizadas.</i>								
+					</span>
+				
+			</div>
+
+		</div>
+		
+		
+		<div id="s1513215" class="public_summary">
+			
+				<p class="mtop2 mbottom0">
+					02/11/2012
+					08:00
+				   	
+					
+						
+							(Sala C10)
+			       		
+			       	
+
+					<span class="greytxt">
+						
+						
+				       								       		
+								Aula
+								Problemas
+				       		
+				       		
+				       					       	
+					</span>     	
+				</p>
+			
+
+				
+					
+					
+						<h3 class="mvert05">7ª Aula Prática</h3>
+					
+						
+				
+			
+			
+			<div class="summary_content">
+				<p>Aplica&ccedil;&atilde;o da Regra de Cauchy. Os teoremas de Lagrange e de Rolle.</p>
+			</div>
+			
+			<div class="details mtop025">
+				<span class="updated-date">
+					Modificado em
+					02/11/2012 11:25
+				</span>
+		
+				
+					<span class="author">
+						Prof.				
+						José Manuel Soares Chagas Roquette	
+					</span>
+				
+		
+				
+		
+								
+		
+								
+		
+							
+					<span class="comment">
+						Presen&ccedil;as:
+						<i>n&atilde;o foram contabilizadas.</i>								
+					</span>
+				
+			</div>
+
+		</div>
+		
+		
+		<div id="s1512950" class="public_summary">
+			
+				<p class="mtop2 mbottom0">
+					30/10/2012
+					12:00
+				   	
+					
+						
+							(Sala PA2)
+			       		
+			       	
+
+					<span class="greytxt">
+						
+						
+				       								       		
+								Aula
+								Problemas
+				       		
+				       		
+				       					       	
+					</span>     	
+				</p>
+			
+
+				
+					
+					
+						<h3 class="mvert05">7ª Aula Prática</h3>
+					
+						
+				
+			
+			
+			<div class="summary_content">
+				<p>Resolu&ccedil;&atilde;o de exerc&iacute;cios da Ficha 2: V. Teoremas de Rolle, Lagrange e Cauchy: 1) a), o), 2) a), t). <br />2&ordm; mini-teste.</p>
+			</div>
+			
+			<div class="details mtop025">
+				<span class="updated-date">
+					Modificado em
+					01/11/2012 16:22
+				</span>
+		
+				
+					<span class="author">
+						Prof.				
+						Miguel Tribolet de Abreu	
+					</span>
+				
+		
+				
+		
+								
+		
+				
+					<span class="comment">
+						Presen&ccedil;as:			
+									
+							
+							
+							
+								28 alunos.
+							
+				
+							
+						
+			
+						
+					</span>
+								
+		
+				
+			</div>
+
+		</div>
+		
+		
+		<div id="s1512948" class="public_summary">
+			
+				<p class="mtop2 mbottom0">
+					30/10/2012
+					09:00
+				   	
+					
+						
+							(Sala QA)
+			       		
+			       	
+
+					<span class="greytxt">
+						
+						
+				       								       		
+								Aula
+								Teórica
+				       		
+				       		
+				       					       	
+					</span>     	
+				</p>
+			
+
+				
+					
+					
+						<h3 class="mvert05">19ª Aula Teórica</h3>
+					
+						
+				
+			
+			
+			<div class="summary_content">
+				<p>Ass&iacute;mptotas ao Gr&aacute;fico de uma Fun&ccedil;&atilde;o. Exemplo de Tra&ccedil;ado<br />do Gr&aacute;fico de uma Fun&ccedil;&atilde;o. Fun&ccedil;&otilde;es Injectivas e suas Inversas.</p> 
+<p><a href="http://media-openeya.math.ist.utl.pt/webcamQA/cdi1/aulaT19/">http://media-openeya.math.ist.utl.pt/webcamQA/cdi1/aulaT19/</a></p> 
+<p><a href="http://media-openeya.math.ist.utl.pt/webcamQA/cdi1/aulaT19b/">http://media-openeya.math.ist.utl.pt/webcamQA/cdi1/aulaT19b/</a></p>
+			</div>
+			
+			<div class="details mtop025">
+				<span class="updated-date">
+					Modificado em
+					05/11/2012 20:30
+				</span>
+		
+				
+					<span class="author">
+						Prof.				
+						Miguel Tribolet de Abreu	
+					</span>
+				
+		
+				
+		
+								
+		
+				
+					<span class="comment">
+						Presen&ccedil;as:			
+									
+							
+							
+							
+								120 alunos.
+							
+				
+							
+						
+			
+						
+					</span>
+								
+		
+				
+			</div>
+
+		</div>
+		
+		
+		<div id="s1512947" class="public_summary">
+			
+				<p class="mtop2 mbottom0">
+					29/10/2012
+					09:00
+				   	
+					
+						
+							(Sala QA)
+			       		
+			       	
+
+					<span class="greytxt">
+						
+						
+				       								       		
+								Aula
+								Teórica
+				       		
+				       		
+				       					       	
+					</span>     	
+				</p>
+			
+
+				
+					
+					
+						<h3 class="mvert05">18ª Aula Teórica</h3>
+					
+						
+				
+			
+			
+			<div class="summary_content">
+				<p>Derivadas de Ordem Superior &agrave; Primeira.<br />Segunda Derivada e Extremos Locais. Concavidades e Inflex&otilde;es.</p> 
+<p><a href="http://media-openeya.math.ist.utl.pt/webcamQA/cdi1/aulaT18/">http://media-openeya.math.ist.utl.pt/webcamQA/cdi1/aulaT18/</a></p>
+			</div>
+			
+			<div class="details mtop025">
+				<span class="updated-date">
+					Modificado em
+					01/11/2012 16:11
+				</span>
+		
+				
+					<span class="author">
+						Prof.				
+						Miguel Tribolet de Abreu	
+					</span>
+				
+		
+				
+		
+								
+		
+				
+					<span class="comment">
+						Presen&ccedil;as:			
+									
+							
+							
+							
+								120 alunos.
+							
+				
+							
+						
+			
+						
+					</span>
+								
+		
+				
+			</div>
+
+		</div>
+		
+		
+		<div id="s1507922" class="public_summary">
+			
+				<p class="mtop2 mbottom0">
+					26/10/2012
+					09:30
+				   	
+					
+						
+							(Sala V1.10)
+			       		
+			       	
+
+					<span class="greytxt">
+						
+						
+				       								       		
+								Aula
+								Problemas
+				       		
+				       		
+				       					       	
+					</span>     	
+				</p>
+			
+
+				
+					
+					
+						<h3 class="mvert05">6ª Aula Prática</h3>
+					
+						
+				
+			
+			
+			<div class="summary_content">
+				<p>Aplica&ccedil;&atilde;o do Teorema de Bolzano e do Axioma do Supremo. C&aacute;lculo de algumas derivadas.</p>
+			</div>
+			
+			<div class="details mtop025">
+				<span class="updated-date">
+					Modificado em
+					26/10/2012 11:24
+				</span>
+		
+				
+					<span class="author">
+						Prof.				
+						José Manuel Soares Chagas Roquette	
+					</span>
+				
+		
+				
+		
+								
+		
+								
+		
+							
+					<span class="comment">
+						Presen&ccedil;as:
+						<i>n&atilde;o foram contabilizadas.</i>								
+					</span>
+				
+			</div>
+
+		</div>
+		
+		
+		<div id="s1507921" class="public_summary">
+			
+				<p class="mtop2 mbottom0">
+					26/10/2012
+					08:00
+				   	
+					
+						
+							(Sala C10)
+			       		
+			       	
+
+					<span class="greytxt">
+						
+						
+				       								       		
+								Aula
+								Problemas
+				       		
+				       		
+				       					       	
+					</span>     	
+				</p>
+			
+
+				
+					
+					
+						<h3 class="mvert05">6ª Aula Prática</h3>
+					
+						
+				
+			
+			
+			<div class="summary_content">
+				<p>Aplica&ccedil;&atilde;o do Teorema de Bolzano e do Axioma do Supremo. C&aacute;lculo de algumas derivadas.</p>
+			</div>
+			
+			<div class="details mtop025">
+				<span class="updated-date">
+					Modificado em
+					26/10/2012 11:24
+				</span>
+		
+				
+					<span class="author">
+						Prof.				
+						José Manuel Soares Chagas Roquette	
+					</span>
+				
+		
+				
+		
+								
+		
+								
+		
+							
+					<span class="comment">
+						Presen&ccedil;as:
+						<i>n&atilde;o foram contabilizadas.</i>								
+					</span>
+				
+			</div>
+
+		</div>
+		
+		
+		<div id="s1508515" class="public_summary">
+			
+				<p class="mtop2 mbottom0">
+					25/10/2012
+					09:00
+				   	
+					
+						
+							(Sala QA)
+			       		
+			       	
+
+					<span class="greytxt">
+						
+						
+				       								       		
+								Aula
+								Teórica
+				       		
+				       		
+				       					       	
+					</span>     	
+				</p>
+			
+
+				
+					
+					
+						<h3 class="mvert05">17ª Aula Teórica</h3>
+					
+						
+				
+			
+			
+			<div class="summary_content">
+				<p>Regra de Cauchy ou de L'H&ocirc;pital e Exemplos de Aplica&ccedil;&atilde;o.</p> 
+<p><a href="http://media-openeya.math.ist.utl.pt/webcamQA/cdi1/aulaT17/">http://media-openeya.math.ist.utl.pt/webcamQA/cdi1/aulaT17/</a></p>
+			</div>
+			
+			<div class="details mtop025">
+				<span class="updated-date">
+					Modificado em
+					26/10/2012 19:57
+				</span>
+		
+				
+					<span class="author">
+						Prof.				
+						Miguel Tribolet de Abreu	
+					</span>
+				
+		
+				
+		
+								
+		
+				
+					<span class="comment">
+						Presen&ccedil;as:			
+									
+							
+							
+							
+								120 alunos.
+							
+				
+							
+						
+			
+						
+					</span>
+								
+		
+				
+			</div>
+
+		</div>
+		
+		
+		<div id="s1506472" class="public_summary">
+			
+				<p class="mtop2 mbottom0">
+					23/10/2012
+					12:00
+				   	
+					
+						
+							(Sala PA2)
+			       		
+			       	
+
+					<span class="greytxt">
+						
+						
+				       								       		
+								Aula
+								Problemas
+				       		
+				       		
+				       					       	
+					</span>     	
+				</p>
+			
+
+				
+					
+					
+						<h3 class="mvert05">6ª Aula Prática</h3>
+					
+						
+				
+			
+			
+			<div class="summary_content">
+				<p>Resolu&ccedil;&atilde;o de exerc&iacute;cios da Ficha 2:<br />IV. C&aacute;lculo de Derivadas de Fun&ccedil;&otilde;es: 1(h), 3(e), 4(f) 10), 11) a), p), w);<br />V. Teoremas de Rolle, Lagrange e Cauchy: 6) a); 10).</p>
+			</div>
+			
+			<div class="details mtop025">
+				<span class="updated-date">
+					Modificado em
+					23/10/2012 18:14
+				</span>
+		
+				
+					<span class="author">
+						Prof.				
+						Miguel Tribolet de Abreu	
+					</span>
+				
+		
+				
+		
+								
+		
+				
+					<span class="comment">
+						Presen&ccedil;as:			
+									
+							
+							
+							
+								25 alunos.
+							
+				
+							
+						
+			
+						
+					</span>
+								
+		
+				
+			</div>
+
+		</div>
+		
+		
+		<div id="s1506470" class="public_summary">
+			
+				<p class="mtop2 mbottom0">
+					23/10/2012
+					09:00
+				   	
+					
+						
+							(Sala QA)
+			       		
+			       	
+
+					<span class="greytxt">
+						
+						
+				       								       		
+								Aula
+								Teórica
+				       		
+				       		
+				       					       	
+					</span>     	
+				</p>
+			
+
+				
+					
+					
+						<h3 class="mvert05">16ª Aula Teórica</h3>
+					
+						
+				
+			
+			
+			<div class="summary_content">
+				<p>Teorema de Lagrange e Exemplos de Aplica&ccedil;&atilde;o. Teorema de Cauchy.</p> 
+<p><a href="http://media-openeya.math.ist.utl.pt/webcamQA/cdi1/aulaT16/">http://media-openeya.math.ist.utl.pt/webcamQA/cdi1/aulaT16/</a></p>
+			</div>
+			
+			<div class="details mtop025">
+				<span class="updated-date">
+					Modificado em
+					26/10/2012 09:41
+				</span>
+		
+				
+					<span class="author">
+						Prof.				
+						Miguel Tribolet de Abreu	
+					</span>
+				
+		
+				
+		
+								
+		
+				
+					<span class="comment">
+						Presen&ccedil;as:			
+									
+							
+							
+							
+								120 alunos.
+							
+				
+							
+						
+			
+						
+					</span>
+								
+		
+				
+			</div>
+
+		</div>
+		
+		
+		<div id="s1506469" class="public_summary">
+			
+				<p class="mtop2 mbottom0">
+					22/10/2012
+					09:00
+				   	
+					
+						
+							(Sala QA)
+			       		
+			       	
+
+					<span class="greytxt">
+						
+						
+				       								       		
+								Aula
+								Teórica
+				       		
+				       		
+				       					       	
+					</span>     	
+				</p>
+			
+
+				
+					
+					
+						<h3 class="mvert05">15ª Aula Teórica</h3>
+					
+						
+				
+			
+			
+			<div class="summary_content">
+				<p>Derivada de Fun&ccedil;&otilde;es Compostas. Diferenciabilidade e Extremos Locais.<br />Teorema de Rolle.</p> 
+<p><a href="http://media-openeya.math.ist.utl.pt/webcamQA/cdi1/aulaT15/">http://media-openeya.math.ist.utl.pt/webcamQA/cdi1/aulaT15/</a></p>
+			</div>
+			
+			<div class="details mtop025">
+				<span class="updated-date">
+					Modificado em
+					26/10/2012 09:40
+				</span>
+		
+				
+					<span class="author">
+						Prof.				
+						Miguel Tribolet de Abreu	
+					</span>
+				
+		
+				
+		
+								
+		
+				
+					<span class="comment">
+						Presen&ccedil;as:			
+									
+							
+							
+							
+								120 alunos.
+							
+				
+							
+						
+			
+						
+					</span>
+								
+		
+				
+			</div>
+
+		</div>
+		
+		
+		<div id="s1505218" class="public_summary">
+			
+				<p class="mtop2 mbottom0">
+					19/10/2012
+					09:30
+				   	
+					
+						
+							(Sala V1.10)
+			       		
+			       	
+
+					<span class="greytxt">
+						
+						
+				       								       		
+								Aula
+								Problemas
+				       		
+				       		
+				       					       	
+					</span>     	
+				</p>
+			
+
+				
+					
+					
+						<h3 class="mvert05">5ª Aula Prática</h3>
+					
+						
+				
+			
+			
+			<div class="summary_content">
+				<p>Estudo da continuidade de algumas fun&ccedil;&otilde;es. Aplica&ccedil;&atilde;o do Teorema de Bolzano. O Axioma do Supremo.</p>
+			</div>
+			
+			<div class="details mtop025">
+				<span class="updated-date">
+					Modificado em
+					19/10/2012 11:14
+				</span>
+		
+				
+					<span class="author">
+						Prof.				
+						José Manuel Soares Chagas Roquette	
+					</span>
+				
+		
+				
+		
+								
+		
+								
+		
+							
+					<span class="comment">
+						Presen&ccedil;as:
+						<i>n&atilde;o foram contabilizadas.</i>								
+					</span>
+				
+			</div>
+
+		</div>
+		
+		
+		<div id="s1505217" class="public_summary">
+			
+				<p class="mtop2 mbottom0">
+					19/10/2012
+					08:00
+				   	
+					
+						
+							(Sala C10)
+			       		
+			       	
+
+					<span class="greytxt">
+						
+						
+				       								       		
+								Aula
+								Problemas
+				       		
+				       		
+				       					       	
+					</span>     	
+				</p>
+			
+
+				
+					
+					
+						<h3 class="mvert05">5ª Aula Prática</h3>
+					
+						
+				
+			
+			
+			<div class="summary_content">
+				<p>Estudo da continuidade de algumas fun&ccedil;&otilde;es. Aplica&ccedil;&atilde;o do Teorema de Bolzano. O Axioma do Supremo.</p>
+			</div>
+			
+			<div class="details mtop025">
+				<span class="updated-date">
+					Modificado em
+					19/10/2012 11:13
+				</span>
+		
+				
+					<span class="author">
+						Prof.				
+						José Manuel Soares Chagas Roquette	
+					</span>
+				
+		
+				
+		
+								
+		
+								
+		
+							
+					<span class="comment">
+						Presen&ccedil;as:
+						<i>n&atilde;o foram contabilizadas.</i>								
+					</span>
+				
+			</div>
+
+		</div>
+		
+		
+		<div id="s1504578" class="public_summary">
+			
+				<p class="mtop2 mbottom0">
+					18/10/2012
+					09:00
+				   	
+					
+						
+							(Sala QA)
+			       		
+			       	
+
+					<span class="greytxt">
+						
+						
+				       								       		
+								Aula
+								Teórica
+				       		
+				       		
+				       					       	
+					</span>     	
+				</p>
+			
+
+				
+					
+					
+						<h3 class="mvert05">14ª Aula Teórica</h3>
+					
+						
+				
+			
+			
+			<div class="summary_content">
+				<p>Derivadas Laterais. Diferenciabilidade e Continuidade. Regras Alg&eacute;bricas de Deriva&ccedil;&atilde;o.</p> 
+<p><a href="http://media-openeya.math.ist.utl.pt/webcamQA/cdi1/aulaT14/">http://media-openeya.math.ist.utl.pt/webcamQA/cdi1/aulaT14/</a></p> 
+<p><a href="http://media-openeya.math.ist.utl.pt/webcamQA/cdi1/aulaT14b/">http://media-openeya.math.ist.utl.pt/webcamQA/cdi1/aulaT14b/</a></p>
+			</div>
+			
+			<div class="details mtop025">
+				<span class="updated-date">
+					Modificado em
+					23/10/2012 18:25
+				</span>
+		
+				
+					<span class="author">
+						Prof.				
+						Miguel Tribolet de Abreu	
+					</span>
+				
+		
+				
+		
+								
+		
+				
+					<span class="comment">
+						Presen&ccedil;as:			
+									
+							
+							
+							
+								120 alunos.
+							
+				
+							
+						
+			
+						
+					</span>
+								
+		
+				
+			</div>
+
+		</div>
+		
+		
+		<div id="s1504579" class="public_summary">
+			
+				<p class="mtop2 mbottom0">
+					16/10/2012
+					12:00
+				   	
+					
+						
+							(Sala PA2)
+			       		
+			       	
+
+					<span class="greytxt">
+						
+						
+				       								       		
+								Aula
+								Problemas
+				       		
+				       		
+				       					       	
+					</span>     	
+				</p>
+			
+
+				
+					
+					
+						<h3 class="mvert05">5ª Aula Prática</h3>
+					
+						
+				
+			
+			
+			<div class="summary_content">
+				<p>Resolu&ccedil;&atilde;o de exerc&iacute;cios da Ficha 2:<br />I. Continuidade de Fun&ccedil;&otilde;es: 1), 4), 6);<br />II. Axioma do Supremo: 6), 15); <br />III. Propriedades Globais das Fun&ccedil;&otilde;es Cont&iacute;nuas: 1), 8).</p>
+			</div>
+			
+			<div class="details mtop025">
+				<span class="updated-date">
+					Modificado em
+					18/10/2012 10:45
+				</span>
+		
+				
+					<span class="author">
+						Prof.				
+						Miguel Tribolet de Abreu	
+					</span>
+				
+		
+				
+		
+								
+		
+				
+					<span class="comment">
+						Presen&ccedil;as:			
+									
+							
+							
+							
+								25 alunos.
+							
+				
+							
+						
+			
+						
+					</span>
+								
+		
+				
+			</div>
+
+		</div>
+		
+		
+		<div id="s1504577" class="public_summary">
+			
+				<p class="mtop2 mbottom0">
+					16/10/2012
+					09:00
+				   	
+					
+						
+							(Sala QA)
+			       		
+			       	
+
+					<span class="greytxt">
+						
+						
+				       								       		
+								Aula
+								Teórica
+				       		
+				       		
+				       					       	
+					</span>     	
+				</p>
+			
+
+				
+					
+					
+						<h3 class="mvert05">13ª Aula Teórica</h3>
+					
+						
+				
+			
+			
+			<div class="summary_content">
+				<p>Derivada de Uma Fun&ccedil;&atilde;o num Ponto - interpreta&ccedil;&atilde;o geom&eacute;trica e f&iacute;sica. Exemplos.</p> 
+<p><a href="http://media-openeya.math.ist.utl.pt/webcamQA/cdi1/aulaT13/">http://media-openeya.math.ist.utl.pt/webcamQA/cdi1/aulaT13/</a></p>
+			</div>
+			
+			<div class="details mtop025">
+				<span class="updated-date">
+					Modificado em
+					23/10/2012 18:23
+				</span>
+		
+				
+					<span class="author">
+						Prof.				
+						Miguel Tribolet de Abreu	
+					</span>
+				
+		
+				
+		
+								
+		
+				
+					<span class="comment">
+						Presen&ccedil;as:			
+									
+							
+							
+							
+								120 alunos.
+							
+				
+							
+						
+			
+						
+					</span>
+								
+		
+				
+			</div>
+
+		</div>
+		
+		
+		<div id="s1504576" class="public_summary">
+			
+				<p class="mtop2 mbottom0">
+					15/10/2012
+					09:00
+				   	
+					
+						
+							(Sala QA)
+			       		
+			       	
+
+					<span class="greytxt">
+						
+						
+				       								       		
+								Aula
+								Teórica
+				       		
+				       		
+				       					       	
+					</span>     	
+				</p>
+			
+
+				
+					
+					
+						<h3 class="mvert05">12ª Aula Teórica</h3>
+					
+						
+				
+			
+			
+			<div class="summary_content">
+				<p>Demonstra&ccedil;&atilde;o dos teoremas da aula anterior: propriedade do supremo.</p> 
+<p><a href="http://media-openeya.math.ist.utl.pt/webcamQA/cdi1/aulaT12/">http://media-openeya.math.ist.utl.pt/webcamQA/cdi1/aulaT12/</a></p>
+			</div>
+			
+			<div class="details mtop025">
+				<span class="updated-date">
+					Modificado em
+					23/10/2012 18:23
+				</span>
+		
+				
+					<span class="author">
+						Prof.				
+						Miguel Tribolet de Abreu	
+					</span>
+				
+		
+				
+		
+								
+		
+				
+					<span class="comment">
+						Presen&ccedil;as:			
+									
+							
+							
+							
+								120 alunos.
+							
+				
+							
+						
+			
+						
+					</span>
+								
+		
+				
+			</div>
+
+		</div>
+		
+		
+		<div id="s1503771" class="public_summary">
+			
+				<p class="mtop2 mbottom0">
+					12/10/2012
+					11:30
+				   	
+					
+						
+							(Sala P1)
+			       		
+			       	
+
+					<span class="greytxt">
+						
+						
+				       								       		
+								Aula
+								Problemas
+				       		
+				       		
+				       					       	
+					</span>     	
+				</p>
+			
+
+				
+					
+					
+						<h3 class="mvert05">.</h3>
+					
+						
+				
+			
+			
+			<div class="summary_content">
+				<p>Limites. 1&ordm; miniteste.</p>
+			</div>
+			
+			<div class="details mtop025">
+				<span class="updated-date">
+					Modificado em
+					16/10/2012 11:27
+				</span>
+		
+				
+					<span class="author">
+						Prof.				
+						João Paulo Neves Monteiro dos Santos	
+					</span>
+				
+		
+				
+		
+								
+		
+								
+		
+							
+					<span class="comment">
+						Presen&ccedil;as:
+						<i>n&atilde;o foram contabilizadas.</i>								
+					</span>
+				
+			</div>
+
+		</div>
+		
+		
+		<div id="s1497755" class="public_summary">
+			
+				<p class="mtop2 mbottom0">
+					12/10/2012
+					09:30
+				   	
+					
+						
+							(Sala V1.10)
+			       		
+			       	
+
+					<span class="greytxt">
+						
+						
+				       								       		
+								Aula
+								Problemas
+				       		
+				       		
+				       					       	
+					</span>     	
+				</p>
+			
+
+				
+					
+					
+						<h3 class="mvert05">4ª Aula Prática</h3>
+					
+						
+				
+			
+			
+			<div class="summary_content">
+				<p>C&aacute;lculo de alguns limites de fun&ccedil;&otilde;es elementares. Primeira prova de avalia&ccedil;&atilde;o cont&iacute;nua.</p>
+			</div>
+			
+			<div class="details mtop025">
+				<span class="updated-date">
+					Modificado em
+					12/10/2012 11:14
+				</span>
+		
+				
+					<span class="author">
+						Prof.				
+						José Manuel Soares Chagas Roquette	
+					</span>
+				
+		
+				
+		
+								
+		
+								
+		
+							
+					<span class="comment">
+						Presen&ccedil;as:
+						<i>n&atilde;o foram contabilizadas.</i>								
+					</span>
+				
+			</div>
+
+		</div>
+		
+		
+		<div id="s1503772" class="public_summary">
+			
+				<p class="mtop2 mbottom0">
+					12/10/2012
+					09:30
+				   	
+					
+						
+							(Sala P12)
+			       		
+			       	
+
+					<span class="greytxt">
+						
+						
+				       								       		
+								Aula
+								Problemas
+				       		
+				       		
+				       					       	
+					</span>     	
+				</p>
+			
+
+				
+					
+					
+						<h3 class="mvert05">.</h3>
+					
+						
+				
+			
+			
+			<div class="summary_content">
+				<p>Limites. 1&ordm; miniteste.</p>
+			</div>
+			
+			<div class="details mtop025">
+				<span class="updated-date">
+					Modificado em
+					16/10/2012 11:27
+				</span>
+		
+				
+					<span class="author">
+						Prof.				
+						João Paulo Neves Monteiro dos Santos	
+					</span>
+				
+		
+				
+		
+								
+		
+								
+		
+							
+					<span class="comment">
+						Presen&ccedil;as:
+						<i>n&atilde;o foram contabilizadas.</i>								
+					</span>
+				
+			</div>
+
+		</div>
+		
+		
+		<div id="s1497754" class="public_summary">
+			
+				<p class="mtop2 mbottom0">
+					12/10/2012
+					08:00
+				   	
+					
+						
+							(Sala C10)
+			       		
+			       	
+
+					<span class="greytxt">
+						
+						
+				       								       		
+								Aula
+								Problemas
+				       		
+				       		
+				       					       	
+					</span>     	
+				</p>
+			
+
+				
+					
+					
+						<h3 class="mvert05">4ª Aula Prática</h3>
+					
+						
+				
+			
+			
+			<div class="summary_content">
+				<p>C&aacute;lculo de alguns limites de fun&ccedil;&otilde;es elementares. Primeira prova de avalia&ccedil;&atilde;o cont&iacute;nua.</p>
+			</div>
+			
+			<div class="details mtop025">
+				<span class="updated-date">
+					Modificado em
+					12/10/2012 11:12
+				</span>
+		
+				
+					<span class="author">
+						Prof.				
+						José Manuel Soares Chagas Roquette	
+					</span>
+				
+		
+				
+		
+								
+		
+								
+		
+							
+					<span class="comment">
+						Presen&ccedil;as:
+						<i>n&atilde;o foram contabilizadas.</i>								
+					</span>
+				
+			</div>
+
+		</div>
+		
+		
+		<div id="s1495156" class="public_summary">
+			
+				<p class="mtop2 mbottom0">
+					11/10/2012
+					09:00
+				   	
+					
+						
+							(Sala QA)
+			       		
+			       	
+
+					<span class="greytxt">
+						
+						
+				       								       		
+								Aula
+								Teórica
+				       		
+				       		
+				       					       	
+					</span>     	
+				</p>
+			
+
+				
+					
+					
+						<h3 class="mvert05">11ª Aula Teórica</h3>
+					
+						
+				
+			
+			
+			<div class="summary_content">
+				<p>Propriedades globais das fun&ccedil;&otilde;es cont&iacute;nuas: teoremas de Bolzano <br />e de Weierstrass. Exemplos de aplica&ccedil;&atilde;o.</p> 
+<p><a href="http://media-openeya.math.ist.utl.pt/webcamQA/cdi1/aulaT11/">http://media-openeya.math.ist.utl.pt/webcamQA/cdi1/aulaT11/</a></p>
+			</div>
+			
+			<div class="details mtop025">
+				<span class="updated-date">
+					Modificado em
+					23/10/2012 18:22
+				</span>
+		
+				
+					<span class="author">
+						Prof.				
+						Miguel Tribolet de Abreu	
+					</span>
+				
+		
+				
+		
+								
+		
+				
+					<span class="comment">
+						Presen&ccedil;as:			
+									
+							
+							
+							
+								120 alunos.
+							
+				
+							
+						
+			
+						
+					</span>
+								
+		
+				
+			</div>
+
+		</div>
+		
+		
+		<div id="s1495158" class="public_summary">
+			
+				<p class="mtop2 mbottom0">
+					09/10/2012
+					12:00
+				   	
+					
+						
+							(Sala PA2)
+			       		
+			       	
+
+					<span class="greytxt">
+						
+						
+				       								       		
+								Aula
+								Problemas
+				       		
+				       		
+				       					       	
+					</span>     	
+				</p>
+			
+
+				
+					
+					
+						<h3 class="mvert05">4ª Aula Prática</h3>
+					
+						
+				
+			
+			
+			<div class="summary_content">
+				<p>Resolu&ccedil;&atilde;o de exerc&iacute;cios da Ficha 1:<br />V. Limites Elementares: 2) (b), 3)(a), 5(a), 6(c), 7 (d) (j), 8(j).<br /><br />1&ordm; mini-teste.</p>
+			</div>
+			
+			<div class="details mtop025">
+				<span class="updated-date">
+					Modificado em
+					11/10/2012 10:44
+				</span>
+		
+				
+					<span class="author">
+						Prof.				
+						Miguel Tribolet de Abreu	
+					</span>
+				
+		
+				
+		
+								
+		
+				
+					<span class="comment">
+						Presen&ccedil;as:			
+									
+							
+							
+							
+								28 alunos.
+							
+				
+							
+						
+			
+						
+					</span>
+								
+		
+				
+			</div>
+
+		</div>
+		
+		
+		<div id="s1495155" class="public_summary">
+			
+				<p class="mtop2 mbottom0">
+					09/10/2012
+					09:00
+				   	
+					
+						
+							(Sala QA)
+			       		
+			       	
+
+					<span class="greytxt">
+						
+						
+				       								       		
+								Aula
+								Teórica
+				       		
+				       		
+				       					       	
+					</span>     	
+				</p>
+			
+
+				
+					
+					
+						<h3 class="mvert05">10ª Aula Teórica</h3>
+					
+						
+				
+			
+			
+			<div class="summary_content">
+				<p>Continuidade de uma fun&ccedil;&atilde;o num ponto. Exemplos. <br />Propriedades locais das fun&ccedil;&otilde;es cont&iacute;nuas.</p> 
+<p><a href="http://media-openeya.math.ist.utl.pt/webcamQA/cdi1/aulaT10/">http://media-openeya.math.ist.utl.pt/webcamQA/cdi1/aulaT10/</a></p> 
+<p><a href="http://media-openeya.math.ist.utl.pt/webcamQA/cdi1/aulaT10b/">http://media-openeya.math.ist.utl.pt/webcamQA/cdi1/aulaT10b/</a></p>
+			</div>
+			
+			<div class="details mtop025">
+				<span class="updated-date">
+					Modificado em
+					23/10/2012 18:19
+				</span>
+		
+				
+					<span class="author">
+						Prof.				
+						Miguel Tribolet de Abreu	
+					</span>
+				
+		
+				
+		
+								
+		
+				
+					<span class="comment">
+						Presen&ccedil;as:			
+									
+							
+							
+							
+								120 alunos.
+							
+				
+							
+						
+			
+						
+					</span>
+								
+		
+				
+			</div>
+
+		</div>
+		
+		
+		<div id="s1495154" class="public_summary">
+			
+				<p class="mtop2 mbottom0">
+					08/10/2012
+					09:00
+				   	
+					
+						
+							(Sala QA)
+			       		
+			       	
+
+					<span class="greytxt">
+						
+						
+				       								       		
+								Aula
+								Teórica
+				       		
+				       		
+				       					       	
+					</span>     	
+				</p>
+			
+
+				
+					
+					
+						<h3 class="mvert05">9ª Aula Teórica</h3>
+					
+						
+				
+			
+			
+			<div class="summary_content">
+				<p>Princ&iacute;pio do encaixe. Limite de fun&ccedil;&otilde;es compostas. Mais exemplos. <br />Limites laterais. Recta acabada e indetermina&ccedil;&otilde;es. Exemplos.</p> 
+<p><a href="http://media-openeya.math.ist.utl.pt/webcamQA/cdi1/aulaT09/">http://media-openeya.math.ist.utl.pt/webcamQA/cdi1/aulaT09/</a></p>
+			</div>
+			
+			<div class="details mtop025">
+				<span class="updated-date">
+					Modificado em
+					23/10/2012 18:19
+				</span>
+		
+				
+					<span class="author">
+						Prof.				
+						Miguel Tribolet de Abreu	
+					</span>
+				
+		
+				
+		
+								
+		
+				
+					<span class="comment">
+						Presen&ccedil;as:			
+									
+							
+							
+							
+								120 alunos.
+							
+				
+							
+						
+			
+						
+					</span>
+								
+		
+				
+			</div>
+
+		</div>
+		
+		
+		<div id="s1488994" class="public_summary">
+			
+				<p class="mtop2 mbottom0">
+					04/10/2012
+					09:00
+				   	
+					
+						
+							(Sala QA)
+			       		
+			       	
+
+					<span class="greytxt">
+						
+						
+				       								       		
+								Aula
+								Teórica
+				       		
+				       		
+				       					       	
+					</span>     	
+				</p>
+			
+
+				
+					
+					
+						<h3 class="mvert05">8ª Aula Teórica</h3>
+					
+						
+				
+			
+			
+			<div class="summary_content">
+				<p>Resolu&ccedil;&atilde;o de exerc&iacute;cios da Ficha 1 (recupera&ccedil;&atilde;o de 1 aula pr&aacute;tica):</p> 
+<p>III. Indu&ccedil;&atilde;o e Somat&oacute;rios: 1.<br />IV. Fun&ccedil;&otilde;es Elementares: 9 (b) e (d).<br />V. Limites Elementares: 1) (b) (g).</p> 
+<p><a href="http://media-openeya.math.ist.utl.pt/webcamQA/cdi1/aulaT08/">http://media-openeya.math.ist.utl.pt/webcamQA/cdi1/aulaT08/</a></p>
+			</div>
+			
+			<div class="details mtop025">
+				<span class="updated-date">
+					Modificado em
+					23/10/2012 18:15
+				</span>
+		
+				
+					<span class="author">
+						Prof.				
+						Miguel Tribolet de Abreu	
+					</span>
+				
+		
+				
+		
+								
+		
+				
+					<span class="comment">
+						Presen&ccedil;as:			
+									
+							
+							
+							
+								120 alunos.
+							
+				
+							
+						
+			
+						
+					</span>
+								
+		
+				
+			</div>
+
+		</div>
+		
+		
+		<div id="s1488995" class="public_summary">
+			
+				<p class="mtop2 mbottom0">
+					02/10/2012
+					12:00
+				   	
+					
+						
+							(Sala PA2)
+			       		
+			       	
+
+					<span class="greytxt">
+						
+						
+				       								       		
+								Aula
+								Problemas
+				       		
+				       		
+				       					       	
+					</span>     	
+				</p>
+			
+
+				
+					
+					
+						<h3 class="mvert05">2ª Aula Prática</h3>
+					
+						
+				
+			
+			
+			<div class="summary_content">
+				<p>Resolu&ccedil;&atilde;o de exerc&iacute;cios da Ficha 1:<br />0. Desigualdades e M&oacute;dulos: 3.7, 4.20, 5.7;<br />I. Indu&ccedil;&atilde;o Matem&aacute;tica: 3(b), 4; <br />II. S&iacute;mbolo de Somat&oacute;rio: 4(a).</p> 
+<p><a href="http://media-openeya.math.ist.utl.pt/webcamPA2/cdi1/aulaP02/">http://media-openeya.math.ist.utl.pt/webcamPA2/cdi1/aulaP02/</a></p>
+			</div>
+			
+			<div class="details mtop025">
+				<span class="updated-date">
+					Modificado em
+					01/11/2012 16:23
+				</span>
+		
+				
+					<span class="author">
+						Prof.				
+						Miguel Tribolet de Abreu	
+					</span>
+				
+		
+				
+		
+								
+		
+				
+					<span class="comment">
+						Presen&ccedil;as:			
+									
+							
+							
+							
+								25 alunos.
+							
+				
+							
+						
+			
+						
+					</span>
+								
+		
+				
+			</div>
+
+		</div>
+		
+		
+		<div id="s1488992" class="public_summary">
+			
+				<p class="mtop2 mbottom0">
+					02/10/2012
+					09:00
+				   	
+					
+						
+							(Sala QA)
+			       		
+			       	
+
+					<span class="greytxt">
+						
+						
+				       								       		
+								Aula
+								Teórica
+				       		
+				       		
+				       					       	
+					</span>     	
+				</p>
+			
+
+				
+					
+					
+						<h3 class="mvert05">7ª Aula Teórica</h3>
+					
+						
+				
+			
+			
+			<div class="summary_content">
+				<p>Limite de uma Fun&ccedil;&atilde;o num Ponto: mais exemplos, unicidade, <br />opera&ccedil;&otilde;es alg&eacute;bricas.</p> 
+<p><a href="http://media-openeya.math.ist.utl.pt/webcamQA/cdi1/aulaT07/">http://media-openeya.math.ist.utl.pt/webcamQA/cdi1/aulaT07/</a></p> 
+<p><a href="http://media-openeya.math.ist.utl.pt/webcamQA/cdi1/aulaT07b/">http://media-openeya.math.ist.utl.pt/webcamQA/cdi1/aulaT07b/</a></p>
+			</div>
+			
+			<div class="details mtop025">
+				<span class="updated-date">
+					Modificado em
+					22/10/2012 20:44
+				</span>
+		
+				
+					<span class="author">
+						Prof.				
+						Miguel Tribolet de Abreu	
+					</span>
+				
+		
+				
+		
+								
+		
+				
+					<span class="comment">
+						Presen&ccedil;as:			
+									
+							
+							
+							
+								120 alunos.
+							
+				
+							
+						
+			
+						
+					</span>
+								
+		
+				
+			</div>
+
+		</div>
+		
+		
+		<div id="s1488990" class="public_summary">
+			
+				<p class="mtop2 mbottom0">
+					01/10/2012
+					09:00
+				   	
+					
+						
+							(Sala QA)
+			       		
+			       	
+
+					<span class="greytxt">
+						
+						
+				       								       		
+								Aula
+								Teórica
+				       		
+				       		
+				       					       	
+					</span>     	
+				</p>
+			
+
+				
+					
+					
+						<h3 class="mvert05">6ª Aula Teórica</h3>
+					
+						
+				
+			
+			
+			<div class="summary_content">
+				<p>Fun&ccedil;&otilde;es compostas. Fun&ccedil;&otilde;es de Heaviside e Dirichlet. Limite de uma <br />fun&ccedil;&atilde;o num Ponto: defini&ccedil;&atilde;o e primeiros exemplos.</p> 
+<p><a href="http://media-openeya.math.ist.utl.pt/webcamQA/cdi1/aulaT06/">http://media-openeya.math.ist.utl.pt/webcamQA/cdi1/aulaT06/</a></p> 
+<p><a href="http://media-openeya.math.ist.utl.pt/webcamQA/cdi1/aulaT06b/">http://media-openeya.math.ist.utl.pt/webcamQA/cdi1/aulaT06b/</a></p>
+			</div>
+			
+			<div class="details mtop025">
+				<span class="updated-date">
+					Modificado em
+					22/10/2012 20:43
+				</span>
+		
+				
+					<span class="author">
+						Prof.				
+						Miguel Tribolet de Abreu	
+					</span>
+				
+		
+				
+		
+								
+		
+				
+					<span class="comment">
+						Presen&ccedil;as:			
+									
+							
+							
+							
+								120 alunos.
+							
+				
+							
+						
+			
+						
+					</span>
+								
+		
+				
+			</div>
+
+		</div>
+		
+		
+		<div id="s1503769" class="public_summary">
+			
+				<p class="mtop2 mbottom0">
+					28/09/2012
+					11:30
+				   	
+					
+						
+							(Sala P1)
+			       		
+			       	
+
+					<span class="greytxt">
+						
+						
+				       								       		
+								Aula
+								Problemas
+				       		
+				       		
+				       					       	
+					</span>     	
+				</p>
+			
+
+				
+					
+					
+						<h3 class="mvert05">.</h3>
+					
+						
+				
+			
+			
+			<div class="summary_content">
+				<p>Desigualdades e m&oacute;dulos. Indu&ccedil;&atilde;o e somat&oacute;rios.</p>
+			</div>
+			
+			<div class="details mtop025">
+				<span class="updated-date">
+					Modificado em
+					16/10/2012 11:27
+				</span>
+		
+				
+					<span class="author">
+						Prof.				
+						João Paulo Neves Monteiro dos Santos	
+					</span>
+				
+		
+				
+		
+								
+		
+								
+		
+							
+					<span class="comment">
+						Presen&ccedil;as:
+						<i>n&atilde;o foram contabilizadas.</i>								
+					</span>
+				
+			</div>
+
+		</div>
+		
+		
+		<div id="s1483580" class="public_summary">
+			
+				<p class="mtop2 mbottom0">
+					28/09/2012
+					09:30
+				   	
+					
+						
+							(Sala V1.10)
+			       		
+			       	
+
+					<span class="greytxt">
+						
+						
+				       								       		
+								Aula
+								Problemas
+				       		
+				       		
+				       					       	
+					</span>     	
+				</p>
+			
+
+				
+					
+					
+						<h3 class="mvert05">2ª Aula Prática</h3>
+					
+						
+				
+			
+			
+			<div class="summary_content">
+				<p>Determina&ccedil;&atilde;o de conjuntos definidos por desigualdades envolvendo m&oacute;dulos. Aplica&ccedil;&atilde;o do M&eacute;todo de Indu&ccedil;&atilde;o Matem&aacute;tica.</p>
+			</div>
+			
+			<div class="details mtop025">
+				<span class="updated-date">
+					Modificado em
+					28/09/2012 11:24
+				</span>
+		
+				
+					<span class="author">
+						Prof.				
+						José Manuel Soares Chagas Roquette	
+					</span>
+				
+		
+				
+		
+								
+		
+								
+		
+							
+					<span class="comment">
+						Presen&ccedil;as:
+						<i>n&atilde;o foram contabilizadas.</i>								
+					</span>
+				
+			</div>
+
+		</div>
+		
+		
+		<div id="s1503770" class="public_summary">
+			
+				<p class="mtop2 mbottom0">
+					28/09/2012
+					09:30
+				   	
+					
+						
+							(Sala P12)
+			       		
+			       	
+
+					<span class="greytxt">
+						
+						
+				       								       		
+								Aula
+								Problemas
+				       		
+				       		
+				       					       	
+					</span>     	
+				</p>
+			
+
+				
+					
+					
+						<h3 class="mvert05">.</h3>
+					
+						
+				
+			
+			
+			<div class="summary_content">
+				<p>Desigualdades e m&oacute;dulos. Indu&ccedil;&atilde;o e somat&oacute;rios.</p>
+			</div>
+			
+			<div class="details mtop025">
+				<span class="updated-date">
+					Modificado em
+					16/10/2012 11:27
+				</span>
+		
+				
+					<span class="author">
+						Prof.				
+						João Paulo Neves Monteiro dos Santos	
+					</span>
+				
+		
+				
+		
+								
+		
+								
+		
+							
+					<span class="comment">
+						Presen&ccedil;as:
+						<i>n&atilde;o foram contabilizadas.</i>								
+					</span>
+				
+			</div>
+
+		</div>
+		
+		
+		<div id="s1483579" class="public_summary">
+			
+				<p class="mtop2 mbottom0">
+					28/09/2012
+					08:00
+				   	
+					
+						
+							(Sala C10)
+			       		
+			       	
+
+					<span class="greytxt">
+						
+						
+				       								       		
+								Aula
+								Problemas
+				       		
+				       		
+				       					       	
+					</span>     	
+				</p>
+			
+
+				
+					
+					
+						<h3 class="mvert05">2ª Aula Prática</h3>
+					
+						
+				
+			
+			
+			<div class="summary_content">
+				<p>Determina&ccedil;&atilde;o de conjuntos definidos por desigualdades envolvendo m&oacute;dulos. Aplica&ccedil;&atilde;o do M&eacute;todo de Indu&ccedil;&atilde;o Matem&aacute;tica.</p>
+			</div>
+			
+			<div class="details mtop025">
+				<span class="updated-date">
+					Modificado em
+					28/09/2012 11:23
+				</span>
+		
+				
+					<span class="author">
+						Prof.				
+						José Manuel Soares Chagas Roquette	
+					</span>
+				
+		
+				
+		
+								
+		
+								
+		
+							
+					<span class="comment">
+						Presen&ccedil;as:
+						<i>n&atilde;o foram contabilizadas.</i>								
+					</span>
+				
+			</div>
+
+		</div>
+		
+		
+		<div id="s1482105" class="public_summary">
+			
+				<p class="mtop2 mbottom0">
+					27/09/2012
+					09:00
+				   	
+					
+						
+							(Sala QA)
+			       		
+			       	
+
+					<span class="greytxt">
+						
+						
+				       								       		
+								Aula
+								Teórica
+				       		
+				       		
+				       					       	
+					</span>     	
+				</p>
+			
+
+				
+					
+					
+						<h3 class="mvert05">5ª Aula Teórica</h3>
+					
+						
+				
+			
+			
+			<div class="summary_content">
+				<p>Fun&ccedil;&otilde;es Reais de Vari&aacute;vel Real. Exemplos de fun&ccedil;&otilde;es elementares:<br />polinomiais, racionais, trigonom&eacute;tricas e hiperb&oacute;licas. Gr&aacute;ficos.</p> 
+<p><a href="http://media-openeya.math.ist.utl.pt/webcamQA/cdi1/aulaT05/">http://media-openeya.math.ist.utl.pt/webcamQA/cdi1/aulaT05/</a></p> 
+<p><a href="http://media-openeya.math.ist.utl.pt/webcamQA/cdi1/aulaT05b/">http://media-openeya.math.ist.utl.pt/webcamQA/cdi1/aulaT05b/</a></p>
+			</div>
+			
+			<div class="details mtop025">
+				<span class="updated-date">
+					Modificado em
+					22/10/2012 20:40
+				</span>
+		
+				
+					<span class="author">
+						Prof.				
+						Miguel Tribolet de Abreu	
+					</span>
+				
+		
+				
+		
+								
+		
+				
+					<span class="comment">
+						Presen&ccedil;as:			
+									
+							
+							
+							
+								120 alunos.
+							
+				
+							
+						
+			
+						
+					</span>
+								
+		
+				
+			</div>
+
+		</div>
+		
+		
+		<div id="s1482108" class="public_summary">
+			
+				<p class="mtop2 mbottom0">
+					25/09/2012
+					12:00
+				   	
+					
+						
+							(Sala PA2)
+			       		
+			       	
+
+					<span class="greytxt">
+						
+						
+				       								       		
+								Aula
+								Problemas
+				       		
+				       		
+				       					       	
+					</span>     	
+				</p>
+			
+
+				
+					
+					
+						<h3 class="mvert05">1ª Aula Prática</h3>
+					
+						
+				
+			
+			
+			<div class="summary_content">
+				<p>Resolu&ccedil;&atilde;o de exerc&iacute;cios da Ficha 1:<br />0. Desigualdades e M&oacute;dulos: 1.1, 1.13, 2.2, 2.5, 3.5, 3.20, 4.2, 4.7, 5.2.</p> 
+<p><a href="http://media-openeya.math.ist.utl.pt/webcamPA2/cdi1/aulaP01/">http://media-openeya.math.ist.utl.pt/webcamPA2/cdi1/aulaP01/</a></p>
+			</div>
+			
+			<div class="details mtop025">
+				<span class="updated-date">
+					Modificado em
+					01/11/2012 16:20
+				</span>
+		
+				
+					<span class="author">
+						Prof.				
+						Miguel Tribolet de Abreu	
+					</span>
+				
+		
+				
+		
+								
+		
+				
+					<span class="comment">
+						Presen&ccedil;as:			
+									
+							
+							
+							
+								25 alunos.
+							
+				
+							
+						
+			
+						
+					</span>
+								
+		
+				
+			</div>
+
+		</div>
+		
+		
+		<div id="s1482103" class="public_summary">
+			
+				<p class="mtop2 mbottom0">
+					25/09/2012
+					09:00
+				   	
+					
+						
+							(Sala QA)
+			       		
+			       	
+
+					<span class="greytxt">
+						
+						
+				       								       		
+								Aula
+								Teórica
+				       		
+				       		
+				       					       	
+					</span>     	
+				</p>
+			
+
+				
+					
+					
+						<h3 class="mvert05">4ª Aula Teórica</h3>
+					
+						
+				
+			
+			
+			<div class="summary_content">
+				<p>Mais indu&ccedil;&atilde;o e somat&oacute;rios. N&uacute;meros Inteiros e Racionais. <br />N&uacute;meros Irracionais. </p> 
+<p><a href="http://media-openeya.math.ist.utl.pt/webcamQA/cdi1/aulaT04/">http://media-openeya.math.ist.utl.pt/webcamQA/cdi1/aulaT04/</a></p>
+			</div>
+			
+			<div class="details mtop025">
+				<span class="updated-date">
+					Modificado em
+					22/10/2012 20:34
+				</span>
+		
+				
+					<span class="author">
+						Prof.				
+						Miguel Tribolet de Abreu	
+					</span>
+				
+		
+				
+		
+								
+		
+				
+					<span class="comment">
+						Presen&ccedil;as:			
+									
+							
+							
+							
+								120 alunos.
+							
+				
+							
+						
+			
+						
+					</span>
+								
+		
+				
+			</div>
+
+		</div>
+		
+		
+		<div id="s1482102" class="public_summary">
+			
+				<p class="mtop2 mbottom0">
+					24/09/2012
+					09:00
+				   	
+					
+						
+							(Sala QA)
+			       		
+			       	
+
+					<span class="greytxt">
+						
+						
+				       								       		
+								Aula
+								Teórica
+				       		
+				       		
+				       					       	
+					</span>     	
+				</p>
+			
+
+				
+					
+					
+						<h3 class="mvert05">3ª Aula Teórica</h3>
+					
+						
+				
+			
+			
+			<div class="summary_content">
+				<p>N&uacute;meros naturais. M&eacute;todo de Indu&ccedil;&atilde;o Matem&aacute;tica. <br />Somat&oacute;rios e suas propriedades.</p> 
+<p><a href="http://media-openeya.math.ist.utl.pt/webcamQA/cdi1/aulaT03/">http://media-openeya.math.ist.utl.pt/webcamQA/cdi1/aulaT03/</a></p> 
+<p><a href="http://media-openeya.math.ist.utl.pt/webcamQA/cdi1/aulaT03b/">http://media-openeya.math.ist.utl.pt/webcamQA/cdi1/aulaT03b/</a></p>
+			</div>
+			
+			<div class="details mtop025">
+				<span class="updated-date">
+					Modificado em
+					22/10/2012 20:30
+				</span>
+		
+				
+					<span class="author">
+						Prof.				
+						Miguel Tribolet de Abreu	
+					</span>
+				
+		
+				
+		
+								
+		
+				
+					<span class="comment">
+						Presen&ccedil;as:			
+									
+							
+							
+							
+								120 alunos.
+							
+				
+							
+						
+			
+						
+					</span>
+								
+		
+				
+			</div>
+
+		</div>
+		
+		
+		<div id="s1503768" class="public_summary">
+			
+				<p class="mtop2 mbottom0">
+					21/09/2012
+					11:30
+				   	
+					
+						
+							(Sala P1)
+			       		
+			       	
+
+					<span class="greytxt">
+						
+						
+				       								       		
+								Aula
+								Problemas
+				       		
+				       		
+				       					       	
+					</span>     	
+				</p>
+			
+
+				
+					
+					
+						<h3 class="mvert05">.</h3>
+					
+						
+				
+			
+			
+			<div class="summary_content">
+				<p>Desigualdades e m&oacute;dulos.</p>
+			</div>
+			
+			<div class="details mtop025">
+				<span class="updated-date">
+					Modificado em
+					16/10/2012 11:26
+				</span>
+		
+				
+					<span class="author">
+						Prof.				
+						João Paulo Neves Monteiro dos Santos	
+					</span>
+				
+		
+				
+		
+								
+		
+								
+		
+							
+					<span class="comment">
+						Presen&ccedil;as:
+						<i>n&atilde;o foram contabilizadas.</i>								
+					</span>
+				
+			</div>
+
+		</div>
+		
+		
+		<div id="s1479803" class="public_summary">
+			
+				<p class="mtop2 mbottom0">
+					21/09/2012
+					09:30
+				   	
+					
+						
+							(Sala V1.10)
+			       		
+			       	
+
+					<span class="greytxt">
+						
+						
+				       								       		
+								Aula
+								Problemas
+				       		
+				       		
+				       					       	
+					</span>     	
+				</p>
+			
+
+				
+					
+					
+						<h3 class="mvert05">1ª Aula Prática</h3>
+					
+						
+				
+			
+			
+			<div class="summary_content">
+				<p>Determina&ccedil;&atilde;o de conjuntos definidos por desigualdades, algumas delas com m&oacute;dulos.</p>
+			</div>
+			
+			<div class="details mtop025">
+				<span class="updated-date">
+					Modificado em
+					24/09/2012 12:47
+				</span>
+		
+				
+					<span class="author">
+						Prof.				
+						José Manuel Soares Chagas Roquette	
+					</span>
+				
+		
+				
+		
+								
+		
+								
+		
+							
+					<span class="comment">
+						Presen&ccedil;as:
+						<i>n&atilde;o foram contabilizadas.</i>								
+					</span>
+				
+			</div>
+
+		</div>
+		
+		
+		<div id="s1480876" class="public_summary">
+			
+				<p class="mtop2 mbottom0">
+					21/09/2012
+					09:30
+				   	
+					
+						
+							(Sala P12)
+			       		
+			       	
+
+					<span class="greytxt">
+						
+						
+				       								       		
+								Aula
+								Problemas
+				       		
+				       		
+				       					       	
+					</span>     	
+				</p>
+			
+
+				
+					
+					
+						<h3 class="mvert05">.</h3>
+					
+						
+				
+			
+			
+			<div class="summary_content">
+				<p>Desigualdades e m&oacute;dulos.</p> 
+<p>&nbsp;</p>
+			</div>
+			
+			<div class="details mtop025">
+				<span class="updated-date">
+					Modificado em
+					25/09/2012 16:30
+				</span>
+		
+				
+					<span class="author">
+						Prof.				
+						João Paulo Neves Monteiro dos Santos	
+					</span>
+				
+		
+				
+		
+								
+		
+								
+		
+							
+					<span class="comment">
+						Presen&ccedil;as:
+						<i>n&atilde;o foram contabilizadas.</i>								
+					</span>
+				
+			</div>
+
+		</div>
+		
+		
+		<div id="s1480866" class="public_summary">
+			
+				<p class="mtop2 mbottom0">
+					21/09/2012
+					08:00
+				   	
+					
+						
+							(Sala C10)
+			       		
+			       	
+
+					<span class="greytxt">
+						
+						
+				       								       		
+								Aula
+								Problemas
+				       		
+				       		
+				       					       	
+					</span>     	
+				</p>
+			
+
+				
+					
+					
+						<h3 class="mvert05">1ª Aula Prática</h3>
+					
+						
+				
+			
+			
+			<div class="summary_content">
+				<p>Determina&ccedil;&atilde;o de conjuntos definidos por desigualdades, algumas delas com m&oacute;dulos.</p>
+			</div>
+			
+			<div class="details mtop025">
+				<span class="updated-date">
+					Modificado em
+					25/09/2012 15:52
+				</span>
+		
+				
+					<span class="author">
+						Prof.				
+						José Manuel Soares Chagas Roquette	
+					</span>
+				
+		
+				
+		
+								
+		
+								
+		
+							
+					<span class="comment">
+						Presen&ccedil;as:
+						<i>n&atilde;o foram contabilizadas.</i>								
+					</span>
+				
+			</div>
+
+		</div>
+		
+		
+		<div id="s1478170" class="public_summary">
+			
+				<p class="mtop2 mbottom0">
+					20/09/2012
+					09:00
+				   	
+					
+						
+							(Sala QA)
+			       		
+			       	
+
+					<span class="greytxt">
+						
+						
+				       								       		
+								Aula
+								Teórica
+				       		
+				       		
+				       					       	
+					</span>     	
+				</p>
+			
+
+				
+					
+					
+						<h3 class="mvert05">2ª Aula Teórica</h3>
+					
+						
+				
+			
+			
+			<div class="summary_content">
+				<p>Propriedades das rela&ccedil;&otilde;es de ordem. M&oacute;dulo ou valor absoluto. </p> 
+<div>
+ <a href="http://media-openeya.math.ist.utl.pt/webcamQA/cdi1/aulaT02/">http://media-openeya.math.ist.utl.pt/webcamQA/cdi1/aulaT02/</a>
+</div>
+			</div>
+			
+			<div class="details mtop025">
+				<span class="updated-date">
+					Modificado em
+					01/11/2012 16:13
+				</span>
+		
+				
+					<span class="author">
+						Prof.				
+						Miguel Tribolet de Abreu	
+					</span>
+				
+		
+				
+		
+								
+		
+				
+					<span class="comment">
+						Presen&ccedil;as:			
+									
+							
+							
+							
+								150 alunos.
+							
+				
+							
+						
+			
+						
+					</span>
+								
+		
+				
+			</div>
+
+		</div>
+		
+		
+		<div id="s1478169" class="public_summary">
+			
+				<p class="mtop2 mbottom0">
+					18/09/2012
+					12:00
+				   	
+					
+						
+							(Sala P1)
+			       		
+			       	
+
+					<span class="greytxt">
+						
+						
+				       								       		
+								Aula
+								Problemas
+				       		
+				       		
+				       					       	
+					</span>     	
+				</p>
+			
+
+				
+					
+					
+						<h3 class="mvert05">Não houve aula devido à prova de aferição</h3>
+					
+						
+				
+			
+			
+			<div class="summary_content">
+				<p>N&atilde;o houve aula devido &agrave; prova de aferi&ccedil;&atilde;o.</p>
+			</div>
+			
+			<div class="details mtop025">
+				<span class="updated-date">
+					Modificado em
+					20/09/2012 12:09
+				</span>
+		
+				
+					<span class="author">
+						Prof.				
+						Miguel Tribolet de Abreu	
+					</span>
+				
+		
+				
+		
+								
+		
+				
+					<span class="comment">
+						Presen&ccedil;as:			
+									
+							
+							
+							
+								0 alunos.
+							
+				
+							
+						
+			
+						
+					</span>
+								
+		
+				
+			</div>
+
+		</div>
+		
+		
+		<div id="s1478168" class="public_summary">
+			
+				<p class="mtop2 mbottom0">
+					18/09/2012
+					09:00
+				   	
+					
+						
+							(Sala QA)
+			       		
+			       	
+
+					<span class="greytxt">
+						
+						
+				       								       		
+								Aula
+								Teórica
+				       		
+				       		
+				       					       	
+					</span>     	
+				</p>
+			
+
+				
+					
+					
+						<h3 class="mvert05">Não houve aula devido à prova de aferição</h3>
+					
+						
+				
+			
+			
+			<div class="summary_content">
+				<p>N&atilde;o houve aula devido &agrave; prova de aferi&ccedil;&atilde;o.</p>
+			</div>
+			
+			<div class="details mtop025">
+				<span class="updated-date">
+					Modificado em
+					20/09/2012 12:09
+				</span>
+		
+				
+					<span class="author">
+						Prof.				
+						Miguel Tribolet de Abreu	
+					</span>
+				
+		
+				
+		
+								
+		
+				
+					<span class="comment">
+						Presen&ccedil;as:			
+									
+							
+							
+							
+								0 alunos.
+							
+				
+							
+						
+			
+						
+					</span>
+								
+		
+				
+			</div>
+
+		</div>
+		
+		
+		<div id="s1478166" class="public_summary">
+			
+				<p class="mtop2 mbottom0">
+					17/09/2012
+					09:00
+				   	
+					
+						
+							(Sala QA)
+			       		
+			       	
+
+					<span class="greytxt">
+						
+						
+				       								       		
+								Aula
+								Teórica
+				       		
+				       		
+				       					       	
+					</span>     	
+				</p>
+			
+
+				
+					
+					
+						<h3 class="mvert05">1ª Aula Teórica</h3>
+					
+						
+				
+			
+			
+			<div class="summary_content">
+				<p>Apresenta&ccedil;&atilde;o. P&aacute;gina da cadeira. Bibliografia. Avalia&ccedil;&atilde;o. <br />Propriedades alg&eacute;bricas dos reais.</p> 
+<div>
+ <a href="http://media-openeya.math.ist.utl.pt/webcamQA/cdi1/aulaT01/">http://media-openeya.math.ist.utl.pt/webcamQA/cdi1/aulaT01/</a>
+</div> 
+<div>
+ &nbsp;
+</div> 
+<div>
+ <a href="http://media-openeya.math.ist.utl.pt/webcamQA/cdi1/aulaT01b/">http://media-openeya.math.ist.utl.pt/webcamQA/cdi1/aulaT01b/</a>
+</div>
+			</div>
+			
+			<div class="details mtop025">
+				<span class="updated-date">
+					Modificado em
+					22/10/2012 20:25
+				</span>
+		
+				
+					<span class="author">
+						Prof.				
+						Miguel Tribolet de Abreu	
+					</span>
+				
+		
+				
+		
+								
+		
+				
+					<span class="comment">
+						Presen&ccedil;as:			
+									
+							
+							
+							
+								150 alunos.
+							
+				
+							
+						
+			
+						
+					</span>
+								
+		
+				
+			</div>
+
+		</div>
+	
+
+
+						</td>
+					</tr>
+				</table>
+			
+			
+			
+			
+			
+		</div>
+
+		<div id="footer">
+			
+
+
+<div id="foot_links">
+	
+	<a href="http://www.ist.utl.pt/pt/sobre-IST/contactos/">Contactos</a>
+	| 
+	
+	<a href="mailto:suporte@dot.ist.utl.pt">Suporte</a>
+</div>
+
+<div id="foot_copy">&copy;2012, Instituto Superior Técnico. Todos os direitos reservados.</div>
+<div class="clear"></div>
+
+		</div>
+<script type="text/javascript">
+	hideButtons()
+</script>
+	</body>
+
+</html>

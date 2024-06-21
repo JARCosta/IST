@@ -1,0 +1,24 @@
+	Name	RTL	SEL_A	REG_A	PA_A	SEL_OP_A	SEL_OP_B	SEL_CONST	SEL_C	REG_C	PA_C	ESCR_C	SEL_BARR_C	OP_ALU	SEL_RE	LE_USP	ESCR_USP	D_MODO	D_BA	D_LE	D_ESCR	ESCR_REM	SEL_SALTO	EXC_FIM	ESCR_RI	MAP	SEL_MICRO_SALTO	MICRO_SALTO	Comments
+0	m_NOP	MPC<--MAP[opcode]																								SIM	SALTA		Presumo que isto esteja certo
+1	m_ADD	"Rd <-- Rd + Rs;MPC<--MAP[opcode]"	RI_7_4			REG	REG		RI_7_4			SIM	ALU	ADD	ZNCV											SIM	SALTA		
+2	m_ADDI	"Rd <-- Rd + k;MPC<--MAP[opcode]"	RI_7_4			REG	CONST	E4_16S	RI_7_4			SIM	ALU	ADD	ZNCV											SIM	SALTA		
+3	m_SHR	"Rd <-- Rd >> k;MPC<--MAP[opcode]"	RI_7_4			REG	CONST	E4_16	RI_7_4			SIM	ALU	SHR	ZNC											SIM	SALTA		
+4	m_MOVL	"Rd <-- k(7){8} || k;MPC<--MAP[opcode]"					CONST	E8_16S	RI_7_4			SIM	ALU	OP_B												SIM	SALTA		
+5	m_LDR1	REM <-- Rs + Ri	RI_7_4			REG	REG							ADD								SIM							
+6	m_LDR2	"Rd <-- Mw[REM];MPC<--MAP[opcode]"							RI_11_8			SIM	MEM							SIM						SIM	SALTA		
+7	m_STO1	REM <-- Rd + Ri	RI_7_4			REG	REG							ADD								SIM							
+8	m_STO2	"Mw[REM] <-- Rd;MPC<--MAP[opcode]"	RI_7_4			REG								OP_A							SIM					SIM	SALTA		
+9	m_JZ	"Z=1: PC <-- PC + 2*dif;MPC<--MAP[opcode]"				PC	CONST	E8_16S					ALU	ADD_Bx2									Z			SIM	SALTA		
+10	m_JMPR	"PC <-- Rs;MPC<--MAP[opcode]"	RI_3_0			REG								OP_A									SALTA			SIM	SALTA		
+11	m_CALL1	REM <-- SP - 2	REG_A	SP		REG	CONST	DOIS						SUB								SIM							
+12	m_CALL2	Mw[REM] <-- PC				PC								OP_A							SIM								
+13	m_CALL3	PC <-- PC + 2* dif				PC	CONST	E12_16S					ALU	ADD_Bx2									SALTA						
+14	m_CALL4	"SP <-- SP - 2;MPC<--MAP[opcode]"	REG_A	SP		REG	CONST	DOIS	SP			SIM	ALU	SUB												SIM	SALTA		
+15	m_EXC1	TEMP <-- RE	REG_A	RE		REG			REG_C	TEMP		SIM	ALU	OP_A													
+16	m_EXC2	"RE <-- 0; REM <-- SP - 2"	REG_A	SP		REG	CONST	DOIS						SUB	NPIEDE							SIM					
+17	m_EXC3	Mw[REM] <-- PC				PC								OP_A							SIM						
+18	m_EXC4	REM <-- SP - 4	REG_A	SP		REG	CONST	QUATRO						SUB								SIM					
+19	m_EXC5	Mw[REM] <-- TEMP 	REG_A	TEMP		REG								OP_A							SIM						
+20	m_EXC6	REM <-- BTE + 2 * OP_B	REG_A	BTE		REG	EXC							ADD_Bx2								SIM					
+21	m_EXC7	PC <-- Mw[REM]											MEM							SIM			SALTA				
+22	m_EXC8	"SP <-- SP - 4; MPC <-- MAP[opcode]"	REG_A	SP		REG	CONST	QUATRO	REG_C	SP		SIM	ALU	SUB										SIM		SIM	SALTA

@@ -1,0 +1,263 @@
+Name	RTL	SEL_A	REG_A	PA_A	SEL_OP_A	SEL_OP_B	SEL_CONST	SEL_C	REG_C	PA_C	ESCR_C	SEL_BARR_C	OP_ALU	SEL_RE	SEL_LE_USP	SEL_ESCR_USP	SEL_MEM	D_MODO	D_BA	D_LE	D_ESCR	INTA	SEL_PROX_END	SEL_SALTO	SEL_B	ESCR_REM	ESCR_RER	ACTUALIZA_PRED	NUM_EXC	EXC_FEITA	FIM	MAP	TERMINÁVEL	SEL_MICRO_SALTO	END_MICRO_SALTO
+m_RST1	PC <--0, RE <-- 0	 	 	 	 	Const	ZERO	 	 	 	 	 	PASS_B	 	 	 	 	 	 	 	 	 	 	SALTA	 	 	 	 	 	 	SIM	SIM	 	 	 
+m_EXC1	TEMP <-- RE	REG_A	R13 (RE)	 	 	 	 	REG_C	R15 (TEMP)	 	SIM	 	PASS_A	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+m_EXC2	"RE <-- (7:0;12:0;13:0), REM <-- SP - 2"	REG_A	R12 (SP)	 	 	Const	DOIS	 	 	 	 	 	SUB	NPIEDE	 	 	 	 	 	 	 	 	 	 	 	SIM	 	 	 	 	 	 	 	 	 
+m_EXC3	Mw[REM] <-- RER	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	RER	CC_CMV	PAL	 	SIM	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+m_EXC4	REM <-- SP - 4	REG_A	R12 (SP)	 	 	Const	QUATRO	 	 	 	 	 	SUB	 	 	 	 	 	 	 	 	 	 	 	 	SIM	 	 	 	 	 	 	 	 	 
+m_EXC5	Mw[REM] <-- TEMP	REG_A	R15 (TEMP)	 	 	 	 	 	 	 	 	 	PASS_A	 	 	 	 	CC_CMV	PAL	 	SIM	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+m_EXC6	REM <-- BTE + (EXC_Index << 1)	REG_A	R14 (BTE)	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	EXC_UE	SIM	 	 	 	 	 	 	 	 	 
+m_EXC7	SP <-- SP -4	REG_A	R12 (SP)	 	 	Const	QUATRO	REG_C	R12 (SP)	 	SIM	 	SUB	 	 	 	 	 		SIM	 	 	MEM	 	 	 	 	 	 				 	 	 
+m_EXC8	PC <-- Mw[REM]			 	 					 		 		 	 	 	 	 	PAL	SIM	 	 	MEM	 	 	 	 	 	 	SIM	SIM	SIM	 	 	 
+m_INT31	TEMP <-- RE	REG_A	R13 (RE)	 	 	 	 	 	 	 	 	 	PASS_A	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+m_INT32	"RE <-- (7:0;12:0;13:0), REM <-- SP - 2"	REG_A	R12 (SP)	 	 	Const	DOIS	 	 	 	 	 	SUB	NPIEDE	 	 	 	 	 	 	 	 	 	 	 	SIM	 	 	 	 	 	 	 	 	 
+m_INT33	Mw[REM] <-- RER	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	RER	CC_CMV	PAL	 	SIM	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+m_INT34	REM <-- SP - 4	REG_A	R12 (SP)	 	 	Const	QUATRO	 	 	 	 	 	SUB	 	 	 	 	 	 	 	 	 	 	 	 	SIM	 	 	 	 	 	 	 	 	 
+m_INT35	Mw[REM] <-- TEMP	 	 	 	 	 	 	 	 	 	 	 	PASS_A	 	 	 	 	CC_CMV	PAL	 	SIM	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+m_INT36	INTA <-- 1, TEMP <-- 0{8} || Mb[x{16}]	 	 	 	 	 	 	 	 	 	 	MEM_D	 	 	 	 	 	 	 	 	 	SIM	 	 	 	 	 	 	 	 	 	 	 	 	 
+m_INT37	REM <-- SP - 6	REG_A	R12 (SP)	 	 	Const	SEIS	 	 	 	 	 	SUB	 	 	 	 	 	 	 	 	 	 	 	 	SIM	 	 	 	 	 	 	 	 	 
+m_INT38	Mw[REM] <-- TEMP	 	 	 	 	 	 	 	 	 	 	 	PASS_A	 	 	 	 	CC_CMV	PAL	 	SIM	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+m_INT39	REM <-- BTE + (INT3_Index << 1)	REG_A	R14 (BTE)	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	EXC_UC	SIM	 	 	INT3	 	 	 	 	 	 
+m_INT310	SP <-- SP - 6	REG_A	R12 (SP)	 	 	Const	SEIS	REG_C	R12 (SP)	 	SIM	 	 	 	 	 	 	 			 	 		 	 	 	 	 	 	SIM	SIM	SIM	 	 	 
+m_INT311	PC <-- Mw[REM]			 	 					 		 	 	 	 	 	 	 	PAL	SIM	 	 	MEM	 	 	 	 	 	 	SIM	SIM	SIM	 	 	 
+m_BOLHA_B	Não faz nada	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	SIM	SIM	 	 
+m_INV1	TEMP <-- RE	REG_A	R13 (RE)	 	 	 	 	 	 	 	 	 	PASS_A	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+m_INV2	"RE <-- (7:0;12:0;13:0), REM <-- SP - 2"	REG_A	R12 (SP)	 	 	Const	DOIS	 	 	 	 	 	SUB	NPIEDE	 	 	 	 	 	 	 	 	 	 	 	SIM	 	 	 	 	 	 	 	 	 
+m_INV3	Mw[REM] <-- RER	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	RER	CC_CMV	PAL	 	SIM	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+m_INV4	REM <-- SP - 4	REG_A	R12 (SP)	 	 	Const	QUATRO	 	 	 	 	 	SUB	 	 	 	 	 	 	 	 	 	 	 	 	SIM	 	 	 	 	 	 	 	 	 
+m_INV5	Mw[REM] <-- TEMP	 	 	 	 	 	 	 	 	 	 	 	PASS_A	 	 	 	 	CC_CMV	PAL	 	SIM	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+m_INV6	REM <-- BTE + (INV_Index << 1)	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	EXC_UC	SIM	 	 	COD_INV	 	 	 	 	 	 
+m_INV7	PC <-- Mw[REM]			 	 					 		 		 	 	 	 	 	PAL	SIM	 	 	MEM	 	 	 	 	 	 				 	 	 
+m_INV8	SP <-- SP - 4	REG_A	R12 (SP)	 	 	Const	QUATRO	REG_C	R12 (SP)	 	SIM	 	SUB	 	 	 	 	 			 	 		 	 	 	 	 	 	SIM	SIM	SIM	 	 	 
+m_ADD	Rd <-- Rd + Rs	IC7_4	 	 	 	 	 	IC7_4	 	 	SIM	 	 	ZNCV	 	 	 	 	 	 	 	 	 	 	 	 	SIM	 	 	 	SIM	SIM	SIM	 	 
+m_ADDC	Rd <-- Rd + Rs + C	IC7_4	 	 	 	 	 	IC7_4	 	 	SIM	 	ADDC	ZNCV	 	 	 	 	 	 	 	 	 	 	 	 	SIM	 	 	 	SIM	SIM	SIM	 	 
+m_ADDI	Rd <-- Rd + k	IC7_4	 	 	 	Const	E4_16S	IC7_4	 	 	SIM	 	 	ZNCV	 	 	 	 	 	 	 	 	 	 	 	 	SIM	 	 	 	SIM	SIM	SIM	 	 
+m_SUB	Rd <-- Rd – Rs	IC7_4	 	 	 	 	 	IC7_4	 	 	SIM	 	SUB	ZNCV	 	 	 	 	 	 	 	 	 	 	 	 	SIM	 	 	 	SIM	SIM	SIM	 	 
+m_SUBB	Rd <-- Rd – Rs - C	IC7_4	 	 	 	 	 	IC7_4	 	 	SIM	 	SUBB	ZNCV	 	 	 	 	 	 	 	 	 	 	 	 	SIM	 	 	 	SIM	SIM	SIM	 	 
+m_SUBI	Rd <-- Rd – k	IC7_4	 	 	 	Const	E4_16S	IC7_4	 	 	SIM	 	SUB	ZNCV	 	 	 	 	 	 	 	 	 	 	 	 	SIM	 	 	 	SIM	SIM	SIM	 	 
+m_CMP	(Rd – Rs)	IC7_4	 	 	 	 	 	 	 	 	 	 	SUB	ZNCV	 	 	 	 	 	 	 	 	 	 	 	 	SIM	 	 	 	SIM	SIM	SIM	 	 
+m_CMPI	(Rd – k)	IC7_4	 	 	 	Const	E4_16S	 	 	 	 	 	SUB	ZNCV	 	 	 	 	 	 	 	 	 	 	 	 	SIM	 	 	 	SIM	SIM	SIM	 	 
+m_MUL	Rd <-- Rd * Rs	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	SIM	 	 	 	 	 	 	 	 
+m_DIV	Rd <-- quociente(Rd / Rs)	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	SIM	 	 	 	 	 	 	 	 
+m_MOD	Rd <-- resto(Rd / Rs)	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	SIM	 	 	 	 	 	 	 	 
+m_NEG	Rd <-- –Rd	IC7_4	 	 	 	 	 	IC7_4	 	 	SIM	 	NEG	ZNCV	 	 	 	 	 	 	 	 	 	 	 	 	SIM	 	 	 	SIM	SIM	SIM	 	 
+m_SHRA	n>0 : Rd <-- Rd(15){n} || Rd(15..n), C <- Rd(n-1)	IC7_4	 	 	 	Const	 	IC7_4	 	 	SIM	 	SHRA	ZNC	 	 	 	 	 	 	 	 	 	 	 	 	SIM	 	 	 	SIM	SIM	SIM	 	 
+m_SHLA	n>0 : C|| Rd <-- Rd(15-n+1 .. 0) || 0{n}, C <- Rd(15-n+1), V <-- 1 se overflow	IC7_4	 	 	 	Const	 	IC7_4	 	 	SIM	 	SHLA	ZNCV	 	 	 	 	 	 	 	 	 	 	 	 	SIM	 	 	 	SIM	SIM	SIM	 	 
+m_AND	Rd <-- Rd & Rs	IC7_4	 	 	 	 	 	IC7_4	 	 	SIM	 	AND	ZN	 	 	 	 	 	 	 	 	 	 	 	 	SIM	 	 	 	SIM	SIM	SIM	 	 
+m_OR	Rd <-- Rd | Rs	IC7_4	 	 	 	 	 	IC7_4	 	 	SIM	 	OR	ZN	 	 	 	 	 	 	 	 	 	 	 	 	SIM	 	 	 	SIM	SIM	SIM	 	 
+m_NOT	Rd <-- Rd ^ FFFFH	IC7_4	 	 	 	 	 	IC7_4	 	 	SIM	 	NOT_A	ZN	 	 	 	 	 	 	 	 	 	 	 	 	SIM	 	 	 	SIM	SIM	SIM	 	 
+m_XOR	Rd <-- Rd ^ Rs	IC7_4	 	 	 	 	 	IC7_4	 	 	SIM	 	XOR	ZN	 	 	 	 	 	 	 	 	 	 	 	 	SIM	 	 	 	SIM	SIM	SIM	 	 
+m_TEST	Rd & Rs	IC7_4	 	 	 	 	 	 	 	 	 	 	AND	ZN	 	 	 	 	 	 	 	 	 	 	 	 	SIM	 	 	 	SIM	SIM	SIM	 	 
+m_BIT	Z <-- Rd(n) ^ 1	IC7_4	 	 	 	Const	 	 	 	 	 	 	BIT	Z	 	 	 	 	 	 	 	 	 	 	 	 	SIM	 	 	 	SIM	SIM	SIM	 	 
+m_SET	Rd(n) <-- 1	IC7_4	 	 	 	Const	 	IC7_4	 	 	SIM	 	SETBIT	ZN	 	 	 	 	 	 	 	 	 	 	 	 	SIM	 	 	 	SIM	SIM	SIM	 	 
+m_CLR	Rd(n) <-- 0	IC7_4	 	 	 	Const	 	IC7_4	 	 	SIM	 	CLRBIT	ZN	 	 	 	 	 	 	 	 	 	 	 	 	SIM	 	 	 	SIM	SIM	SIM	 	 
+m_CPL	Rd(n) <-- Rd(n) ^ 1	IC7_4	 	 	 	Const	 	IC7_4	 	 	SIM	 	CPLBIT	ZN	 	 	 	 	 	 	 	 	 	 	 	 	SIM	 	 	 	SIM	SIM	SIM	 	 
+m_SHR	n > 0 : Rd <-- 0{n} || Rd(15..n), C <- Rd(n-1)	IC7_4	 	 	 	Const	 	IC7_4	 	 	SIM	 	SHR	ZNC	 	 	 	 	 	 	 	 	 	 	 	 	SIM	 	 	 	SIM	SIM	SIM	 	 
+m_SHL	n>0 : C|| Rd <-- Rd(15-n+1 .. 0) || 0{n}, C <- Rd(15-n+1)	IC7_4	 	 	 	Const	 	IC7_4	 	 	SIM	 	SHL	ZNC	 	 	 	 	 	 	 	 	 	 	 	 	SIM	 	 	 	SIM	SIM	SIM	 	 
+m_ROR	n>0 : Rd <-- Rd(n-1..0) || Rd(15..n), C <- Rd(n-1)	IC7_4	 	 	 	Const	 	IC7_4	 	 	SIM	 	ROR	ZNC	 	 	 	 	 	 	 	 	 	 	 	 	SIM	 	 	 	SIM	SIM	SIM	 	 
+m_ROL	n>0 : Rd <-- Rd(n..0) || Rd(15..15-n+1), C <- Rd(15-n+1)	IC7_4	 	 	 	Const	 	IC7_4	 	 	SIM	 	ROL	ZNC	 	 	 	 	 	 	 	 	 	 	 	 	SIM	 	 	 	SIM	SIM	SIM	 	 
+m_RORC	n>0 : C || Rd <-- Rd(n-1..0) || C || Rd(15..n)	IC7_4	 	 	 	Const	 	IC7_4	 	 	SIM	 	RORC	ZNC	 	 	 	 	 	 	 	 	 	 	 	 	SIM	 	 	 	SIM	SIM	SIM	 	 
+m_ROLC	n>0 : C || Rd <-- Rd(15-n+1..0) ||  C || Rd(15..15-n+2)	IC7_4	 	 	 	Const	 	IC7_4	 	 	SIM	 	ROLC	ZNC	 	 	 	 	 	 	 	 	 	 	 	 	SIM	 	 	 	SIM	SIM	SIM	 	 
+m_LDO1	REM <-- Rs + 2*(off/2)	IC7_4	 	 	 	Const	E4_16Sx2	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	SIM	SIM	 	 	 	 	 	SIM	 	 
+m_LDO2	Rd <-- Mw[REM]	 	 	 	 	 	 	IC11_8	 	 	SIM	MEM_D	 	 	 	 	 	CC_CMV	PAL	SIM	 	 	 	 	 	 	SIM	 	 	 	SIM	SIM	SIM	 	 
+m_LDR1	REM <-- Rs + Ri	IC7_4	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	SIM	SIM	 	 	 	 	 	SIM	 	 
+m_LDR2	Rd <-- Mw[REM]	 	 	 	 	 	 	IC11_8	 	 	SIM	MEM_D	 	 	 	 	 	CC_CMV	PAL	SIM	 	 	 	 	 	 	SIM	 	 	 	SIM	SIM	SIM	 	 
+m_STO1	REM <-- Rd + 2*(off/2)	IC7_4	 	 	 	Const	E4_16Sx2	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	SIM	SIM	 	 	 	 	 	SIM	 	 
+m_STO2	Mw[REM] <-- Rs	IC11_8	 	 	 	 	 	 	 	 	 	 	PASS_A	 	 	 	 	CC_CMV	PAL	 	SIM	 	 	 	 	 	SIM	 	 	 	SIM	SIM	SIM	 	 
+m_STR1	REM <-- Rd + Ri	IC7_4	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	SIM	SIM	 	 	 	 	 	SIM	 	 
+m_STR2	Mw[REM] <-- Rs	IC11_8	 	 	 	 	 	IC11_8	 	 	 	 	PASS_A	 	 	 	 	CC_CMV	PAL	 	SIM	 	 	 	 	 	SIM	 	 	 	SIM	SIM	SIM	 	 
+m_LDB1	REM <-- Rs	 	 	 	 	 	 	 	 	 	 	 	PASS_A	 	 	 	 	 	 	 	 	 	 	 	 	SIM	SIM	 	 	 	 	 	SIM	 	 
+m_LDB2	Rd <-- Mb[REM]	 	 	 	 	 	 	IC7_4	 	 	SIM	MEM_D	 	 	 	 	 	CC_CMV	 	SIM	 	 	 	 	 	 	SIM	 	 	 	SIM	SIM	SIM	 	 
+m_STB1	REM <-- Rd	IC7_4	 	 	 	 	 	 	 	 	 	 	PASS_A	 	 	 	 	 	 	 	 	 	 	 	 	SIM	SIM	 	 	 	 	 	SIM	 	 
+m_STB2	Mb[REM] <-- Rs(7..0)	 	 	 	 	 	 	 	 	 	 	 	PASS_A	 	 	 	 	CC_CMV	 	 	SIM	 	 	 	 	 	SIM	 	 	 	SIM	SIM	SIM	 	 
+m_LDP1	REM <-- Rs	 	 	 	 	 	 	 	 	 	 	 	PASS_A	 	 	 	 	 	 	 	 	 	 	 	 	SIM	SIM	 	 	 	 	 	SIM	 	 
+m_LDP2	Rd <-- Mw[REM]	 	 	 	 	 	 	IC7_4	 	 	SIM	MEM_D	 	 	 	 	 	 	PAL	SIM	 	 	 	 	 	 	SIM	 	 	 	SIM	SIM	SIM	 	 
+m_STP1	REM <-- Rd	IC7_4	 	 	 	 	 	 	 	 	 	 	PASS_A	 	 	 	 	 	 	 	 	 	 	 	 	SIM	SIM	 	 	 	 	 	SIM	 	 
+m_STP2	Mw[REM] <-- Rs	 	 	 	 	 	 	 	 	 	 	 	PASS_A	 	 	 	 	 	PAL	 	SIM	 	 	 	 	 	SIM	 	 	 	SIM	SIM	SIM	 	 
+m_MOVL	Rd <--k(7){8} || k	 	 	 	 	Const	E8_16S	IC11_8	 	 	SIM	 	PASS_B	 	 	 	 	 	 	 	 	 	 	 	 	 	SIM	 	 	 	SIM	SIM	SIM	 	 
+m_MOVH	Rd(15..8) <-- k	IC11_8	 	 	 	Const	E8_16Z	IC11_8	 	 	SIM	 	LBTOHA	 	 	 	 	 	 	 	 	 	 	 	 	 	SIM	 	 	 	SIM	SIM	SIM	 	 
+m_MOVRR	Rd <-- Rs	 	 	 	 	 	 	IC7_4	 	 	SIM	 	PASS_A	 	 	 	 	 	 	 	 	 	 	 	 	 	SIM	 	 	 	SIM	SIM	SIM	 	 
+m_MOVAR	Ad <-- Rs	 	 	 	 	 	 	IC7_4	 	A	SIM	 	PASS_A	 	 	 	 	 	 	 	 	 	 	 	 	 	SIM	 	 	 	SIM	SIM	SIM	 	 
+m_MOVRA	Rd <-- As	 	 	A	 	 	 	IC7_4	 	 	SIM	 	PASS_A	 	 	 	 	 	 	 	 	 	 	 	 	 	SIM	 	 	 	SIM	SIM	SIM	 	 
+m_MOVRU	Rd <-- USP	REG_A	R12 (SP)	 	 	 	 	IC7_4	 	 	SIM	 	PASS_A	 	USP	 	 	 	 	 	 	 	 	 	 	 	SIM	 	 	 	SIM	SIM	SIM	 	 
+m_MOVUR	USP <-- Rs	 	 	 	 	 	 	REG_C	R12 (SP)	 	SIM	 	PASS_A	 	 	USP	 	 	 	 	 	 	 	 	 	 	SIM	 	 	 	SIM	SIM	SIM	 	 
+m_SWAPRR1	TEMP <-- Rd	IC7_4	 	 	 	 	 	 	 	 	 	 	PASS_A	 	 	 	 	 	 	 	 	 	 	 	 	 	SIM	 	 	 	 	 	SIM	 	 
+m_SWAPRR2	Rd <-- Rs	 	 	 	 	 	 	IC7_4	 	 	SIM	 	PASS_A	 	 	 	 	 	 	 	 	 	 	 	 	 	SIM	 	 	 	 	 	SIM	 	 
+m_SWAPRR3	Rs <-- TEMP	 	 	 	 	 	 	 	 	 	SIM	 	PASS_A	 	 	 	 	 	 	 	 	 	 	 	 	 	SIM	 	 	 	SIM	SIM	SIM	 	 
+m_SWAPRM1	REM <-- Rs	 	 	 	 	 	 	 	 	 	 	 	PASS_A	 	 	 	 	 	 	 	 	 	 	 	 	SIM	SIM	 	 	 	 	 	SIM	 	 
+m_SWAPRM2	TEMP <-- Mw[REM]	 	 	 	 	 	 	 	 	 	 	MEM_D	 	 	 	 	 	CC_CMV	PAL	SIM	 	 	 	 	 	 	SIM	 	 	 	 	 	SIM	 	 
+m_SWAPRM3	Mw[REM] <-- Rd	IC7_4	 	 	 	 	 	 	 	 	 	 	PASS_A	 	 	 	 	CC_CMV	PAL	 	SIM	 	 	 	 	 	SIM	 	 	 	 	 	SIM	 	 
+m_SWAPRM4	Rd <-- TEMP	 	 	 	 	 	 	IC7_4	 	 	SIM	 	PASS_A	 	 	 	 	 	 	 	 	 	 	 	 	 	SIM	 	 	 	SIM	SIM	SIM	 	 
+m_PUSHR1	REM <-- SP -2	REG_A	R12 (SP)	 	 	Const	DOIS	REG_C	 	 	 	 	SUB	 	 	 	 	 	 	 	 	 	 	 	 	SIM	SIM	 	 	 	 	 	SIM	 	 
+m_PUSHR2	Mw[REM] <-- Rd	IC7_4	 	 	 	 	 	 	 	 	 	 	PASS_A	 	 	 	 	CC_CMV	PAL	 	SIM	 	 	 	 	 	SIM	 	 	 	 	 	SIM	 	 
+m_PUSHR3	SP <-- SP - 2	REG_A	R12 (SP)	 	 	Const	DOIS	REG_C	R12 (SP)	 	SIM	 	SUB	 	 	 	 	 	 	 	 	 	 	 	 	 	SIM	 	 	 	SIM	SIM	SIM	 	 
+m_POPR1	REM <-- SP	REG_A	R12 (SP)	 	 	 	 	 	 	 	 	 	PASS_A	 	 	 	 	 	 	 	 	 	 	 	 	SIM	SIM	 	 	 	 	 	SIM	 	 
+m_POPR2	Rd <-- Mw[REM]	 	 	 	 	 	 	IC7_4	 	 	SIM	MEM_D	 	 	 	 	 	CC_CMV	PAL	SIM	 	 	 	 	 	 	SIM	 	 	 	 	 	SIM	 	 
+m_POPR3	SP <-- SP + 2	REG_A	R12 (SP)	 	 	Const	DOIS	REG_C	R12 (SP)	 	SIM	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	SIM	 	 	 	SIM	SIM	SIM	 	 
+m_JZ	Z=1: PC <-- EIS + 2*dif	 	 	 	EIS	Const	E8_16Sx2	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	JZ	 	 	SIM	SIM	 	 	SIM	SIM	SIM	 	 
+m_JNZ	Z=0: PC <-- EIS + 2*dif	 	 	 	EIS	Const	E8_16Sx2	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	JNZ	 	 	SIM	SIM	 	 	SIM	SIM	SIM	 	 
+m_JN	N=1: PC <-- EIS + 2*dif	 	 	 	EIS	Const	E8_16Sx2	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	JN	 	 	SIM	SIM	 	 	SIM	SIM	SIM	 	 
+m_JNN	N=0: PC <-- EIS + 2*dif	 	 	 	EIS	Const	E8_16Sx2	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	JNN	 	 	SIM	SIM	 	 	SIM	SIM	SIM	 	 
+m_JC	C=1: PC <-- EIS + 2*dif	 	 	 	EIS	Const	E8_16Sx2	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	JC	 	 	SIM	SIM	 	 	SIM	SIM	SIM	 	 
+m_JNC	C=0: PC <-- EIS + 2*dif	 	 	 	EIS	Const	E8_16Sx2	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	JNC	 	 	SIM	SIM	 	 	SIM	SIM	SIM	 	 
+m_JV	V=1: PC <-- EIS + 2*dif	 	 	 	EIS	Const	E8_16Sx2	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	SIM	SIM	 	 	SIM	SIM	SIM	 	 
+m_JNV	V=0: PC <-- EIS + 2*dif	 	 	 	EIS	Const	E8_16Sx2	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	SIM	SIM	 	 	SIM	SIM	SIM	 	 
+m_JP	(N | Z) =0: PC <-- EIS + 2*dif	 	 	 	EIS	Const	E8_16Sx2	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	JP	 	 	SIM	SIM	 	 	SIM	SIM	SIM	 	 
+m_JNP	(N | Z) =1: PC <-- EIS + 2*dif	 	 	 	EIS	Const	E8_16Sx2	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	JNP	 	 	SIM	SIM	 	 	SIM	SIM	SIM	 	 
+m_JA	A=1: PC <-- EIS + 2*dif	 	 	 	EIS	Const	E8_16Sx2	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	JA	 	 	SIM	SIM	 	 	SIM	SIM	SIM	 	 
+m_JNA	A=0: PC <-- EIS + 2*dif	 	 	 	EIS	Const	E8_16Sx2	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	JNA	 	 	SIM	SIM	 	 	SIM	SIM	SIM	 	 
+m_JLT	N ^ V =1 : PC <-- EIS + 2*dif	 	 	 	EIS	Const	E8_16Sx2	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	JLT	 	 	SIM	SIM	 	 	SIM	SIM	SIM	 	 
+m_JLE	((N ^ V) | Z)=1 : PC <-- EIS + 2*dif	 	 	 	EIS	Const	E8_16Sx2	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	JLE	 	 	SIM	SIM	 	 	SIM	SIM	SIM	 	 
+m_JGT	((N ^ V) | Z)=0 : PC <-- EIS + 2*dif	 	 	 	EIS	Const	E8_16Sx2	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	JGT	 	 	SIM	SIM	 	 	SIM	SIM	SIM	 	 
+m_JGE	N ^ V =0 : PC <-- EIS + 2*dif	 	 	 	EIS	Const	E8_16Sx2	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	JGE	 	 	SIM	SIM	 	 	SIM	SIM	SIM	 	 
+m_JMP	PC <-- EIS + 2*dif	 	 	 	EIS	Const	E12_16Sx2	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	SALTA	 	 	SIM	 	 	 	SIM	SIM	SIM	 	 
+m_JMPR	PC <-- Rs	 	 	 	 	 	 	 	 	 	 	 	PASS_A	 	 	 	 	 	 	 	 	 	 	SALTA	 	 	SIM	 	 	 	SIM	SIM	SIM	 	 
+m_CALLSP1	REM <-- SP -2	REG_A	R12 (SP)	 	 	Const	DOIS	 	 	 	 	 	SUB	 	 	 	 	 	 	 	 	 	 	 	 	SIM	SIM	 	 	 	 	 	SIM	 	 
+m_CALLSP2	Mw[REM] <-- RER	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	RER	CC_CMV	PAL	 	SIM	 	 	 	 	 	 	 	 	 	 	 	SIM	 	 
+m_CALLSP3	SP <-- SP - 2	REG_A	R12 (SP)	 	 	Const	DOIS	REG_C	R12 (SP)	 	SIM	 	SUB	 	 	 	 	 	 	 	 	 	 	 	 	 	SIM	 	 	 	 	 	SIM	 	 
+m_CALLSP4	PC  <-- EIS + 2*dif	 	 	 	EIS	Const	E12_16Sx2	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	SALTA	 	 	SIM	 	 	 	SIM	SIM	SIM	 	 
+m_CR1	REM <-- SP	REG_A	R12 (SP)	 	 	Const	DOIS	 	 	 	 	 	SUB	 	 	 	 	 	 	 	 	 	 	 	 	SIM	SIM	 	 	 	 	 	SIM	 	 
+m_CR2	Mw[REM] <-- RER	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	RER	CC_CMV	PAL	 	SIM	 	 	 	 	 	 	 	 	 	 	 	SIM	 	 
+m_CR3	SP <-- SP - 2	REG_A	R12 (SP)	 	 	Const	DOIS	REG_C	R12 (SP)	 	SIM	 	SUB	 	 	 	 	 	 	 	 	 	 	 	 	 	SIM	 	 	 	 	 	SIM	 	 
+m_CR4	PC  <-- Rs	 	 	 	 	 	 	 	 	 	 	 	PASS_A	 	 	 	 	 	 	 	 	 	 	SALTA	 	 	SIM	 	 	 	SIM	SIM	SIM	 	 
+m_CALLF1	LR <-- EIS + 2	 	 	 	EIS	Const	DOIS	REG_C	R11 (RL)	 	SIM	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	SIM	 	 
+m_CALLF2	PC  <-- EIS + 2*dif	 	 	 	EIS	Const	E12_16Sx2	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	SALTA	 	 	SIM	 	 	 	SIM	SIM	SIM	 	 
+m_CRF1	LR <-- EIS + 2	 	 	 	EIS	Const	DOIS	REG_C	R11 (RL)	 	SIM	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	SIM	 	 
+m_CRF2	PC  <-- Rs	 	 	 	 	 	 	 	 	 	 	 	PASS_A	 	 	 	 	 	 	 	 	 	 	SALTA	 	 	SIM	 	 	 	SIM	SIM	SIM	 	 
+m_RET1	REM <-- SP	REG_A	R12 (SP)	 	 	 	 	 	 	 	 	 	PASS_A	 	 	 	 	 	 	 	 	 	 	 	 	SIM	SIM	 	 	 	 	 	SIM	 	 
+m_RET2	SP <-- SP +2	REG_A	R12 (SP)	 	 	Const	DOIS	REG_C	R12 (SP)	 	SIM	 	 	 	 	 	 				 	 			 	 	SIM	 	 	 			SIM	 	 
+m_RET3	PC <-- Mw[REM]			 	 							 	 	 	 	 	 	CC_CMV	PAL	SIM	 	 	MEM	SALTA	 	 	SIM	 	 	 	SIM	SIM	SIM	 	 
+m_RETF	PC <-- RL	REG_A	R11 (RL)	 	 	 	 	 	 	 	 	 	PASS_A	 	 	 	 	 	 	 	 	 	 	SALTA	 	 	SIM	 	 	 	SIM	SIM	SIM	 	 
+m_SWE1	TEMP <-- RE	REG_A	R13 (RE)	 	 	 	 	 	 	 	 	 	PASS_A	 	 	 	 	 	 	 	 	 	 	 	 	 	SIM	 	 	 	 	 	SIM	 	 
+m_SWE2	"RE <-- (7:0;12:0;13:0), REM <-- SP-2"	REG_A	R12 (SP)	 	 	Const	DOIS	 	 	 	 	 	SUB	NPIEDE	 	 	 	 	 	 	 	 	 	 	 	SIM	SIM	 	 	 	 	 	SIM	 	 
+m_SWE3	Mw[REM] <-- RER	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	RER	CC_CMV	PAL	 	SIM	 	 	 	 	 	 	 	 	 	 	 	SIM	 	 
+m_SWE4	REM <-- SP - 4	REG_A	R12 (SP)	 	 	Const	QUATRO	 	 	 	 	 	SUB	 	 	 	 	 	 	 	 	 	 	 	 	SIM	SIM	 	 	 	 	 	SIM	 	 
+m_SWE5	Mw[REM] <-- TEMP	 	 	 	 	 	 	 	 	 	 	 	PASS_A	 	 	 	 	CC_CMV	PAL	 	SIM	 	 	 	 	 	SIM	 	 	 	 	 	SIM	 	 
+m_SWE6	REM <-- BTE + SWE_Index || 0	REG_A	R14 (BTE)	 	 	Const	E8_16Sx2	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	SIM	SIM	 	SOFTWARE	 	 	 	SIM	 	 
+m_SWE7	SP <-- SP - 4	REG_A	R12 (SP)	 	 	Const	QUATRO	REG_C	R12 (SP)	 	SIM	 	SUB	 	 	 	 				 	 			 	 	SIM	 	 	 			SIM	 	 
+m_SWE8	PC <-- Mw[REM]			 	 					 		 		 	 	 	 	CC_CMV	PAL	SIM	 	 	MEM	SALTA	 	 	SIM	 	 	 	SIM	SIM	SIM	 	 
+m_RFE1	REM <-- SP	REG_A	R12 (SP)	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	SIM	SIM	 	 	 	 	 	SIM	 	 
+m_RFE2	TEMP <-- Mw[REM]	 	 	 	 	 	 	 	 	 	 	MEM_D	 	 	 	 	 	CC_CMV	PAL	SIM	 	 	 	 	 	 	SIM	 	 	 	 	 	SIM	 	 
+m_RFE3	REM <-- SP + 2	REG_A	R12 (SP)	 	 	Const	DOIS	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	SIM	SIM	 	 	 	 	 	SIM	 	 
+m_RFE4	RE <-- TEMP	 	 	 	 	 	 	REG_C	R13 (RE)	 	SIM	 	PASS_A	 	 	 	 	 	 	 	 	 	 	 	 	 	SIM	 	 	 	 	 	SIM	 	 
+m_RFE5	SP <-- SP + 4	REG_A	R12 (SP)	 	 	Const	QUATRO	REG_C	R12 (SP)	 	SIM	 	 	 	 	 	 				 	 			 	 	SIM	 	 	 			SIM	 	 
+m_RFE6	PC <-- Mw[REM]											 	 	 	 	 	 	CC_CMV	PAL	SIM	 	 	MEM	SALTA	 	 	SIM	 	 	 	SIM	SIM	SIM	 	 
+m_NOP	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	SIM	 	 	 	SIM	SIM	SIM	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
