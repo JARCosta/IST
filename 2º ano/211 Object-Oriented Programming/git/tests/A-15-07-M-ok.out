@@ -1,0 +1,140 @@
+Menu Principal
+1 - Abrir
+2 - Guardar
+3 - Mostrar Data
+4 - Avançar Data
+5 - Gestão de Produtos
+6 - Gestão de Parceiros
+7 - Gestão de Transacções
+8 - Menu de Consultas
+9 - Ver Saldo Global
+0 - Sair
+Escolha uma opção: Gestão de Transacções
+1 - Visualizar
+2 - Registar desagregação
+3 - Registar venda
+4 - Registar compra
+5 - Receber pagamento de venda
+0 - Sair
+Escolha uma opção: Identificador do parceiro: Data limite de pagamento: Identificador do produto: Quantidade: Gestão de Transacções
+1 - Visualizar
+2 - Registar desagregação
+3 - Registar venda
+4 - Registar compra
+5 - Receber pagamento de venda
+0 - Sair
+Escolha uma opção: Identificador do parceiro: Data limite de pagamento: Identificador do produto: Quantidade: Gestão de Transacções
+1 - Visualizar
+2 - Registar desagregação
+3 - Registar venda
+4 - Registar compra
+5 - Receber pagamento de venda
+0 - Sair
+Escolha uma opção: Identificador do parceiro: Data limite de pagamento: Data limite de pagamento: Identificador do produto: Quantidade: Gestão de Transacções
+1 - Visualizar
+2 - Registar desagregação
+3 - Registar venda
+4 - Registar compra
+5 - Receber pagamento de venda
+0 - Sair
+Escolha uma opção: Menu Principal
+1 - Abrir
+2 - Guardar
+3 - Mostrar Data
+4 - Avançar Data
+5 - Gestão de Produtos
+6 - Gestão de Parceiros
+7 - Gestão de Transacções
+8 - Menu de Consultas
+9 - Ver Saldo Global
+0 - Sair
+Escolha uma opção: Gestão de Produtos
+1 - Visualizar todos os produtos
+2 - Visualizar todos os lotes
+3 - Visualizar lotes fornecidos por parceiro
+4 - Visualizar lotes de um dado produto
+0 - Sair
+Escolha uma opção: GARRAFA|200|5|ROLHA:1#SAL:5#VIDRO:10
+HIDROGENIO|200|5000
+ROLHA|2|0
+SAL|16|0
+VIDRO|10|0
+Gestão de Produtos
+1 - Visualizar todos os produtos
+2 - Visualizar todos os lotes
+3 - Visualizar lotes fornecidos por parceiro
+4 - Visualizar lotes de um dado produto
+0 - Sair
+Escolha uma opção: Menu Principal
+1 - Abrir
+2 - Guardar
+3 - Mostrar Data
+4 - Avançar Data
+5 - Gestão de Produtos
+6 - Gestão de Parceiros
+7 - Gestão de Transacções
+8 - Menu de Consultas
+9 - Ver Saldo Global
+0 - Sair
+Escolha uma opção: Gestão de Transacções
+1 - Visualizar
+2 - Registar desagregação
+3 - Registar venda
+4 - Registar compra
+5 - Receber pagamento de venda
+0 - Sair
+Escolha uma opção: Identificador do parceiro: Identificador do produto: Quantidade: Gestão de Transacções
+1 - Visualizar
+2 - Registar desagregação
+3 - Registar venda
+4 - Registar compra
+5 - Receber pagamento de venda
+0 - Sair
+Escolha uma opção: Identificador da transacção: DESAGREGAÇÃO|3|M1|GARRAFA|3|54|54|0|ROLHA:3:6#SAL:15:240#VIDRO:30:300
+Gestão de Transacções
+1 - Visualizar
+2 - Registar desagregação
+3 - Registar venda
+4 - Registar compra
+5 - Receber pagamento de venda
+0 - Sair
+Escolha uma opção: Menu Principal
+1 - Abrir
+2 - Guardar
+3 - Mostrar Data
+4 - Avançar Data
+5 - Gestão de Produtos
+6 - Gestão de Parceiros
+7 - Gestão de Transacções
+8 - Menu de Consultas
+9 - Ver Saldo Global
+0 - Sair
+Escolha uma opção: Gestão de Produtos
+1 - Visualizar todos os produtos
+2 - Visualizar todos os lotes
+3 - Visualizar lotes fornecidos por parceiro
+4 - Visualizar lotes de um dado produto
+0 - Sair
+Escolha uma opção: GARRAFA|200|2|ROLHA:1#SAL:5#VIDRO:10
+HIDROGENIO|200|5000
+ROLHA|2|3
+SAL|16|15
+VIDRO|10|30
+Gestão de Produtos
+1 - Visualizar todos os produtos
+2 - Visualizar todos os lotes
+3 - Visualizar lotes fornecidos por parceiro
+4 - Visualizar lotes de um dado produto
+0 - Sair
+Escolha uma opção: Menu Principal
+1 - Abrir
+2 - Guardar
+3 - Mostrar Data
+4 - Avançar Data
+5 - Gestão de Produtos
+6 - Gestão de Parceiros
+7 - Gestão de Transacções
+8 - Menu de Consultas
+9 - Ver Saldo Global
+0 - Sair
+Escolha uma opção: 

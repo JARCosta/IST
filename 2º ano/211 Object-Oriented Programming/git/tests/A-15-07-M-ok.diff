@@ -1,0 +1,19 @@
+*** tests/A-15-07-M-ok.out	2021-10-31 22:37:40.000000000 +0000
+--- tests/A-15-07-M-ok.outhyp	2021-11-19 22:41:45.388090489 +0000
+***************
+*** 90,96 ****
+  4 - Registar compra
+  5 - Receber pagamento de venda
+  0 - Sair
+! Escolha uma opção: Identificador da transacção: DESAGREGAÇÃO|3|M1|GARRAFA|3|54|54|0|ROLHA:3:6#SAL:15:240#VIDRO:30:300
+  Gestão de Transacções
+  1 - Visualizar
+  2 - Registar desagregação
+--- 90,96 ----
+  4 - Registar compra
+  5 - Receber pagamento de venda
+  0 - Sair
+! Escolha uma opção: Identificador da transacção: DESAGREGAÇÃO|3|M1|GARRAFA|3|648|648|0|ROLHA:3:6#SAL:15:240#VIDRO:30:300
+  Gestão de Transacções
+  1 - Visualizar
+  2 - Registar desagregação

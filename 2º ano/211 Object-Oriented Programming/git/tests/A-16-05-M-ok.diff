@@ -1,0 +1,52 @@
+*** tests/A-16-05-M-ok.out	2021-11-01 17:47:01.000000000 +0000
+--- tests/A-16-05-M-ok.outhyp	2021-11-19 22:41:46.704090533 +0000
+***************
+*** 46,59 ****
+  4 - Registar compra
+  5 - Receber pagamento de venda
+  0 - Sair
+! Escolha uma opção: Identificador da transacção: Gestão de Transacções
+  1 - Visualizar
+  2 - Registar desagregação
+  3 - Registar venda
+  4 - Registar compra
+  5 - Receber pagamento de venda
+  0 - Sair
+! Escolha uma opção: Identificador da transacção: Gestão de Transacções
+  1 - Visualizar
+  2 - Registar desagregação
+  3 - Registar venda
+--- 46,61 ----
+  4 - Registar compra
+  5 - Receber pagamento de venda
+  0 - Sair
+! Escolha uma opção: Identificador da transacção: Receber pagamento de venda: Operação inválida: A transacção '0' não existe.
+! Gestão de Transacções
+  1 - Visualizar
+  2 - Registar desagregação
+  3 - Registar venda
+  4 - Registar compra
+  5 - Receber pagamento de venda
+  0 - Sair
+! Escolha uma opção: Identificador da transacção: Receber pagamento de venda: Operação inválida: A transacção '1' não existe.
+! Gestão de Transacções
+  1 - Visualizar
+  2 - Registar desagregação
+  3 - Registar venda
+***************
+*** 95,101 ****
+  5 - Mostrar compras com parceiro
+  6 - Mostrar vendas (e desagregações) com parceiro
+  0 - Sair
+! Escolha uma opção: M1|Rohit Figueiredo|New Delhi, India|NORMAL|0|0|0|0
+  R1|António Figueiredo|Lisboa|NORMAL|0|0|0|0
+  S1|Toshiba|Tokyo, Japan|NORMAL|120|0|0|0
+  Gestão de Parceiros
+--- 97,103 ----
+  5 - Mostrar compras com parceiro
+  6 - Mostrar vendas (e desagregações) com parceiro
+  0 - Sair
+! Escolha uma opção: M1|Rohit Figueiredo|New Delhi, India|NORMAL|-80|0|0|0
+  R1|António Figueiredo|Lisboa|NORMAL|0|0|0|0
+  S1|Toshiba|Tokyo, Japan|NORMAL|120|0|0|0
+  Gestão de Parceiros

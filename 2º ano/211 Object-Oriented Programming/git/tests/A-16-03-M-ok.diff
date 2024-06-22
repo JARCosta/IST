@@ -1,0 +1,36 @@
+*** tests/A-16-03-M-ok.out	2021-11-01 17:27:24.000000000 +0000
+--- tests/A-16-03-M-ok.outhyp	2021-11-19 22:41:46.408090523 +0000
+***************
+*** 126,132 ****
+  5 - Mostrar compras com parceiro
+  6 - Mostrar vendas (e desagregações) com parceiro
+  0 - Sair
+! Escolha uma opção: Identificador do parceiro: S1|Toshiba|Tokyo, Japan|NORMAL|300|0|30|30
+  Gestão de Parceiros
+  1 - Mostrar parceiro
+  2 - Mostrar parceiros
+--- 126,132 ----
+  5 - Mostrar compras com parceiro
+  6 - Mostrar vendas (e desagregações) com parceiro
+  0 - Sair
+! Escolha uma opção: Identificador do parceiro: S1|Toshiba|Tokyo, Japan|NORMAL|600|0|30|30
+  Gestão de Parceiros
+  1 - Mostrar parceiro
+  2 - Mostrar parceiros
+***************
+*** 137,143 ****
+  0 - Sair
+  Escolha uma opção: M1|Rohit Figueiredo|New Delhi, India|NORMAL|0|0|0|0
+  R1|António Figueiredo|Lisboa|NORMAL|0|0|0|0
+! S1|Toshiba|Tokyo, Japan|NORMAL|300|0|30|30
+  Gestão de Parceiros
+  1 - Mostrar parceiro
+  2 - Mostrar parceiros
+--- 137,143 ----
+  0 - Sair
+  Escolha uma opção: M1|Rohit Figueiredo|New Delhi, India|NORMAL|0|0|0|0
+  R1|António Figueiredo|Lisboa|NORMAL|0|0|0|0
+! S1|Toshiba|Tokyo, Japan|NORMAL|600|0|30|30
+  Gestão de Parceiros
+  1 - Mostrar parceiro
+  2 - Mostrar parceiros

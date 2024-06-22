@@ -1,0 +1,20 @@
+*** tests/A-16-04-M-ok.out	2021-11-01 17:33:01.000000000 +0000
+--- tests/A-16-04-M-ok.outhyp	2021-11-19 22:41:46.536090527 +0000
+***************
+*** 31,37 ****
+  4 - Registar compra
+  5 - Receber pagamento de venda
+  0 - Sair
+! Escolha uma opção: Identificador da transacção: Gestão de Transacções
+  1 - Visualizar
+  2 - Registar desagregação
+  3 - Registar venda
+--- 31,38 ----
+  4 - Registar compra
+  5 - Receber pagamento de venda
+  0 - Sair
+! Escolha uma opção: Identificador da transacção: Receber pagamento de venda: Operação inválida: A transacção '0' não existe.
+! Gestão de Transacções
+  1 - Visualizar
+  2 - Registar desagregação
+  3 - Registar venda

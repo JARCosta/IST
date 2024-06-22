@@ -1,0 +1,55 @@
+Menu Principal
+1 - Abrir
+2 - Guardar
+3 - Mostrar Data
+4 - Avançar Data
+5 - Gestão de Produtos
+6 - Gestão de Parceiros
+7 - Gestão de Transacções
+8 - Menu de Consultas
+9 - Ver Saldo Global
+0 - Sair
+Escolha uma opção: Gestão de Parceiros
+1 - Mostrar parceiro
+2 - Mostrar parceiros
+3 - Registar parceiro
+4 - Activa/desactivar notificações de um produto
+5 - Mostrar compras com parceiro
+6 - Mostrar vendas (e desagregações) com parceiro
+0 - Sair
+Escolha uma opção: Identificador do parceiro: Nome do parceiro: Endereço do parceiro: Gestão de Parceiros
+1 - Mostrar parceiro
+2 - Mostrar parceiros
+3 - Registar parceiro
+4 - Activa/desactivar notificações de um produto
+5 - Mostrar compras com parceiro
+6 - Mostrar vendas (e desagregações) com parceiro
+0 - Sair
+Escolha uma opção: AAAAS1|Toshiba|Tokyo, Japan|NORMAL|0|0|0|0
+BBBBW2|Pedraria Fonseca|Oeiras, Portugal|NORMAL|0|0|0|0
+CCCCCCCCP1|Lages do Chão|Lisboa, Portugal|NORMAL|0|0|0|0
+DDDDDDP3|ObBrian Rocks|Koln, Germany|NORMAL|0|0|0|0
+EEEEEER2|Jorge Figueiredo|Lisboa, Portugal|NORMAL|0|0|0|0
+EFFFFF4|Filomena Figueiredo|Lisboa, Portugal|NORMAL|0|0|0|0
+RRRrrrrrr|RRR|rr@rrr|NORMAL|0|0|0|0
+Gestão de Parceiros
+1 - Mostrar parceiro
+2 - Mostrar parceiros
+3 - Registar parceiro
+4 - Activa/desactivar notificações de um produto
+5 - Mostrar compras com parceiro
+6 - Mostrar vendas (e desagregações) com parceiro
+0 - Sair
+Escolha uma opção: Menu Principal
+1 - Abrir
+2 - Guardar
+3 - Mostrar Data
+4 - Avançar Data
+5 - Gestão de Produtos
+6 - Gestão de Parceiros
+7 - Gestão de Transacções
+8 - Menu de Consultas
+9 - Ver Saldo Global
+0 - Sair
+Escolha uma opção: Número inválido!
+Escolha uma opção: 

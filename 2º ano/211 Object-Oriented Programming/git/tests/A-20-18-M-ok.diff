@@ -1,0 +1,36 @@
+*** tests/A-20-18-M-ok.out	2021-11-11 22:33:23.000000000 +0000
+--- tests/A-20-18-M-ok.outhyp	2021-11-19 22:41:51.904090709 +0000
+***************
+*** 156,162 ****
+  5 - Mostrar compras com parceiro
+  6 - Mostrar vendas (e desagregações) com parceiro
+  0 - Sair
+! Escolha uma opção: M1|Rohit Figueiredo|New Delhi, India|NORMAL|2400|0|2500|2508
+  M2|Toshiba|Tokyo, Japan|NORMAL|0|0|0|0
+  S1|Toshiba|Tokyo, Japan|NORMAL|0|0|0|0
+  Gestão de Parceiros
+--- 156,162 ----
+  5 - Mostrar compras com parceiro
+  6 - Mostrar vendas (e desagregações) com parceiro
+  0 - Sair
+! Escolha uma opção: M1|Rohit Figueiredo|New Delhi, India|SELECTION|21600|0|2500|2508
+  M2|Toshiba|Tokyo, Japan|NORMAL|0|0|0|0
+  S1|Toshiba|Tokyo, Japan|NORMAL|0|0|0|0
+  Gestão de Parceiros
+***************
+*** 226,232 ****
+  5 - Mostrar compras com parceiro
+  6 - Mostrar vendas (e desagregações) com parceiro
+  0 - Sair
+! Escolha uma opção: M1|Rohit Figueiredo|New Delhi, India|SELECTION|3400|0|2600|2608
+  M2|Toshiba|Tokyo, Japan|NORMAL|0|0|0|0
+  S1|Toshiba|Tokyo, Japan|NORMAL|0|0|0|0
+  Gestão de Parceiros
+--- 226,232 ----
+  5 - Mostrar compras com parceiro
+  6 - Mostrar vendas (e desagregações) com parceiro
+  0 - Sair
+! Escolha uma opção: M1|Rohit Figueiredo|New Delhi, India|SELECTION|22600|0|2600|2608
+  M2|Toshiba|Tokyo, Japan|NORMAL|0|0|0|0
+  S1|Toshiba|Tokyo, Japan|NORMAL|0|0|0|0
+  Gestão de Parceiros

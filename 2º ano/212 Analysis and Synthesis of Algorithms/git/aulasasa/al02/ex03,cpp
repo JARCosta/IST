@@ -1,0 +1,61 @@
+NULL = "NULL";
+
+typedef struct Node {
+    int id;
+    int pri;
+    struct Node* next;
+} *Lst;
+
+typedef struct QueueNode {
+    Lst hd;
+} *Queue;
+
+int ExtractQueue(Queue q) { //      T(n) = O(c) = i*O(1) = O(1)
+    if (q->hd == NULL) return -1;
+    Lst hd = q->hd;
+    q->hd = hd->next;
+    return hd->id;
+}
+
+Lst Remove(Lst lst, int id) {
+    if (lst == NULL) return lst;
+    if (lst->id == id) return lst->next;
+    Lst prev = lst;
+    Lst cur = lst->next;
+    while (cur != NULL) {       // T(n) = E(O(c)) = O(n)
+        if (cur->id == id) {
+            prev->next = cur->next;
+            break;
+        }
+        prev = cur;
+        cur = cur->next;
+    }
+    return lst;
+}
+
+Lst Insert (Lst lst, Lst node) {
+    if (lst == NULL) return node;
+    if (node->pri <= lst->pri) {
+        node->next = lst;
+        return node;
+    } else {
+        Lst ret = Insert(lst->next, node); // no limite percorre a lista toda
+                                           // T(n) = T(n-1)+ O(1)
+                                           // T(n-1)= T(n-2) + O(1) + O(1)
+                                           //                   1      1
+                                           //       = T(n-k) + 1 + 1 + 1 ....
+                                           //                      k vezes
+                                           // k = n :  T(0) + 1 + 1 + 1 + 1 = T(0) + n
+                                           //       = O(n)
+        lst->next = ret;
+        return lst;
+    }
+}
+
+void DecreaseKey (Queue q, Lst node, int pri) {
+    Lst lst = Remove(q->hd, node->id);  // chama revove (O(n))
+    node->pri = pri;                    // O(i)
+    lst = Insert(lst, node);            // chama insert (O(n))
+    q->hd = lst;                        // O(i)
+}   // T(n) = O(n) + O(i) + O(n) + O(i)
+    // T(n) = O(n)

@@ -1,0 +1,164 @@
+Menu Principal
+1 - Abrir
+2 - Guardar
+3 - Mostrar Data
+4 - Avançar Data
+5 - Gestão de Produtos
+6 - Gestão de Parceiros
+7 - Gestão de Transacções
+8 - Menu de Consultas
+9 - Ver Saldo Global
+0 - Sair
+Escolha uma opção: Gestão de Transacções
+1 - Visualizar
+2 - Registar desagregação
+3 - Registar venda
+4 - Registar compra
+5 - Receber pagamento de venda
+0 - Sair
+Escolha uma opção: Identificador do parceiro: Identificador do produto: Preço: Quantidade: Gestão de Transacções
+1 - Visualizar
+2 - Registar desagregação
+3 - Registar venda
+4 - Registar compra
+5 - Receber pagamento de venda
+0 - Sair
+Escolha uma opção: Identificador do parceiro: Identificador do produto: Preço: Quantidade: Gestão de Transacções
+1 - Visualizar
+2 - Registar desagregação
+3 - Registar venda
+4 - Registar compra
+5 - Receber pagamento de venda
+0 - Sair
+Escolha uma opção: Identificador do parceiro: Identificador do produto: Preço: Quantidade: Gestão de Transacções
+1 - Visualizar
+2 - Registar desagregação
+3 - Registar venda
+4 - Registar compra
+5 - Receber pagamento de venda
+0 - Sair
+Escolha uma opção: Identificador do parceiro: Identificador do produto: Preço: Quantidade: Gestão de Transacções
+1 - Visualizar
+2 - Registar desagregação
+3 - Registar venda
+4 - Registar compra
+5 - Receber pagamento de venda
+0 - Sair
+Escolha uma opção: Identificador do parceiro: Identificador do produto: Preço: Quantidade: Gestão de Transacções
+1 - Visualizar
+2 - Registar desagregação
+3 - Registar venda
+4 - Registar compra
+5 - Receber pagamento de venda
+0 - Sair
+Escolha uma opção: Identificador do parceiro: Identificador do produto: Preço: Quantidade: Gestão de Transacções
+1 - Visualizar
+2 - Registar desagregação
+3 - Registar venda
+4 - Registar compra
+5 - Receber pagamento de venda
+0 - Sair
+Escolha uma opção: Menu Principal
+1 - Abrir
+2 - Guardar
+3 - Mostrar Data
+4 - Avançar Data
+5 - Gestão de Produtos
+6 - Gestão de Parceiros
+7 - Gestão de Transacções
+8 - Menu de Consultas
+9 - Ver Saldo Global
+0 - Sair
+Escolha uma opção: Gestão de Parceiros
+1 - Mostrar parceiro
+2 - Mostrar parceiros
+3 - Registar parceiro
+4 - Activa/desactivar notificações de um produto
+5 - Mostrar compras com parceiro
+6 - Mostrar vendas (e desagregações) com parceiro
+0 - Sair
+Escolha uma opção: M1|Rohit Figueiredo|New Delhi, India|NORMAL|0|5000|0|0
+M2|Figueiredo|Porto, Portugal|NORMAL|0|1000|0|0
+S1|Toshiba|Tokyo, Japan|NORMAL|0|3000|0|0
+Gestão de Parceiros
+1 - Mostrar parceiro
+2 - Mostrar parceiros
+3 - Registar parceiro
+4 - Activa/desactivar notificações de um produto
+5 - Mostrar compras com parceiro
+6 - Mostrar vendas (e desagregações) com parceiro
+0 - Sair
+Escolha uma opção: Menu Principal
+1 - Abrir
+2 - Guardar
+3 - Mostrar Data
+4 - Avançar Data
+5 - Gestão de Produtos
+6 - Gestão de Parceiros
+7 - Gestão de Transacções
+8 - Menu de Consultas
+9 - Ver Saldo Global
+0 - Sair
+Escolha uma opção: Gestão de Produtos
+1 - Visualizar todos os produtos
+2 - Visualizar todos os lotes
+3 - Visualizar lotes fornecidos por parceiro
+4 - Visualizar lotes de um dado produto
+0 - Sair
+Escolha uma opção: GARRAFA|80|2100|VIDRO:1#ROLHA:1
+ROLHA|100|620
+VIDRO|100|560
+Gestão de Produtos
+1 - Visualizar todos os produtos
+2 - Visualizar todos os lotes
+3 - Visualizar lotes fornecidos por parceiro
+4 - Visualizar lotes de um dado produto
+0 - Sair
+Escolha uma opção: GARRAFA|M1|40|50
+GARRAFA|S1|20|50
+GARRAFA|S1|50|1000
+GARRAFA|S1|80|1000
+ROLHA|M1|10|100
+ROLHA|M1|20|500
+ROLHA|S1|100|20
+VIDRO|M1|30|500
+VIDRO|M1|40|50
+VIDRO|M2|100|10
+Gestão de Produtos
+1 - Visualizar todos os produtos
+2 - Visualizar todos os lotes
+3 - Visualizar lotes fornecidos por parceiro
+4 - Visualizar lotes de um dado produto
+0 - Sair
+Escolha uma opção: Identificador do produto: VIDRO|M1|30|500
+VIDRO|M1|40|50
+VIDRO|M2|100|10
+Gestão de Produtos
+1 - Visualizar todos os produtos
+2 - Visualizar todos os lotes
+3 - Visualizar lotes fornecidos por parceiro
+4 - Visualizar lotes de um dado produto
+0 - Sair
+Escolha uma opção: Menu Principal
+1 - Abrir
+2 - Guardar
+3 - Mostrar Data
+4 - Avançar Data
+5 - Gestão de Produtos
+6 - Gestão de Parceiros
+7 - Gestão de Transacções
+8 - Menu de Consultas
+9 - Ver Saldo Global
+0 - Sair
+Escolha uma opção: Ficheiro sem nome. Guardar ficheiro como: Menu Principal
+1 - Abrir
+2 - Guardar
+3 - Mostrar Data
+4 - Avançar Data
+5 - Gestão de Produtos
+6 - Gestão de Parceiros
+7 - Gestão de Transacções
+8 - Menu de Consultas
+9 - Ver Saldo Global
+0 - Sair
+Escolha uma opção: 

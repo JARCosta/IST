@@ -1,0 +1,2 @@
+#!/bin/sh
+scp -r E3/web/ ist199088@sigma.tecnico.ulisboa.pt:~/

@@ -1,0 +1,119 @@
+Menu Principal
+1 - Abrir
+2 - Guardar
+3 - Mostrar Data
+4 - Avançar Data
+5 - Gestão de Produtos
+6 - Gestão de Parceiros
+7 - Gestão de Transacções
+8 - Menu de Consultas
+9 - Ver Saldo Global
+0 - Sair
+Escolha uma opção: Gestão de Transacções
+1 - Visualizar
+2 - Registar desagregação
+3 - Registar venda
+4 - Registar compra
+5 - Receber pagamento de venda
+0 - Sair
+Escolha uma opção: Identificador do parceiro: Identificador do produto: Quantidade: Gestão de Transacções
+1 - Visualizar
+2 - Registar desagregação
+3 - Registar venda
+4 - Registar compra
+5 - Receber pagamento de venda
+0 - Sair
+Escolha uma opção: Identificador da transacção: DESAGREGAÇÃO|0|R1|GARRAFA|9|362|362|0|ROLHA:9:18#SAL:45:720#VIDRO:90:900
+Gestão de Transacções
+1 - Visualizar
+2 - Registar desagregação
+3 - Registar venda
+4 - Registar compra
+5 - Receber pagamento de venda
+0 - Sair
+Escolha uma opção: Menu Principal
+1 - Abrir
+2 - Guardar
+3 - Mostrar Data
+4 - Avançar Data
+5 - Gestão de Produtos
+6 - Gestão de Parceiros
+7 - Gestão de Transacções
+8 - Menu de Consultas
+9 - Ver Saldo Global
+0 - Sair
+Escolha uma opção: Gestão de Produtos
+1 - Visualizar todos os produtos
+2 - Visualizar todos os lotes
+3 - Visualizar lotes fornecidos por parceiro
+4 - Visualizar lotes de um dado produto
+0 - Sair
+Escolha uma opção: GARRAFA|400|4|ROLHA:1#SAL:5#VIDRO:10
+HIDROGENIO|200|5000
+ROLHA|20|1009
+SAL|26|1045
+VIDRO|30|1590
+Gestão de Produtos
+1 - Visualizar todos os produtos
+2 - Visualizar todos os lotes
+3 - Visualizar lotes fornecidos por parceiro
+4 - Visualizar lotes de um dado produto
+0 - Sair
+Escolha uma opção: GARRAFA|M1|400|4
+HIDROGENIO|S1|200|5000
+ROLHA|R1|2|9
+ROLHA|R1|2|500
+ROLHA|R1|20|500
+SAL|R1|16|45
+SAL|S1|16|500
+SAL|S1|26|500
+VIDRO|M1|10|500
+VIDRO|M1|20|500
+VIDRO|M1|30|500
+VIDRO|R1|10|90
+Gestão de Produtos
+1 - Visualizar todos os produtos
+2 - Visualizar todos os lotes
+3 - Visualizar lotes fornecidos por parceiro
+4 - Visualizar lotes de um dado produto
+0 - Sair
+Escolha uma opção: Menu Principal
+1 - Abrir
+2 - Guardar
+3 - Mostrar Data
+4 - Avançar Data
+5 - Gestão de Produtos
+6 - Gestão de Parceiros
+7 - Gestão de Transacções
+8 - Menu de Consultas
+9 - Ver Saldo Global
+0 - Sair
+Escolha uma opção: Gestão de Produtos
+1 - Visualizar todos os produtos
+2 - Visualizar todos os lotes
+3 - Visualizar lotes fornecidos por parceiro
+4 - Visualizar lotes de um dado produto
+0 - Sair
+Escolha uma opção: GARRAFA|400|4|ROLHA:1#SAL:5#VIDRO:10
+HIDROGENIO|200|5000
+ROLHA|20|1009
+SAL|26|1045
+VIDRO|30|1590
+Gestão de Produtos
+1 - Visualizar todos os produtos
+2 - Visualizar todos os lotes
+3 - Visualizar lotes fornecidos por parceiro
+4 - Visualizar lotes de um dado produto
+0 - Sair
+Escolha uma opção: Menu Principal
+1 - Abrir
+2 - Guardar
+3 - Mostrar Data
+4 - Avançar Data
+5 - Gestão de Produtos
+6 - Gestão de Parceiros
+7 - Gestão de Transacções
+8 - Menu de Consultas
+9 - Ver Saldo Global
+0 - Sair
+Escolha uma opção: 

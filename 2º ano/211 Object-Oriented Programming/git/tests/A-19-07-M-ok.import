@@ -1,0 +1,18 @@
+PARTNER|M2|Toshiba|Tokyo, Japan
+PARTNER|S1|Toshiba|Tokyo, Japan
+PARTNER|M1|Rohit Figueiredo|New Delhi, India
+BATCH_S|ROLHA|M1|2|75
+BATCH_S|VIDRO|M1|1|5
+BATCH_S|VIDRO|M1|2|5
+BATCH_S|VIDRO|M1|3|15
+BATCH_S|SAL|S1|40|500
+BATCH_M|GARRAFA|S1|13|2|0.1|ROLHA:10#VIDRO:5
+
+6
+
+2x(13)
+  (10x2+5x1)
+  (10x2+5x2)
+  (10x2+5x3)
+
+  (10x2+5x3)

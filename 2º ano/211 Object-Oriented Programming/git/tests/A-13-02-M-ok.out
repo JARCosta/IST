@@ -1,0 +1,72 @@
+Menu Principal
+1 - Abrir
+2 - Guardar
+3 - Mostrar Data
+4 - Avançar Data
+5 - Gestão de Produtos
+6 - Gestão de Parceiros
+7 - Gestão de Transacções
+8 - Menu de Consultas
+9 - Ver Saldo Global
+0 - Sair
+Escolha uma opção: Ficheiro a abrir: Menu Principal
+1 - Abrir
+2 - Guardar
+3 - Mostrar Data
+4 - Avançar Data
+5 - Gestão de Produtos
+6 - Gestão de Parceiros
+7 - Gestão de Transacções
+8 - Menu de Consultas
+9 - Ver Saldo Global
+0 - Sair
+Escolha uma opção: Gestão de Produtos
+1 - Visualizar todos os produtos
+2 - Visualizar todos os lotes
+3 - Visualizar lotes fornecidos por parceiro
+4 - Visualizar lotes de um dado produto
+0 - Sair
+Escolha uma opção: HIDROGENIO|2|5000
+ROLHA|2|500
+SAL|1|0
+VIDRO|1|500
+Gestão de Produtos
+1 - Visualizar todos os produtos
+2 - Visualizar todos os lotes
+3 - Visualizar lotes fornecidos por parceiro
+4 - Visualizar lotes de um dado produto
+0 - Sair
+Escolha uma opção: Menu Principal
+1 - Abrir
+2 - Guardar
+3 - Mostrar Data
+4 - Avançar Data
+5 - Gestão de Produtos
+6 - Gestão de Parceiros
+7 - Gestão de Transacções
+8 - Menu de Consultas
+9 - Ver Saldo Global
+0 - Sair
+Escolha uma opção: Consultas
+1 - Produtos com Preço Abaixo de Limite
+2 - Facturas pagas por parceiro
+0 - Sair
+Escolha uma opção: Preço: HIDROGENIO|S1|2|5000
+ROLHA|M1|2|500
+VIDRO|M1|1|500
+Consultas
+1 - Produtos com Preço Abaixo de Limite
+2 - Facturas pagas por parceiro
+0 - Sair
+Escolha uma opção: Menu Principal
+1 - Abrir
+2 - Guardar
+3 - Mostrar Data
+4 - Avançar Data
+5 - Gestão de Produtos
+6 - Gestão de Parceiros
+7 - Gestão de Transacções
+8 - Menu de Consultas
+9 - Ver Saldo Global
+0 - Sair
+Escolha uma opção: 

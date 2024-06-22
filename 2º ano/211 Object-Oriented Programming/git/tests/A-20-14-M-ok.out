@@ -1,0 +1,240 @@
+Menu Principal
+1 - Abrir
+2 - Guardar
+3 - Mostrar Data
+4 - Avançar Data
+5 - Gestão de Produtos
+6 - Gestão de Parceiros
+7 - Gestão de Transacções
+8 - Menu de Consultas
+9 - Ver Saldo Global
+0 - Sair
+Escolha uma opção: Ficheiro a abrir: Menu Principal
+1 - Abrir
+2 - Guardar
+3 - Mostrar Data
+4 - Avançar Data
+5 - Gestão de Produtos
+6 - Gestão de Parceiros
+7 - Gestão de Transacções
+8 - Menu de Consultas
+9 - Ver Saldo Global
+0 - Sair
+Escolha uma opção: Gestão de Transacções
+1 - Visualizar
+2 - Registar desagregação
+3 - Registar venda
+4 - Registar compra
+5 - Receber pagamento de venda
+0 - Sair
+Escolha uma opção: Identificador do parceiro: Data limite de pagamento: Identificador do produto: Quantidade: Gestão de Transacções
+1 - Visualizar
+2 - Registar desagregação
+3 - Registar venda
+4 - Registar compra
+5 - Receber pagamento de venda
+0 - Sair
+Escolha uma opção: Identificador da transacção: Gestão de Transacções
+1 - Visualizar
+2 - Registar desagregação
+3 - Registar venda
+4 - Registar compra
+5 - Receber pagamento de venda
+0 - Sair
+Escolha uma opção: Identificador da transacção: Gestão de Transacções
+1 - Visualizar
+2 - Registar desagregação
+3 - Registar venda
+4 - Registar compra
+5 - Receber pagamento de venda
+0 - Sair
+Escolha uma opção: Identificador da transacção: VENDA|2|M1|GARRAFA|23|230|207|8|0
+Gestão de Transacções
+1 - Visualizar
+2 - Registar desagregação
+3 - Registar venda
+4 - Registar compra
+5 - Receber pagamento de venda
+0 - Sair
+Escolha uma opção: Menu Principal
+1 - Abrir
+2 - Guardar
+3 - Mostrar Data
+4 - Avançar Data
+5 - Gestão de Produtos
+6 - Gestão de Parceiros
+7 - Gestão de Transacções
+8 - Menu de Consultas
+9 - Ver Saldo Global
+0 - Sair
+Escolha uma opção: Gestão de Parceiros
+1 - Mostrar parceiro
+2 - Mostrar parceiros
+3 - Registar parceiro
+4 - Activa/desactivar notificações de um produto
+5 - Mostrar compras com parceiro
+6 - Mostrar vendas (e desagregações) com parceiro
+0 - Sair
+Escolha uma opção: M1|Rohit Figueiredo|New Delhi, India|SELECTION|4170|0|440|417
+M2|Toshiba|Tokyo, Japan|SELECTION|2100|0|210|210
+S1|Toshiba|Tokyo, Japan|NORMAL|0|0|0|0
+Gestão de Parceiros
+1 - Mostrar parceiro
+2 - Mostrar parceiros
+3 - Registar parceiro
+4 - Activa/desactivar notificações de um produto
+5 - Mostrar compras com parceiro
+6 - Mostrar vendas (e desagregações) com parceiro
+0 - Sair
+Escolha uma opção: Menu Principal
+1 - Abrir
+2 - Guardar
+3 - Mostrar Data
+4 - Avançar Data
+5 - Gestão de Produtos
+6 - Gestão de Parceiros
+7 - Gestão de Transacções
+8 - Menu de Consultas
+9 - Ver Saldo Global
+0 - Sair
+Escolha uma opção: Gestão de Transacções
+1 - Visualizar
+2 - Registar desagregação
+3 - Registar venda
+4 - Registar compra
+5 - Receber pagamento de venda
+0 - Sair
+Escolha uma opção: Identificador do parceiro: Data limite de pagamento: Identificador do produto: Quantidade: Gestão de Transacções
+1 - Visualizar
+2 - Registar desagregação
+3 - Registar venda
+4 - Registar compra
+5 - Receber pagamento de venda
+0 - Sair
+Escolha uma opção: Identificador da transacção: VENDA|3|M1|GARRAFA|230|2300|2070|8
+Gestão de Transacções
+1 - Visualizar
+2 - Registar desagregação
+3 - Registar venda
+4 - Registar compra
+5 - Receber pagamento de venda
+0 - Sair
+Escolha uma opção: Identificador da transacção: Gestão de Transacções
+1 - Visualizar
+2 - Registar desagregação
+3 - Registar venda
+4 - Registar compra
+5 - Receber pagamento de venda
+0 - Sair
+Escolha uma opção: Menu Principal
+1 - Abrir
+2 - Guardar
+3 - Mostrar Data
+4 - Avançar Data
+5 - Gestão de Produtos
+6 - Gestão de Parceiros
+7 - Gestão de Transacções
+8 - Menu de Consultas
+9 - Ver Saldo Global
+0 - Sair
+Escolha uma opção: Gestão de Parceiros
+1 - Mostrar parceiro
+2 - Mostrar parceiros
+3 - Registar parceiro
+4 - Activa/desactivar notificações de um produto
+5 - Mostrar compras com parceiro
+6 - Mostrar vendas (e desagregações) com parceiro
+0 - Sair
+Escolha uma opção: M1|Rohit Figueiredo|New Delhi, India|SELECTION|24870|0|2740|2487
+M2|Toshiba|Tokyo, Japan|SELECTION|2100|0|210|210
+S1|Toshiba|Tokyo, Japan|NORMAL|0|0|0|0
+Gestão de Parceiros
+1 - Mostrar parceiro
+2 - Mostrar parceiros
+3 - Registar parceiro
+4 - Activa/desactivar notificações de um produto
+5 - Mostrar compras com parceiro
+6 - Mostrar vendas (e desagregações) com parceiro
+0 - Sair
+Escolha uma opção: Menu Principal
+1 - Abrir
+2 - Guardar
+3 - Mostrar Data
+4 - Avançar Data
+5 - Gestão de Produtos
+6 - Gestão de Parceiros
+7 - Gestão de Transacções
+8 - Menu de Consultas
+9 - Ver Saldo Global
+0 - Sair
+Escolha uma opção: Gestão de Transacções
+1 - Visualizar
+2 - Registar desagregação
+3 - Registar venda
+4 - Registar compra
+5 - Receber pagamento de venda
+0 - Sair
+Escolha uma opção: Identificador do parceiro: Data limite de pagamento: Identificador do produto: Quantidade: Gestão de Transacções
+1 - Visualizar
+2 - Registar desagregação
+3 - Registar venda
+4 - Registar compra
+5 - Receber pagamento de venda
+0 - Sair
+Escolha uma opção: Identificador da transacção: Gestão de Transacções
+1 - Visualizar
+2 - Registar desagregação
+3 - Registar venda
+4 - Registar compra
+5 - Receber pagamento de venda
+0 - Sair
+Escolha uma opção: Identificador da transacção: VENDA|4|M1|GARRAFA|4|40|36|7|0
+Gestão de Transacções
+1 - Visualizar
+2 - Registar desagregação
+3 - Registar venda
+4 - Registar compra
+5 - Receber pagamento de venda
+0 - Sair
+Escolha uma opção: Menu Principal
+1 - Abrir
+2 - Guardar
+3 - Mostrar Data
+4 - Avançar Data
+5 - Gestão de Produtos
+6 - Gestão de Parceiros
+7 - Gestão de Transacções
+8 - Menu de Consultas
+9 - Ver Saldo Global
+0 - Sair
+Escolha uma opção: Gestão de Parceiros
+1 - Mostrar parceiro
+2 - Mostrar parceiros
+3 - Registar parceiro
+4 - Activa/desactivar notificações de um produto
+5 - Mostrar compras com parceiro
+6 - Mostrar vendas (e desagregações) com parceiro
+0 - Sair
+Escolha uma opção: M1|Rohit Figueiredo|New Delhi, India|ELITE|25230|0|2780|2523
+M2|Toshiba|Tokyo, Japan|SELECTION|2100|0|210|210
+S1|Toshiba|Tokyo, Japan|NORMAL|0|0|0|0
+Gestão de Parceiros
+1 - Mostrar parceiro
+2 - Mostrar parceiros
+3 - Registar parceiro
+4 - Activa/desactivar notificações de um produto
+5 - Mostrar compras com parceiro
+6 - Mostrar vendas (e desagregações) com parceiro
+0 - Sair
+Escolha uma opção: Menu Principal
+1 - Abrir
+2 - Guardar
+3 - Mostrar Data
+4 - Avançar Data
+5 - Gestão de Produtos
+6 - Gestão de Parceiros
+7 - Gestão de Transacções
+8 - Menu de Consultas
+9 - Ver Saldo Global
+0 - Sair
+Escolha uma opção: 

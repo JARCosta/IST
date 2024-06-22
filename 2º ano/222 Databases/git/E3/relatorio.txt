@@ -1,0 +1,45 @@
+7.1-
+
+Criámos um índice para o nome e um para o tin na tabela retalhista.
+Para o nome o índice ajuda a filtrar os nomes distintos.
+Para o tin o índice ajuda na igualdade com o tin da tabela responsavel_por.
+create index nome_tin_index on retalhista(nome, tin)   
+
+
+Criámos um índice para o nome da categoria e um para o tin na tabela responsavel_por.
+Como são para 2 igualdades, o tin aparece primeiro porque terá mais valores.
+Para o tin o índice ajuda na igualdade com o tin da tabela retalhista.
+Para o nome da categoria o índice ajuda comparar com o pedido, "Frutos".
+create index tin_nomecat_index on responsavel_por(tin, nome_cat)
+
+
+
+7.2-
+
+Criámos um índice para o nome na tabela tem_categoria.
+Este índice é útil para a função GROUP BY e também para comprar com o nome da categoria da tabela produto.
+create index nome_index on tem_categoria(nome)                     
+
+
+Criámos um índice para categoria e um para a descrição do produto na tabela produto.
+Para a categoria o filtro ajuda na comparação com o nome em tem_categoria.
+Para a descrição é porque procuramos descrições começadas por "A", sabemos como começa a pesquisa no índice.
+create index cat_desc_incex on produto(cat, desc)
+
+
+
+7.1-
+
+Na tabela retalhista não há necessidade de criar um índice dado que o tin já é chave primária e, desse modo, já tem associado um índice do tipo Btree. No entanto, por se tratar de uma igualdade, o índice mais eficiente seria o hash.
+    create index tin_index on retalhista USING hash(tin);
+Também não há necessidade de criar um índice para o atributo nome pois o facto de ser único, pelas restrições de integridade, já lhe atribui um índice Btree.
+Para a tabela responsavel_por, sugerimos um índice hash para o atributo nome_cat, visto que é chave estrangeira e não cria índice e que é usado em igualdades.
+    create index nome_index on responsavel_por USING hash(nome_cat);
+
+
+7.2-
+
+Na tabela tem_categoria, sugerimos um índice no atributo nome para facilitar o GROUP BY e condição associada ao mesmo atributo. 
+    create index nome_index2 on tem_categoria(nome) USING btree;              
+Para a tabela produto, sugerimos a criação de um índice hash no atributo cat porque é mais seletivo que a desc e facilitará a igualdade 
+    create index cat_incex on produto USING hash(cat);                   

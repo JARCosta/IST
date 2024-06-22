@@ -1,0 +1,24 @@
+threads2.o: tests/threads2.c fs/operations.h fs/config.h fs/state.h
+threads6.o: tests/threads6.c fs/operations.h fs/config.h fs/state.h
+copy_to_external_simple.o: tests/copy_to_external_simple.c \
+ fs/operations.h fs/config.h fs/state.h
+write_10_blocks_spill.o: tests/write_10_blocks_spill.c \
+ tests/../fs/operations.h tests/../fs/config.h tests/../fs/state.h
+write_10_blocks_simple.o: tests/write_10_blocks_simple.c \
+ tests/../fs/operations.h tests/../fs/config.h tests/../fs/state.h
+threads4.o: tests/threads4.c fs/operations.h fs/config.h fs/state.h
+threads1.o: tests/threads1.c fs/operations.h fs/config.h fs/state.h
+threads8.o: tests/threads8.c tests/../fs/operations.h \
+ tests/../fs/config.h tests/../fs/state.h
+threads3.o: tests/threads3.c fs/operations.h fs/config.h fs/state.h
+asa.o: tests/asa.c fs/operations.h fs/config.h fs/state.h
+threads7.o: tests/threads7.c fs/operations.h fs/config.h fs/state.h
+write_more_than_10_blocks_simple.o: \
+ tests/write_more_than_10_blocks_simple.c tests/../fs/operations.h \
+ tests/../fs/config.h tests/../fs/state.h
+test1.o: tests/test1.c fs/operations.h fs/config.h fs/state.h
+threads5.o: tests/threads5.c fs/operations.h fs/config.h fs/state.h
+copy_to_external_errors.o: tests/copy_to_external_errors.c \
+ fs/operations.h fs/config.h fs/state.h
+state.o: fs/state.c fs/state.h fs/config.h
+operations.o: fs/operations.c fs/operations.h fs/config.h fs/state.h

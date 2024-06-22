@@ -1,0 +1,12 @@
+
+compilar
+javac -cp po-uilib.jar:. `find ggc -name *.java`
+
+correr
+java -cp po-uilib.jar:. ggc.app.App
+
+corer com import sab«ve.import
+java -cp po-uilib.jar:. -Dimport=save.import ggc.app.App
+
+correr testes do stor
+./runtests.sh
