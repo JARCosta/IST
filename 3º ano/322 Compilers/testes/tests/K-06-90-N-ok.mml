@@ -1,0 +1,9 @@
+auto f = (int x, int y) -> int {
+  x = 5;
+  return 1 + x + y;
+};
+begin
+  f(3, 4)!!
+  return 0;
+end
+

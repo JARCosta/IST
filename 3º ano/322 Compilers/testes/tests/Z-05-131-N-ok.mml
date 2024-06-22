@@ -1,0 +1,9 @@
+begin
+  int<int> f;
+  int<int> g;
+  g = f = (int i) -> int { return i + 1; };
+  g(1)!!
+  f(2)!!
+  return 0;
+end
+

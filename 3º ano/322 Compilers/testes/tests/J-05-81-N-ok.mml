@@ -1,0 +1,6 @@
+auto pi = () -> int { return 314; };
+begin
+  pi()!!
+  return 0;
+end
+

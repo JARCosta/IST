@@ -1,0 +1,6 @@
+auto f = () -> void { "ola"!! };
+begin
+  f();
+  return 0;
+end
+

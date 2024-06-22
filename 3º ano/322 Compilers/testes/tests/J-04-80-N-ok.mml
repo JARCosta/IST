@@ -1,0 +1,10 @@
+forward void<> f;
+public f = () -> void {
+  int x = 3;
+  x!!
+};
+begin
+  f();
+  return 0;
+end
+

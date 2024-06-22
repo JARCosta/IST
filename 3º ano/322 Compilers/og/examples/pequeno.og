@@ -1,0 +1,4 @@
+public int og() {
+  writeln 1;
+  return 999;
+}

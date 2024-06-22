@@ -1,0 +1,7 @@
+begin 
+	if (0) 
+		 "KO"!! 
+	else 
+		 "OK"!! 
+	return 0; 
+end

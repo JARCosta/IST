@@ -1,0 +1,6 @@
+int<> f = () -> int { return 2; };
+begin
+  f()!!
+  return 0;
+end
+

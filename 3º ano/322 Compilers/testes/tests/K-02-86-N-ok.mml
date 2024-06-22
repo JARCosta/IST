@@ -1,0 +1,6 @@
+auto f = (int x) -> void { x!! };
+begin
+  f(3);
+  return 0;
+end
+

@@ -1,0 +1,8 @@
+auto f = (int i) -> int { return i + 1; };
+auto g = (int n, int<int> fun) -> int { return fun(n); };
+begin
+  g(3, f)!!  // escreve 4
+  g(3, (int i) -> int { return i * 2; })!!  // escreve 6
+  return 0;
+end
+

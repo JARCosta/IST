@@ -1,0 +1,4 @@
+begin 
+	10!!    
+	return 0; 
+end

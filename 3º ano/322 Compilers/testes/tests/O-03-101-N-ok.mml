@@ -1,0 +1,7 @@
+auto f = (double y) -> double { return 9; };
+begin
+  f(10)!!
+  f(2)!!
+  return 0;
+end
+

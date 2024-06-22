@@ -1,0 +1,13 @@
+double<int> f = (int i) -> double { return i + 1.1; };
+int<double> g = (double d) -> int { return -1; };
+double<double<int>,int> h = (double<int> f, int i) -> double { return f(i); };
+begin
+  double<int> ff = g;
+  f(0)!!     // escreve 1.1
+  f = g;
+  f(0)!!     // escreve -1
+  ff(0)!!    // escreve -1
+  h(g, 0)!!  // escreve -1
+  return 0;
+end
+

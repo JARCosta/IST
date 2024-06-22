@@ -1,0 +1,10 @@
+void<> f;
+begin
+  f = () -> void {
+    int x = 3;
+    x!!
+  };
+  f();
+  return 0;
+end
+

@@ -1,0 +1,6 @@
+auto f = (int x) -> int { return 1 + x; };
+begin
+  f(3)!!
+  return 0;
+end
+

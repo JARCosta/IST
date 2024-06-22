@@ -1,0 +1,80 @@
+{
+  "savedWithSimulatorVersion" : "2.0.1",
+  "savedWithSimulatorBuildOn" : "2020-09-18  at  16:30:27",
+  "startAutomatically" : true,
+  "zoomScale" : 100,
+  "gridVisible" : true,
+  "window" : {
+    "X absolute" : 230,
+    "Y absolute" : 187,
+    "X relative" : 230,
+    "Y relative" : 187,
+    "width" : 1152,
+    "height" : 718,
+    "leftRightDividerLocation" : 281,
+    "topBottomDividerLocation" : 510
+  },
+  "connections" : [ {
+    "className" : "Connection",
+    "elementID" : 91,
+    "name" : "Connection_ID:91",
+    "numberOfBits" : 16,
+    "segments" : [ {
+      "sourcePinID" : 88,
+      "targetPinID" : 90,
+      "points" : [ {
+        "X" : 379,
+        "Y" : 127
+      }, {
+        "X" : 548,
+        "Y" : 127
+      } ]
+    } ]
+  } ],
+  "modules" : [ {
+    "className" : "ModuleHexaInput",
+    "elementID" : 87,
+    "name" : "Entrada hexadecimal",
+    "numberOfBits" : 16,
+    "moduleDelay" : 5,
+    "positionX" : 240,
+    "positionY" : 112,
+    "simGuiVisibleInSimulation" : false,
+    "nHexaDigits" : 4,
+    "outPin" : {
+      "className" : "TristateOutPin",
+      "elementID" : 88,
+      "name" : "OUT",
+      "numberOfBits" : 16,
+      "pinStartBit" : 0,
+      "connStartBit" : 0,
+      "pinSide" : "RIGHT",
+      "pinShape" : "RECT",
+      "pinConnectionID" : 91
+    }
+  }, {
+    "className" : "ModuleHexaDisplays",
+    "elementID" : 89,
+    "name" : "Displays",
+    "numberOfBits" : 16,
+    "moduleDelay" : 5,
+    "positionX" : 553,
+    "positionY" : 114,
+    "simGuiVisibleInSimulation" : false,
+    "nHexaDigits" : 4,
+    "onColor" : "Red",
+    "zColor" : "Black_White",
+    "inPin" : {
+      "className" : "InPin",
+      "elementID" : 90,
+      "name" : "IN",
+      "numberOfBits" : 16,
+      "pinStartBit" : 0,
+      "connStartBit" : 0,
+      "pinSide" : "LEFT",
+      "pinShape" : "RECT",
+      "pinConnectionID" : 91,
+      "pinValueFixed" : "-"
+    }
+  } ]
+}

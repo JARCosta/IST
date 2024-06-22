@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>World Choropleth Map</title>
+        <style>
+            body {
+                font-family: Arial;
+            }
+            .overlay {
+                display: flex;
+            }
+
+            .dashboard {
+                display: grid;
+                grid-template-columns: 0fr 1fr 1fr;
+                grid-template-rows: 0fr 1fr;
+                /* grid-template-columns: 1fr 1fr; */
+
+                grid-template-areas:
+                    "year tree parallel"
+                    "choro tree parallel"
+                    "stream stream parallel";
+                gap: 10px;
+                /* padding: 20px; */
+            }
+            .visualization {
+                padding: 0px;
+            }
+            #lineChart {
+                grid-area: year;
+                height: 40px;
+                /* width: fit-content; */
+            }
+            .container1 {
+                display: flex;
+                grid-area: choro;
+            }
+            .container2 {
+                grid-area: parallel;
+            }
+            .container3 {
+                grid-area: stream;
+            }
+            .container4 {
+                display: flex;
+                grid-area: tree;
+            }
+            #choroplethTitle {
+                text-align: center;
+            }
+            #parallelCoordinatesTitle {
+                text-align: center;
+            }
+        </style>
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <script src="https://unpkg.com/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
+        <script src="script.js"></script>
+        <script src="linked.js"></script>
+    </head>
+    <body onload="startDashboard()" style="background-color: #54738C;">
+        <div class="dashboard">
+            <div class="visualization" id="lineChart" style="background-color: #fff1;"></div>
+            
+            <div class="container1" style="background-color: #fff1; width: -webkit-fill-available;">
+                <div >
+                    <div id="choroplethTitle"></div>
+                    <div class="visualization" id="choropleth"></div>
+                </div>
+                <div class="visualization" id="choroplethLabel"></div>
+            </div>
+            
+            <div class="container2" style="background-color: #fff1; width: fit-content;">
+                <div >
+                    <div id="parallelCoordinatesTitle"></div>
+                    <div class="visualization" id="parallelCoordinates"></div>
+                </div>
+            </div>
+            
+            <div class="container3" style="background-color: #fff1; width: fit-content;">
+                <div class="visualization" id="streamGraph"></div>
+            </div>
+            
+            <div class="container4" style="background-color: #fff1; width: fit-content;">
+                <div class="visualization" id="treeMap"></div>
+                <div class="visualization" id="treeMapLabel"></div>
+            </div>
+
+
+        </div>
+    </body>
+</html>

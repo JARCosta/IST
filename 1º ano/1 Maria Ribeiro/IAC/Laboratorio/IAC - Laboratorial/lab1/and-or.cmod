@@ -1,0 +1,43 @@
+CNR2202990601001
+# Module
+# ******
+0 CM= "ist.ac.simulador.nucleo.SCompoundModule" Name= "Arch Root" Gui= "null" NB= 0 NM= 6 NC= 5
+  # Connections
+  0 C= "ist.ac.simulador.nucleo.SConnection" Name= "C1e22" NBits= 1 NSegments= 1
+    Po= "118b87e3266-0" Pd= "118b87ea544" Np= 2
+      X= 209 Y= 191
+      X= 261 Y= 223
+  1 C= "ist.ac.simulador.nucleo.SConnection" Name= "C5626" NBits= 1 NSegments= 1
+    Po= "118b87e43cb-0" Pd= "118b87ea564" Np= 2
+      X= 209 Y= 263
+      X= 261 Y= 243
+  2 C= "ist.ac.simulador.nucleo.SConnection" Name= "Cecdd" NBits= 1 NSegments= 1
+    Po= "118b8933b78-0" Pd= "118b87e75b8-0" Np= 2
+      X= 531 Y= 255
+      X= 557 Y= 255
+  3 C= "ist.ac.simulador.nucleo.SConnection" Name= "Cfa71" NBits= 1 NSegments= 1
+    Po= "118b87ea535-0" Pd= "118b8933b97" Np= 2
+      X= 371 Y= 223
+      X= 421 Y= 255
+  4 C= "ist.ac.simulador.nucleo.SConnection" Name= "C1440" NBits= 1 NSegments= 1
+    Po= "118b8945a08-0" Pd= "118b8933bc6" Np= 2
+      X= 209 Y= 335
+      X= 421 Y= 275
+  # Bridges
+  # Modules
+  0 M= "ist.ac.simulador.modules.ModuleToggleButtons" Name= "Interruptor 1" NPorts= 1 Conf= "1@3" X= 104 Y= 176
+       P= "OUT" CIn= 0 NBit= 1 StBit= 0 StConnBit= 0 PId= "118b87e3266-0" Fixed= -1
+  1 M= "ist.ac.simulador.modules.ModuleToggleButtons" Name= "Interruptor 2" NPorts= 1 Conf= "1@3" X= 104 Y= 248
+       P= "OUT" CIn= 1 NBit= 1 StBit= 0 StConnBit= 0 PId= "118b87e43cb-0" Fixed= -1
+  2 M= "ist.ac.simulador.modules.ModuleLeds" Name= "Leds" NPorts= 1 Conf= "1@3" X= 552 Y= 240
+ HIGHCOLOR= "Red" LOWCOLOR= "Black" ZCOLOR= "Grey"       P= "IN" CIn= 2 NBit= 1 StBit= 0 StConnBit= 0 PId= "118b87e75b8-0" Fixed= -1
+  3 M= "ist.ac.simulador.modules.ModuleAND" Name= "AND" NPorts= 3 Conf= "2x1@3" X= 256 Y= 208
+       P= "IN0" CIn= 0 NBit= 1 StBit= 0 StConnBit= 0 PId= "118b87ea544" Fixed= -1
+       P= "IN1" CIn= 1 NBit= 1 StBit= 0 StConnBit= 0 PId= "118b87ea564" Fixed= -1
+       P= "OUT" CIn= 3 NBit= 1 StBit= 0 StConnBit= 0 PId= "118b87ea535-0" Fixed= -1
+  4 M= "ist.ac.simulador.modules.ModuleOR" Name= "OR" NPorts= 3 Conf= "2x1@3" X= 416 Y= 240
+       P= "IN0" CIn= 3 NBit= 1 StBit= 0 StConnBit= 0 PId= "118b8933b97" Fixed= -1
+       P= "IN1" CIn= 4 NBit= 1 StBit= 0 StConnBit= 0 PId= "118b8933bc6" Fixed= -1
+       P= "OUT" CIn= 2 NBit= 1 StBit= 0 StConnBit= 0 PId= "118b8933b78-0" Fixed= -1
+  5 M= "ist.ac.simulador.modules.ModuleToggleButtons" Name= "Interruptor 3" NPorts= 1 Conf= "1@3" X= 104 Y= 320
+       P= "OUT" CIn= 4 NBit= 1 StBit= 0 StConnBit= 0 PId= "118b8945a08-0" Fixed= -1

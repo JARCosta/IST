@@ -1,0 +1,263 @@
+CNR2202990601001
+# Module
+# ******
+0 CM= "ist.ac.simulador.nucleo.SCompoundModule" Name= "Arch Root" Gui= "null" NB= 0 NM= 15 NC= 17
+  # Connections
+  0 C= "ist.ac.simulador.nucleo.SConnection" Name= "C49bd" NBits= 16 NSegments= 1
+    Po= "112386b8325-0" Pd= "112386a23f2-0" Np= 6
+      X= 153 Y= 375
+      X= 173 Y= 375
+      X= 173 Y= 310
+      X= 83 Y= 310
+      X= 83 Y= 223
+      X= 117 Y= 223
+  1 C= "ist.ac.simulador.nucleo.SConnection" Name= "Ce769" NBits= 16 NSegments= 7
+    Po= "112386a2579" Pd= "112386b488d" Np= 4
+      X= 227 Y= 103
+      X= 365 Y= 103
+      X= 365 Y= 159
+      X= 389 Y= 159
+    Po= "112386b3f84" Pd= "112386a2579" Np= 4
+      X= 397 Y= 371
+      X= 365 Y= 371
+      X= 365 Y= 103
+      X= 227 Y= 103
+    Po= "112386b9fa5-0" Pd= "112386a2579" Np= 4
+      X= 293 Y= 511
+      X= 268 Y= 511
+      X= 268 Y= 103
+      X= 227 Y= 103
+    Po= "112386b9fc5" Pd= "112386a2579" Np= 4
+      X= 293 Y= 531
+      X= 268 Y= 531
+      X= 268 Y= 103
+      X= 227 Y= 103
+    Po= "112386b9ff4" Pd= "112386a2579" Np= 4
+      X= 293 Y= 551
+      X= 268 Y= 551
+      X= 268 Y= 103
+      X= 227 Y= 103
+    Po= "112386a6725" Pd= "112386a2579" Np= 4
+      X= 925 Y= 135
+      X= 858 Y= 135
+      X= 858 Y= 103
+      X= 227 Y= 103
+    Po= "112386a7b98" Pd= "112386a2579" Np= 4
+      X= 925 Y= 327
+      X= 858 Y= 327
+      X= 858 Y= 103
+      X= 227 Y= 103
+  2 C= "ist.ac.simulador.nucleo.SConnection" Name= "C2c6a" NBits= 1 NSegments= 1
+    Po= "112386b59e2-0" Pd= "112386a66f7" Np= 2
+      X= 819 Y= 159
+      X= 925 Y= 159
+  3 C= "ist.ac.simulador.nucleo.SConnection" Name= "C1c53" NBits= 1 NSegments= 1
+    Po= "112386b487d-0" Pd= "112386b3553" Np= 2
+      X= 499 Y= 159
+      X= 541 Y= 159
+  4 C= "ist.ac.simulador.nucleo.SConnection" Name= "C3b11" NBits= 1 NSegments= 2
+    Po= "112386b3f74" Pd= "112386a2589" Np= 4
+      X= 397 Y= 351
+      X= 340 Y= 351
+      X= 340 Y= 123
+      X= 227 Y= 123
+    Po= "112386b3572" Pd= "112386a2589" Np= 6
+      X= 541 Y= 179
+      X= 521 Y= 179
+      X= 521 Y= 203
+      X= 340 Y= 203
+      X= 340 Y= 123
+      X= 227 Y= 123
+  5 C= "ist.ac.simulador.nucleo.SConnection" Name= "C4bc5" NBits= 1 NSegments= 1
+    Po= "112386b3543-0" Pd= "112386b59f2" Np= 2
+      X= 651 Y= 159
+      X= 709 Y= 159
+  6 C= "ist.ac.simulador.nucleo.SConnection" Name= "C5a54" NBits= 1 NSegments= 1
+    Po= "112386b3f65-0" Pd= "112386b61e1" Np= 2
+      X= 507 Y= 351
+      X= 709 Y= 351
+  7 C= "ist.ac.simulador.nucleo.SConnection" Name= "Cddc2" NBits= 1 NSegments= 2
+    Po= "112386b9fb5" Pd= "112386b5a01" Np= 6
+      X= 403 Y= 511
+      X= 557 Y= 511
+      X= 557 Y= 305
+      X= 677 Y= 305
+      X= 677 Y= 179
+      X= 709 Y= 179
+    Po= "112386b61f1" Pd= "112386b9fb5" Np= 4
+      X= 709 Y= 371
+      X= 557 Y= 371
+      X= 557 Y= 511
+      X= 403 Y= 511
+  8 C= "ist.ac.simulador.nucleo.SConnection" Name= "Cfbc0" NBits= 1 NSegments= 3
+    Po= "112386a6706" Pd= "112386a2598" Np= 4
+      X= 925 Y= 175
+      X= 880 Y= 175
+      X= 880 Y= 223
+      X= 227 Y= 223
+    Po= "112386a7b79" Pd= "112386a2598" Np= 4
+      X= 925 Y= 367
+      X= 880 Y= 367
+      X= 880 Y= 223
+      X= 227 Y= 223
+    Po= "112386be74d" Pd= "112386a2598" Np= 4
+      X= 709 Y= 671
+      X= 655 Y= 671
+      X= 655 Y= 223
+      X= 227 Y= 223
+  9 C= "ist.ac.simulador.nucleo.SConnection" Name= "Cc34b" NBits= 1 NSegments= 3
+    Po= "112386a6745" Pd= "112386a25a8" Np= 4
+      X= 925 Y= 195
+      X= 902 Y= 195
+      X= 902 Y= 243
+      X= 227 Y= 243
+    Po= "112386a7ba7" Pd= "112386a25a8" Np= 4
+      X= 925 Y= 387
+      X= 902 Y= 387
+      X= 902 Y= 243
+      X= 227 Y= 243
+    Po= "112386bdd0c" Pd= "112386a25a8" Np= 4
+      X= 709 Y= 535
+      X= 632 Y= 535
+      X= 632 Y= 243
+      X= 227 Y= 243
+  10 C= "ist.ac.simulador.nucleo.SConnection" Name= "C8c8" NBits= 1 NSegments= 1
+    Po= "112386bdd1c" Pd= "112386ba013" Np= 4
+      X= 709 Y= 495
+      X= 683 Y= 495
+      X= 683 Y= 571
+      X= 403 Y= 571
+  11 C= "ist.ac.simulador.nucleo.SConnection" Name= "C951b" NBits= 1 NSegments= 1
+    Po= "112386be73e-0" Pd= "112386ba042" Np= 2
+      X= 709 Y= 631
+      X= 403 Y= 631
+  12 C= "ist.ac.simulador.nucleo.SConnection" Name= "C9cad" NBits= 8 NSegments= 2
+    Po= "112386c67e7-0" Pd= "112386be75d" Np= 4
+      X= 561 Y= 671
+      X= 604 Y= 671
+      X= 604 Y= 651
+      X= 709 Y= 651
+    Po= "112386c8497-0" Pd= "112386be75d" Np= 4
+      X= 561 Y= 735
+      X= 604 Y= 735
+      X= 604 Y= 651
+      X= 709 Y= 651
+  13 C= "ist.ac.simulador.nucleo.SConnection" Name= "Cfcbe" NBits= 8 NSegments= 1
+    Po= "112386a6764" Pd= "112386a2569" Np= 6
+      X= 1035 Y= 135
+      X= 1055 Y= 135
+      X= 1055 Y= 62
+      X= 309 Y= 62
+      X= 309 Y= 163
+      X= 227 Y= 163
+  14 C= "ist.ac.simulador.nucleo.SConnection" Name= "Cb54f" NBits= 8 NSegments= 3
+    Po= "112386a7bc7" Pd= "112386a255a" Np= 6
+      X= 1035 Y= 327
+      X= 1057 Y= 327
+      X= 1057 Y= 273
+      X= 311 Y= 273
+      X= 311 Y= 183
+      X= 227 Y= 183
+    Po= "112386bdcfd-0" Pd= "112386a255a" Np= 6
+      X= 709 Y= 515
+      X= 603 Y= 515
+      X= 603 Y= 273
+      X= 311 Y= 273
+      X= 311 Y= 183
+      X= 227 Y= 183
+    Po= "112386be77c" Pd= "112386a255a" Np= 6
+      X= 819 Y= 631
+      X= 839 Y= 631
+      X= 839 Y= 273
+      X= 311 Y= 273
+      X= 311 Y= 183
+      X= 227 Y= 183
+  15 C= "ist.ac.simulador.nucleo.SConnection" Name= "Cb517" NBits= 8 NSegments= 1
+    Po= "112386bdd2b" Pd= "112386c2fc0-0" Np= 2
+      X= 819 Y= 495
+      X= 925 Y= 495
+  16 C= "ist.ac.simulador.nucleo.SConnection" Name= "C61df" NBits= 1 NSegments= 1
+    Po= "112386b61c2-0" Pd= "112386a7b59-0" Np= 2
+      X= 819 Y= 351
+      X= 925 Y= 351
+  # Bridges
+  # Modules
+  0 M= "ist.ac.simulador.modules.ModulePepe" Name= "Pepe" NPorts= 16 Conf= "0@100@20@21@20@1" CF= "C:\\Delgado\\ac\\AC-2006-2007\\trabalhos-práticos\\Lab7\\solucao-guiao7.asm" X= 112 Y= 88
+       P= "A15-A0" CIn= 1 NBit= 16 StBit= 0 StConnBit= 0 PId= "112386a2579" Fixed= -1
+       P= "BA" CIn= 4 NBit= 1 StBit= 0 StConnBit= 0 PId= "112386a2589" Fixed= -1
+       P= "BGT" CIn= -1 NBit= 1 StBit= 0 StConnBit= 0 PId= "112386a25c7" Fixed= -1
+       P= "BRQ" CIn= -1 NBit= 1 StBit= 0 StConnBit= 0 PId= "112386a25c7-0" Fixed= 0
+       P= "CLOCK" CIn= -1 NBit= 1 StBit= 0 StConnBit= 0 PId= "112386a254a" Fixed= -1
+       P= "DATA_I" CIn= 13 NBit= 8 StBit= 0 StConnBit= 0 PId= "112386a2569" Fixed= -1
+       P= "DATA_P" CIn= 14 NBit= 8 StBit= 0 StConnBit= 0 PId= "112386a255a" Fixed= -1
+       P= "INT0" CIn= -1 NBit= 1 StBit= 0 StConnBit= 0 PId= "112386a246f" Fixed= 0
+       P= "INT1" CIn= -1 NBit= 1 StBit= 0 StConnBit= 0 PId= "112386a249e" Fixed= 0
+       P= "INT2" CIn= -1 NBit= 1 StBit= 0 StConnBit= 0 PId= "112386a24bd" Fixed= 0
+       P= "INT3" CIn= -1 NBit= 1 StBit= 0 StConnBit= 0 PId= "112386a24ec" Fixed= 0
+       P= "INTA" CIn= -1 NBit= 1 StBit= 0 StConnBit= 0 PId= "112386a253a" Fixed= -1
+       P= "RD" CIn= 8 NBit= 1 StBit= 0 StConnBit= 0 PId= "112386a2598" Fixed= -1
+       P= "RESET" CIn= 0 NBit= 1 StBit= 0 StConnBit= 0 PId= "112386a23f2-0" Fixed= -1
+       P= "WAIT" CIn= -1 NBit= 1 StBit= 0 StConnBit= 0 PId= "112386a25b7" Fixed= 0
+       P= "WR" CIn= 9 NBit= 1 StBit= 0 StConnBit= 0 PId= "112386a25a8" Fixed= -1
+  1 M= "ist.ac.simulador.modules.ModuleRAMCsRdWr" Name= "RAM ímpar" NPorts= 5 Conf= "10x8@3" X= 920 Y= 120
+       P= "ADDRESS" CIn= 1 NBit= 10 StBit= 0 StConnBit= 1 PId= "112386a6725" Fixed= -1
+       P= "CS" CIn= 2 NBit= 1 StBit= 0 StConnBit= 0 PId= "112386a66f7" Fixed= -1
+       P= "DATA" CIn= 13 NBit= 8 StBit= 0 StConnBit= 0 PId= "112386a6764" Fixed= -1
+       P= "RD" CIn= 8 NBit= 1 StBit= 0 StConnBit= 0 PId= "112386a6706" Fixed= -1
+       P= "WR" CIn= 9 NBit= 1 StBit= 0 StConnBit= 0 PId= "112386a6745" Fixed= -1
+  2 M= "ist.ac.simulador.modules.ModuleRAMCsRdWr" Name= "RAM par" NPorts= 5 Conf= "10x8@3" X= 920 Y= 312
+       P= "ADDRESS" CIn= 1 NBit= 10 StBit= 0 StConnBit= 1 PId= "112386a7b98" Fixed= -1
+       P= "CS" CIn= 16 NBit= 1 StBit= 0 StConnBit= 0 PId= "112386a7b59-0" Fixed= -1
+       P= "DATA" CIn= 14 NBit= 8 StBit= 0 StConnBit= 0 PId= "112386a7bc7" Fixed= -1
+       P= "RD" CIn= 8 NBit= 1 StBit= 0 StConnBit= 0 PId= "112386a7b79" Fixed= -1
+       P= "WR" CIn= 9 NBit= 1 StBit= 0 StConnBit= 0 PId= "112386a7ba7" Fixed= -1
+  3 M= "ist.ac.simulador.modules.ModuleAND" Name= "AND" NPorts= 3 Conf= "2x1@0" X= 536 Y= 144
+       P= "IN0" CIn= 3 NBit= 1 StBit= 0 StConnBit= 0 PId= "112386b3553" Fixed= -1
+       P= "IN1" CIn= 4 NBit= 1 StBit= 0 StConnBit= 0 PId= "112386b3572" Fixed= -1
+       P= "OUT" CIn= 5 NBit= 1 StBit= 0 StConnBit= 0 PId= "112386b3543-0" Fixed= -1
+  4 M= "ist.ac.simulador.modules.ModuleAND" Name= "AND" NPorts= 3 Conf= "2x1@0" X= 392 Y= 336
+       P= "IN0" CIn= 4 NBit= 1 StBit= 0 StConnBit= 0 PId= "112386b3f74" Fixed= -1
+       P= "IN1" CIn= 1 NBit= 1 StBit= 0 StConnBit= 0 PId= "112386b3f84" Fixed= -1
+       P= "OUT" CIn= 6 NBit= 1 StBit= 0 StConnBit= 0 PId= "112386b3f65-0" Fixed= -1
+  5 M= "ist.ac.simulador.modules.ModuleNOT" Name= "NOT" NPorts= 2 Conf= "1x1@0" X= 384 Y= 144
+       P= "IN0" CIn= 1 NBit= 1 StBit= 0 StConnBit= 0 PId= "112386b488d" Fixed= -1
+       P= "OUT" CIn= 3 NBit= 1 StBit= 0 StConnBit= 0 PId= "112386b487d-0" Fixed= -1
+  6 M= "ist.ac.simulador.modules.ModuleOR" Name= "OR" NPorts= 3 Conf= "2x1@0" X= 704 Y= 144
+       P= "IN0" CIn= 5 NBit= 1 StBit= 0 StConnBit= 0 PId= "112386b59f2" Fixed= -1
+       P= "IN1" CIn= 7 NBit= 1 StBit= 0 StConnBit= 0 PId= "112386b5a01" Fixed= -1
+       P= "OUT" CIn= 2 NBit= 1 StBit= 0 StConnBit= 0 PId= "112386b59e2-0" Fixed= -1
+  7 M= "ist.ac.simulador.modules.ModuleOR" Name= "OR" NPorts= 3 Conf= "2x1@0" X= 704 Y= 336
+       P= "IN0" CIn= 6 NBit= 1 StBit= 0 StConnBit= 0 PId= "112386b61e1" Fixed= -1
+       P= "IN1" CIn= 7 NBit= 1 StBit= 0 StConnBit= 0 PId= "112386b61f1" Fixed= -1
+       P= "OUT" CIn= 16 NBit= 1 StBit= 0 StConnBit= 0 PId= "112386b61c2-0" Fixed= -1
+  8 M= "ist.ac.simulador.modules.ModuleReset" Name= "RESET" NPorts= 1 Conf= "16@20" X= 48 Y= 360
+       P= "OUT" CIn= 0 NBit= 16 StBit= 0 StConnBit= 0 PId= "112386b8325-0" Fixed= -1
+  9 M= "ist.ac.simulador.modules.ModuleDecoder" Name= "Decoder" NPorts= 12 Conf= "3@0" X= 288 Y= 496
+       P= "A0" CIn= 1 NBit= 1 StBit= 0 StConnBit= 11 PId= "112386b9fa5-0" Fixed= -1
+       P= "A1" CIn= 1 NBit= 1 StBit= 0 StConnBit= 12 PId= "112386b9fc5" Fixed= -1
+       P= "A2" CIn= 1 NBit= 1 StBit= 0 StConnBit= 13 PId= "112386b9ff4" Fixed= -1
+       P= "EN" CIn= -1 NBit= 1 StBit= 0 StConnBit= 0 PId= "112386ba051-0" Fixed= 1
+       P= "OUT0" CIn= 7 NBit= 1 StBit= 0 StConnBit= 0 PId= "112386b9fb5" Fixed= -1
+       P= "OUT1" CIn= -1 NBit= 1 StBit= 0 StConnBit= 0 PId= "112386b9fd4" Fixed= -1
+       P= "OUT2" CIn= -1 NBit= 1 StBit= 0 StConnBit= 0 PId= "112386ba003" Fixed= -1
+       P= "OUT3" CIn= 10 NBit= 1 StBit= 0 StConnBit= 0 PId= "112386ba013" Fixed= -1
+       P= "OUT4" CIn= -1 NBit= 1 StBit= 0 StConnBit= 0 PId= "112386ba022" Fixed= -1
+       P= "OUT5" CIn= -1 NBit= 1 StBit= 0 StConnBit= 0 PId= "112386ba032" Fixed= -1
+       P= "OUT6" CIn= 11 NBit= 1 StBit= 0 StConnBit= 0 PId= "112386ba042" Fixed= -1
+       P= "OUT7" CIn= -1 NBit= 1 StBit= 0 StConnBit= 0 PId= "112386ba051" Fixed= -1
+  10 M= "ist.ac.simulador.modules.ModuleDriverOut" Name= "POUT" NPorts= 4 Conf= "8@3" X= 704 Y= 480
+       P= "CS" CIn= 10 NBit= 1 StBit= 0 StConnBit= 0 PId= "112386bdd1c" Fixed= -1
+       P= "IN" CIn= 14 NBit= 8 StBit= 0 StConnBit= 0 PId= "112386bdcfd-0" Fixed= -1
+       P= "OUT" CIn= 15 NBit= 8 StBit= 0 StConnBit= 0 PId= "112386bdd2b" Fixed= -1
+       P= "WR" CIn= 9 NBit= 1 StBit= 0 StConnBit= 0 PId= "112386bdd0c" Fixed= -1
+  11 M= "ist.ac.simulador.modules.ModuleDriverIn" Name= "PIN" NPorts= 4 Conf= "8@3" X= 704 Y= 616
+       P= "CS" CIn= 11 NBit= 1 StBit= 0 StConnBit= 0 PId= "112386be73e-0" Fixed= -1
+       P= "IN" CIn= 12 NBit= 8 StBit= 0 StConnBit= 0 PId= "112386be75d" Fixed= -1
+       P= "OUT" CIn= 14 NBit= 8 StBit= 0 StConnBit= 0 PId= "112386be77c" Fixed= -1
+       P= "RD" CIn= 8 NBit= 1 StBit= 0 StConnBit= 0 PId= "112386be74d" Fixed= -1
+  12 M= "ist.ac.simulador.modules.ModuleHexaDisplay" Name= "Hexa Display" NPorts= 1 Conf= "4@3" X= 920 Y= 480
+       P= "IN" CIn= 15 NBit= 4 StBit= 0 StConnBit= 0 PId= "112386c2fc0-0" Fixed= -1
+  13 M= "ist.ac.simulador.modules.ModulePushButtons" Name= "Push Buttons" NPorts= 1 Conf= "1@3" X= 456 Y= 656
+       P= "OUT" CIn= 12 NBit= 1 StBit= 0 StConnBit= 1 PId= "112386c67e7-0" Fixed= -1
+  14 M= "ist.ac.simulador.modules.ModuleRTClock" Name= "RTClock" NPorts= 1 Conf= "1@500" X= 456 Y= 720
+       P= "OUT" CIn= 12 NBit= 1 StBit= 0 StConnBit= 0 PId= "112386c8497-0" Fixed= -1

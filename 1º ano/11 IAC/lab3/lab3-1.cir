@@ -1,0 +1,136 @@
+{
+  "savedWithSimulatorVersion" : "2.0.1",
+  "savedWithSimulatorBuildOn" : "2020-09-18  at  11:03:43",
+  "startAutomatically" : true,
+  "zoomScale" : 100,
+  "gridVisible" : true,
+  "window" : {
+    "X absolute" : 333,
+    "Y absolute" : 194,
+    "X relative" : 333,
+    "Y relative" : 194,
+    "width" : 1110,
+    "height" : 708,
+    "leftRightDividerLocation" : 281,
+    "topBottomDividerLocation" : 524
+  },
+  "connections" : [ {
+    "className" : "Connection",
+    "elementID" : 5,
+    "name" : "Connection_ID:5",
+    "numberOfBits" : 4,
+    "segments" : [ {
+      "sourcePinID" : 4,
+      "targetPinID" : 1,
+      "points" : [ {
+        "X" : 173,
+        "Y" : 223
+      }, {
+        "X" : 251,
+        "Y" : 223
+      } ]
+    } ]
+  }, {
+    "className" : "Connection",
+    "elementID" : 8,
+    "name" : "Connection_ID:8",
+    "numberOfBits" : 4,
+    "segments" : [ {
+      "sourcePinID" : 2,
+      "targetPinID" : 7,
+      "points" : [ {
+        "X" : 349,
+        "Y" : 223
+      }, {
+        "X" : 459,
+        "Y" : 223
+      } ]
+    } ]
+  } ],
+  "modules" : [ {
+    "className" : "ModuleKeypad",
+    "elementID" : 0,
+    "name" : "Teclado",
+    "numberOfBits" : 4,
+    "moduleDelay" : 5,
+    "positionX" : 256,
+    "positionY" : 208,
+    "simGuiVisibleInSimulation" : false,
+    "columns" : 4,
+    "key numbers radix" : "Hexadecimal",
+    "key color" : "Default",
+    "key numbers color" : "Black",
+    "key width" : 30,
+    "key height" : 30,
+    "key gap" : 2,
+    "inPin" : {
+      "className" : "InPin",
+      "elementID" : 1,
+      "name" : "IN",
+      "numberOfBits" : 4,
+      "pinStartBit" : 0,
+      "connStartBit" : 0,
+      "pinSide" : "LEFT",
+      "pinShape" : "RECT",
+      "pinConnectionID" : 5,
+      "pinValueFixed" : "-"
+    },
+    "outPin" : {
+      "className" : "OutPin",
+      "elementID" : 2,
+      "name" : "OUT",
+      "numberOfBits" : 4,
+      "pinStartBit" : 0,
+      "connStartBit" : 0,
+      "pinSide" : "RIGHT",
+      "pinShape" : "RECT",
+      "pinConnectionID" : 8
+    }
+  }, {
+    "className" : "ModuleToggleButtons",
+    "elementID" : 3,
+    "name" : "Interruptores",
+    "numberOfBits" : 4,
+    "moduleDelay" : 5,
+    "positionX" : 80,
+    "positionY" : 208,
+    "simGuiVisibleInSimulation" : false,
+    "highColor" : "Red",
+    "lowColor" : "Black",
+    "outPin" : {
+      "className" : "OutPin",
+      "elementID" : 4,
+      "name" : "OUT",
+      "numberOfBits" : 4,
+      "pinStartBit" : 0,
+      "connStartBit" : 0,
+      "pinSide" : "RIGHT",
+      "pinShape" : "RECT",
+      "pinConnectionID" : 5
+    }
+  }, {
+    "className" : "ModuleLeds",
+    "elementID" : 6,
+    "name" : "Leds",
+    "numberOfBits" : 4,
+    "moduleDelay" : 5,
+    "positionX" : 464,
+    "positionY" : 208,
+    "simGuiVisibleInSimulation" : false,
+    "highColor" : "Red",
+    "lowColor" : "Black",
+    "zColor" : "Black_White",
+    "inPin" : {
+      "className" : "InPin",
+      "elementID" : 7,
+      "name" : "IN",
+      "numberOfBits" : 4,
+      "pinStartBit" : 0,
+      "connStartBit" : 0,
+      "pinSide" : "LEFT",
+      "pinShape" : "RECT",
+      "pinConnectionID" : 8,
+      "pinValueFixed" : "-"
+    }
+  } ]
+}

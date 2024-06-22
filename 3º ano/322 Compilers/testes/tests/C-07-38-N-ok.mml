@@ -1,0 +1,6 @@
+int x;                  
+begin 
+	x = -2; 
+	1 + -x * 3!!       
+	return 0; 
+end

@@ -1,0 +1,7 @@
+auto f = () -> int<int> { return (int i) -> int { return i + 1; }; };
+begin
+  int<int> g = f();
+  g(1)!!
+  return 0;
+end
+

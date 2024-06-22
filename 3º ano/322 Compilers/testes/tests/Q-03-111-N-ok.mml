@@ -1,0 +1,8 @@
+double r = 6.1E1;
+begin
+  [double] p = null;
+  p = r?;
+  p[0]!!
+  return 0;
+end
+

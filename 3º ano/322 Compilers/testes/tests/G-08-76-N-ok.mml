@@ -1,0 +1,5 @@
+auto f = () -> double { return 1.1; };
+begin
+  sizeof(f())!!
+end
+

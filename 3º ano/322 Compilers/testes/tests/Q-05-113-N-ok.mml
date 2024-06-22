@@ -1,0 +1,7 @@
+double r = 6.1E1;
+public main = ([double] p) -> double { return p[0]; };
+begin
+  main(r?)!!
+  return 0;
+end
+

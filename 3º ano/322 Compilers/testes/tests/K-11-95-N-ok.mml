@@ -1,0 +1,14 @@
+forward int<int> g;
+auto f = (string s) -> int {
+  s!!
+  return 10;
+};
+auto g = (int n) -> int {
+  n!!
+  return 10;
+};
+begin
+  f("ola");
+  return 0;
+end
+

@@ -1,0 +1,9 @@
+auto f = () -> void { 
+  int main = 1;
+  2 * main + main!!
+};
+begin
+  f();
+  return 0;
+end
+

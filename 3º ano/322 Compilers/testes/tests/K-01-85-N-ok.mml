@@ -1,0 +1,11 @@
+public int x = 10;
+auto f = () -> void {
+  int x = 3;
+  x!!
+};
+begin
+  f();
+  x!!
+  return 0;
+end
+

@@ -1,0 +1,11 @@
+auto f = (int i) -> int { return i + 1; };
+auto g = (int n, int<int> fun) -> int { return fun(n); };
+auto h = (int n, int<int> f1, int<int> f2) -> int { return f1(f2(n)); };
+begin
+  g(3, f)!!  // escreve 4
+  g(3, (int i) -> int { return i * 2; })!!  // escreve 6
+  g(((int i) -> int { return 7 + i; })(8), (int i) -> int { return i * 2; })!!  // escreve 30
+  h(3, (int n) -> int { return n + 4; }, (int n) -> int { return 7 * n; })!!  // escreve 25
+  return 0;
+end
+

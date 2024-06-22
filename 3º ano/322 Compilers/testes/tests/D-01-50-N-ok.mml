@@ -1,0 +1,10 @@
+begin
+  if (0) 
+    "KO"!!
+  elif (1)
+    "elif"!!
+  else
+    "OK"!!
+  return 0;
+end
+

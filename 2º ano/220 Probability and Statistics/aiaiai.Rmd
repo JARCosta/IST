@@ -1,0 +1,55 @@
+---
+title: "Exercício 2"
+author: "Joao Andre Roque Costa"
+date: "`r format(Sys.Date(), '%d/%m/%Y')`"
+output:
+  word_document: default
+  html_document:
+    theme: null
+    highlight: pygments
+  pdf_document: default
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = TRUE, comment = '', out.width="50%", fig.align = 'center')
+
+library(ggplot2)
+library(readxl)
+theme_set(theme_light(base_size = 12)) # mudar aqui o tema padrÃ£o do ggplot
+```
+
+```{css, echo = FALSE}
+.section {column-count: 1; column-gap: 2em; column-fill: auto; page-break-after: always;}
+body {font-size: 12px;}
+div.sourceCode {margin: 0.2em 0;}
+pre {padding: 2px; font-size: 95%; border: 1px solid #cacaca;}
+p, ul, ol, pre {margin: 5px 0;}
+pre.sourceCode {background-color: #f4f4f4; border: none;}
+@media print {h1, .title, .author, .date {display: none;}}
+```
+
+
+```{r, echo=TRUE, warnings = FALSE}
+source <- read_excel("C:/Users/João Roque Costa/Downloads/EsperancaVida.xlsx", col_names = FALSE)
+source <- source[c(6:67),c(1:103)]
+
+graph <- c(source[c(44:51), c(1,42,53,59,76,87,93)])
+graph <- sapply(graph, as.numeric)
+colnames(graph) <- c("Anos","BT.H","HU.H","MT.H","BT.M","HU.M","MT.M")
+dataFrame <- as.data.frame(graph)
+
+tab <- data.frame(
+  Anos = rep(c(dataFrame$Anos), 2),
+  Países = rep(c("Bulgaria", "Hungria", "Malta"), each = 16),
+  Gender = rep(c("Male", "Female"), each = 8),
+  Valores = c(dataFrame$BT.H, dataFrame$BT.M, dataFrame$HU.H, dataFrame$HU.M,dataFrame$MT.H,dataFrame$MT.M)
+)
+
+ggplot(tab, aes(x = Anos)) +
+  geom_point(aes(y = Valores, colour = Países, shape = Gender), size = 3) +
+  geom_line(aes(y = Valores, colour = Países, linetype = Gender), size = 1)
+
+```
+
+# COMENTARIO 
+Observamos que em geral os valores da esperança media de vida subiram ao longo dos anos, onde as mulheres obtiveram consistentemente valores superiores aos homens.

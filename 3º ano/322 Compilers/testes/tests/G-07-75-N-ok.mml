@@ -1,0 +1,5 @@
+auto f = () -> void { 1.1!! };
+begin
+  sizeof(f)!!
+end
+

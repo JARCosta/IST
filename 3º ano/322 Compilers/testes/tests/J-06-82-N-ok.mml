@@ -1,0 +1,6 @@
+foreign int<> argc;
+begin
+  argc()!!
+  return 0;
+end
+

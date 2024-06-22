@@ -1,0 +1,16 @@
+begin
+  if (0) 
+     "KO"!!
+  elif (0)
+     "elif1"!!
+  elif (0)
+     "elif2"!!
+  elif (0)
+     "elif3"!!
+  elif (0)
+     "elif4"!!
+  else
+     "OK"!!
+  return 0;
+end
+

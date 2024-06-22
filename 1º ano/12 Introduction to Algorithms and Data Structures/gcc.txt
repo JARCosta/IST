@@ -1,0 +1,2 @@
+gcc -ansi -pedantic -Wall -Wextra -Werror ex**.c
+git pull https://github.com/pedroreissantos/iaed21

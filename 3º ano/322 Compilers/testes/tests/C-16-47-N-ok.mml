@@ -1,0 +1,6 @@
+int x = 0;  
+int y = 1; 
+begin 
+	~ (x == y) == x!!            
+	return 0; 
+end

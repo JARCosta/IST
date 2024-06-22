@@ -1,0 +1,7 @@
+auto f = (int x, double y) -> double { return y + x; };
+begin
+  f(3, 10)!!
+  f(2,  3)!!
+  return 0;
+end
+

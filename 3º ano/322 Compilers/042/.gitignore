@@ -1,0 +1,9 @@
+*.o
+*.asm
+*.xml
+mml
+.auto/*.h
+*.output
+*.tab.c
+*.tab.h
+mml_scanner.cpp

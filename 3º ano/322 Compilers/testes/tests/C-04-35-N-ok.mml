@@ -1,0 +1,6 @@
+int x;                  
+begin 
+	x = 4;  
+	x!!                
+	return 0; 
+end

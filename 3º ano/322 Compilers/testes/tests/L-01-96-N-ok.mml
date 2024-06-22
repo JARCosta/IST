@@ -1,0 +1,15 @@
+auto f = (int i) -> int {
+  int n;
+  if (i == 0) 
+     n = 0;
+  else {
+     n = i + @(i - 1);
+     return n;
+  }
+  return 9;
+};
+begin
+  f(3)!!
+  return 0;
+end
+

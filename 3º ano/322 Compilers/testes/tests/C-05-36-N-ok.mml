@@ -1,0 +1,8 @@
+int x;      
+int y;     
+begin 
+	x = 4;  
+	y = x + 2;   
+	y!! 
+	return 0; 
+end

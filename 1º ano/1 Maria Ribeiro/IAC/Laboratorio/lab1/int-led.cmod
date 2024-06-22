@@ -1,0 +1,15 @@
+CNR2202990601001
+# Module
+# ******
+0 CM= "ist.ac.simulador.nucleo.SCompoundModule" Name= "Arch Root" Gui= "null" NB= 0 NM= 2 NC= 1
+  # Connections
+  0 C= "ist.ac.simulador.nucleo.SConnection" Name= "C12e9" NBits= 4 NSegments= 1
+    Po= "118b89a3730-0" Pd= "118b89a61ab-0" Np= 2
+      X= 193 Y= 175
+      X= 301 Y= 175
+  # Bridges
+  # Modules
+  0 M= "ist.ac.simulador.modules.ModuleToggleButtons" Name= "Interruptor" NPorts= 1 Conf= "4@3" X= 88 Y= 160
+       P= "OUT" CIn= 0 NBit= 4 StBit= 0 StConnBit= 0 PId= "118b89a3730-0" Fixed= -1
+  1 M= "ist.ac.simulador.modules.ModuleLeds" Name= "Leds" NPorts= 1 Conf= "4@3" X= 296 Y= 160
+       P= "IN" CIn= 0 NBit= 4 StBit= 0 StConnBit= 0 PId= "118b89a61ab-0" Fixed= -1

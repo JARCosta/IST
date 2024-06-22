@@ -1,0 +1,22 @@
+forward int<int> g;
+auto f = (int i) -> int {
+  int n = 9;
+  if (i == 0) 
+    n = 0;
+  else
+    n = i + g(i - 1);
+  return n;
+};
+auto g = (int i) -> int {
+  int n = 9;
+  if (i == 0)
+    n = 0;
+  else
+    n = i + f(i - 1);
+  return n;
+};
+begin
+  f(3)!!
+  return 0;
+end
+

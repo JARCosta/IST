@@ -1,0 +1,13 @@
+int x = 10;
+int y = 3;
+int z = 30;
+auto f = () -> int {
+  z = 7;
+  return z;
+};
+begin
+  x == y && f();
+  z!!
+  return 0;
+end
+

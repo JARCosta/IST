@@ -1,0 +1,6 @@
+auto f = (int x, int y) -> void { x + y!! };
+begin
+  f(3, 4);
+  return 0;
+end
+

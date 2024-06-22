@@ -1,0 +1,15 @@
+
+Last episodes average: 
+Average reward:  -42.64
+Percentage of episodes that ended with collison:  13.8
+Percentage of episodes that ended with time up:  8.4
+Average steps when didn't collide:  10.62
+Average steps:  9.98
+
+All time average:
+Average reward:  -108.43
+Percentage of episodes that ended with collison:  25.03
+Percentage of episodes that ended with time up:  18.2
+Average steps when didn't collide:  13.41
+Average steps:  12.22
+

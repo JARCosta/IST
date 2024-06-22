@@ -1,0 +1,9 @@
+begin
+  auto x = 0;
+  while (x <= 29) {
+    x!!
+    x = x + 1;
+  }
+  return 0;
+end
+

@@ -1,0 +1,4 @@
+begin 
+	"X\012Y\12Z\n"! 
+	return 0; 
+end

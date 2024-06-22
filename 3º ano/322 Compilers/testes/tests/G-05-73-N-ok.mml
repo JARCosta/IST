@@ -1,0 +1,5 @@
+auto i = 1;
+begin
+  sizeof(i)!!
+end
+

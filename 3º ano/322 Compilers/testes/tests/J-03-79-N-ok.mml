@@ -1,0 +1,6 @@
+auto f = () -> string { return "ola"; };
+begin
+  f()!!
+  return 0;
+end
+
